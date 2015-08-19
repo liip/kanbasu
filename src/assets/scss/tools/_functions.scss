@@ -1,0 +1,25 @@
+/*----------------------------------------*\
+  FUNCTIONS
+\*----------------------------------------*/
+
+
+/**
+ * Calculate REM value based on the default font-size
+ */
+
+@function rem($value) {
+  @return ($value / $font-size-default) * 1rem;
+}
+
+
+/**
+ * Return a value divided by a ratio
+ * It uses the golden ratio by default
+ *
+ * Useful to create "visually equal" spacings
+ * As perfectly equal spacings never "visually" look equal when close to text
+ */
+
+@function ratio($value, $ratio: $ratio) {
+  @return floor($value/$ratio);
+}

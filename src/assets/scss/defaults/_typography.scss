@@ -1,0 +1,153 @@
+/*----------------------------------------*\
+  TYPOGRAPHY SCAFFOLDING
+\*----------------------------------------*/
+
+html {
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  color: $text-color;
+
+  // Cleaner font rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/**
+ * Links
+ */
+
+a {
+  color: $link-color;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+
+/**
+ * Headings
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.441em;
+}
+
+h2 {
+  font-size: 1.953em;
+}
+
+h3 {
+  font-size: 1.563em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.8em;
+}
+
+
+/**
+ * Paragraphs
+ */
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1.3em;
+}
+
+
+/**
+ * Preformatted text
+ */
+
+pre,
+code {
+  font-family: 'Monaco', monospace;
+  font-weight: normal;
+
+  background-color: #f5f5f5;
+}
+
+pre {
+  padding: $spacing-unit-default;
+  margin: 0 0 2em;
+
+  font-size: 0.875em;
+
+  border-radius: $border-radius-default;
+}
+
+code {
+  display: inline-block;
+  padding: 1px 5px;
+
+  pre & {
+    display: block;
+    padding: 0;
+  }
+}
+
+
+/**
+ * Lists
+ */
+
+ul,
+ol {
+  padding-left: $spacing-unit-default;
+  margin: 1em 0;
+
+  ul,
+  ol {
+    margin: 0;
+  }
+}
+
+dl {
+  @extend %clearfix;
+}
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin-left: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .dl--inline {
+    dt {
+      float: left;
+      width: 100px;
+    }
+
+    dd {
+      margin-left: calc(100px + #{$spacing-unit-small});
+    }
+  }
+
+
+/**
+ * Miscellaenous
+ */
+
+abbr {
+  cursor: help;
+}

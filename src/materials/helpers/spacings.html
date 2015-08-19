@@ -1,0 +1,84 @@
+---
+notes: |
+  Alter spacings (padding or margin) on elements according to the spacing units defined in the settings.
+
+  <div class="grid">
+  	<div class="grid__item sm-w-1/3">
+  		<dl class="dl--inline text-small">
+  			<dt>mrg</dt>
+  			<dd>Margin</dd>
+  			<dt>pdg</dt>
+  			<dd>Padding</dd>
+  		</dl>
+      </div>
+      <div class="grid__item sm-w-1/3">
+  		<dl class="dl--inline text-small">
+  			<dt>{empty}</dt>
+  			<dd>All sides</dd>
+  			<dt>t</dt>
+  			<dd>Top</dd>
+  			<dt>r</dt>
+  			<dd>Right</dd>
+  			<dt>b</dt>
+  			<dd>Bottom</dd>
+  			<dt>l</dt>
+  			<dd>Left</dd>
+  			<dt>v</dt>
+  			<dd>Vertical (top &amp; bottom)</dd>
+  			<dt>h</dt>
+  			<dd>Horizontal (left &amp; right)</dd>
+  		</dl>
+      </div>
+      <div class="grid__item sm-w-1/3">
+  		<dl class="dl--inline text-small">
+  			<dt>0</dt>
+  			<dd>Zero</dd>
+  			<dt>--</dt>
+  			<dd>Quarter spacing unit</dd>
+  			<dt>-</dt>
+  			<dd>Half spacing unit</dd>
+  			<dt>{empty}</dt>
+  			<dd>Base spacing unit</dd>
+  			<dt>+</dt>
+  			<dd>Double spacing unit</dd>
+  			<dt>++</dt>
+  			<dd>Quadruple spacing unit</dd>
+  		</dl>
+  	</div>
+  </div>
+
+  You can also restrict style to specific breakpoints by prefixing them with the media query name, for example `.xs-pdg+`.
+---
+
+<div class="box box--tight box--default pdg">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	Tempore fuga delectus debitis asperiores distinctio saepe itaque aut,
+	temporibus veritatis rerum odit exercitationem facilis, impedit amet,
+	molestiae necessitatibus natus. Distinctio, nam.
+</div>
+<div class="box box--tight box--default mrg-">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	Tempore fuga delectus debitis asperiores distinctio saepe itaque aut,
+	temporibus veritatis rerum odit exercitationem facilis, impedit amet,
+	molestiae necessitatibus natus. Distinctio, nam.
+</div>
+<div class="box box--tight box--default pdgv- pdgh+ mrgt+ mrgb-">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	Tempore fuga delectus debitis asperiores distinctio saepe itaque aut,
+	temporibus veritatis rerum odit exercitationem facilis, impedit amet,
+	molestiae necessitatibus natus. Distinctio, nam.
+</div>
+<div class="box box--tight box--default pdg xs-pdg- mrgh">
+	<strong>Responsive</strong>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	Tempore fuga delectus debitis asperiores distinctio saepe itaque aut,
+	temporibus veritatis rerum odit exercitationem facilis, impedit amet,
+	molestiae necessitatibus natus. Distinctio, nam.
+</div>
+<div class="box box--tight box--default mrgv lg-mrgv-">
+	<strong>Responsive</strong>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	Tempore fuga delectus debitis asperiores distinctio saepe itaque aut,
+	temporibus veritatis rerum odit exercitationem facilis, impedit amet,
+	molestiae necessitatibus natus. Distinctio, nam.
+</div>

@@ -1,0 +1,5 @@
+/**
+ * Kanbasu JavaScript
+ */
+
+'use strict';

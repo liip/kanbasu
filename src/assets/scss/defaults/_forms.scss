@@ -1,0 +1,136 @@
+/*----------------------------------------*\
+  FORMS
+\*----------------------------------------*/
+
+/**
+ * Basic form elements
+ */
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='number'],
+input[type='file'],
+select,
+textarea {
+  width: 100%;
+  padding: ratio($field-padding) $field-padding;
+
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+
+  border: $field-border;
+  background-color: $field-bkg-color;
+  border-radius: $field-border-radius;
+
+  // Cleaner font rendering
+  // <input> doesn’t inherit from body
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+
+  &:focus {
+    border-color: $field-focus-border-color;
+    outline: none;
+  }
+}
+
+select {
+  // Select doesn’t care about vertical padding, we have to set the height instead
+  // First find the field border width from $field-border parameter
+  @each $value in $field-border {
+    @if type-of($value) == 'number' {
+      $field-border-width: $value;
+    }
+  }
+
+  // Now calculate the height according to fields configuration
+  // Font size * line height + padding + border
+  height: floor($font-size-default*$line-height-default + ratio($field-padding)*2 + $field-border-width*2);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline-block;
+
+  label & {
+    margin-right: $spacing-unit-tiny;
+  }
+}
+
+label {
+  display: block;
+  padding-bottom: $spacing-unit-small;
+
+  cursor: pointer;
+}
+
+  .label--inline {
+    display: inline-block;
+    padding-top: ratio($spacing-unit-small);
+    padding-bottom: ratio($spacing-unit-small);
+
+    ~ .label--inline {
+      margin-left: $spacing-unit-default;
+    }
+  }
+
+
+/**
+ * Forms layout
+ */
+
+.form-group {
+  ~ .form-group {
+    margin-top: $spacing-unit-small;
+  }
+}
+
+.field-label {
+  font-weight: bold;
+  padding: ratio($spacing-unit-small) 0;
+}
+
+.field-help {
+  margin-top: $spacing-unit-tiny;
+  margin-bottom: 0;
+
+  color: $field-help-color;
+}
+
+
+/**
+ * Sizes
+ */
+
+.input--small {
+  padding: ratio($field-small-padding) $field-small-padding !important;
+  font-size: $field-small-font-size !important;
+  border-radius: $field-small-border-radius !important;
+}
+
+.input--large {
+  padding: ratio($field-large-padding) $field-large-padding !important;
+  font-size: $field-large-font-size !important;
+  border-radius: $field-large-border-radius !important;
+}

@@ -1,0 +1,20 @@
+/*----------------------------------------*\
+  TABLE
+\*----------------------------------------*/
+
+table {
+  width: 100%;
+  margin-bottom: $spacing-unit-default;
+
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: $spacing-unit-tiny;
+}

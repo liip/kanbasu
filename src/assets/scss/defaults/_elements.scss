@@ -1,0 +1,11 @@
+/*----------------------------------------*\
+  ELEMENT DEFAULT BEHAVIOR
+\*----------------------------------------*/
+
+// Prevent ghost space under usually block elements
+img,
+iframe,
+embed,
+object {
+  display: block;
+}

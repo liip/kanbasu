@@ -1,0 +1,114 @@
+/*----------------------------------------*\
+  GRID
+\*----------------------------------------*/
+
+.grid {
+  display: block;
+  margin-left: -$spacing-unit-default;
+
+  // Remove extra-space between items due to inline block
+  font-size: 0;
+}
+
+  .grid__item {
+    display: inline-block;
+    width: 100%;
+    padding-left: $spacing-unit-default;
+
+    // Reset font size to default (see comment above)
+    font-size: $font-size-default;
+    vertical-align: top;
+  }
+
+
+/**
+ * Gutters size
+ */
+
+.grid--tight {
+  margin-left: 0;
+
+  > .grid__item {
+    padding-left: 0;
+  }
+}
+
+.grid--tiny {
+  margin-left: -$spacing-unit-tiny;
+
+  > .grid__item {
+    padding-left: $spacing-unit-tiny;
+  }
+}
+
+.grid--small {
+  margin-left: -$spacing-unit-small;
+
+  > .grid__item {
+    padding-left: $spacing-unit-small;
+  }
+}
+
+.grid--large {
+  margin-left: -$spacing-unit-large;
+
+  > .grid__item {
+    padding-left: $spacing-unit-large;
+  }
+}
+
+.grid--huge {
+  margin-left: -$spacing-unit-huge;
+
+  > .grid__item {
+    padding-left: $spacing-unit-huge;
+  }
+}
+
+
+/**
+ * Alignment
+ */
+
+.grid--center {
+  text-align: center;
+
+  > .grid__item {
+    text-align: left;
+  }
+}
+
+.grid--right {
+  text-align: right;
+
+  > .grid__item {
+    text-align: left;
+  }
+}
+
+.grid--middle {
+  > .grid__item {
+    vertical-align: middle;
+  }
+}
+
+.grid--bottom {
+  > .grid__item {
+    vertical-align: bottom;
+  }
+}
+
+
+/**
+ * Order
+ */
+
+.grid--rev {
+  direction: rtl;
+  text-align: left;
+
+  > .grid__item {
+    direction: ltr;
+    text-align: left;
+  }
+}

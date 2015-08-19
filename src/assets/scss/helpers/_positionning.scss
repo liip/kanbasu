@@ -1,0 +1,28 @@
+/*----------------------------------------*\
+  VERTICAL & HORIZONTAL ALIGN
+\*----------------------------------------*/
+
+// Vertically align an element in the middle
+// The referent container has to be relative
+.v-align,
+%v-align {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+// Vertically and horizontally align an element in the middle
+// The referent container has to be relative
+.vh-align,
+%vh-align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.relative-parent {
+  position: relative;
+}

@@ -1,0 +1,60 @@
+/*----------------------------------------*\
+  LIST STACKED
+\*----------------------------------------*/
+
+.list-stacked {
+  @extend %list;
+
+  > li {
+    padding: $spacing-unit-default/2 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+  // Add separators
+  .list-stacked--divided {
+    > li + li {
+      border-top: $list-separator-style;
+    }
+  }
+
+  /**
+   * Sizes
+   */
+
+  .list-stacked--tight {
+    > li {
+      padding: 0;
+    }
+  }
+
+  .list-stacked--tiny {
+    > li {
+      padding: $spacing-unit-tiny/2 0;
+    }
+  }
+
+  .list-stacked--small {
+    > li {
+      padding: $spacing-unit-small/2 0;
+    }
+  }
+
+  .list-stacked--large {
+    > li {
+      padding: $spacing-unit-large/2 0;
+    }
+  }
+
+  .list-stacked--huge {
+    > li {
+      padding: $spacing-unit-huge/2 0;
+    }
+  }

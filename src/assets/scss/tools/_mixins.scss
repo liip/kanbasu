@@ -1,0 +1,53 @@
+/*----------------------------------------*\
+  MIXINS
+\*----------------------------------------*/
+
+/**
+ * Responsive
+ */
+
+// Output something for each breakpoint
+// $breakpoint-name is available inside @content
+//
+// Usage: @include foreach-breakpoint() {}
+
+@mixin foreach-breakpoint($breakpoints: $breakpoints-default) {
+  @each $breakpoint in $breakpoints {
+    $breakpoint-name: nth($breakpoint, 1) !global; // Set it as global so it can be used inside the @content
+    $breakpoint-mq: nth($breakpoint, 2);
+
+    @media #{$breakpoint-mq} {
+      @content;
+    }
+
+    $breakpoint-name: null !global; // Reset global variable
+  }
+}
+
+
+// Generate fractions classes to be used as fluid widths
+// $columns   {List}    A list of numbers in reverse order for which you want to create fractions
+//                      "3,2,1" will create 1/1 1/2 1/3 2/3
+//                      Reverse order is required to keep only 1/1 instead of 3/3 for example
+// $prefix    {String}  A prefix for the generated classes
+
+@mixin widths($columns, $prefix: null) {
+  $fractions: ();
+
+  // Loop inside entries and push them into a map
+  // So entries are unique by width
+  @each $column in $columns {
+    @for $i from 1 through $column {
+      $width: percentage($i/$column);
+      $fractions: map-merge($fractions, ($width: #{$i}\/#{$column}));
+    }
+  }
+
+  // Now generate all the classes
+  // .w-{prefix}{nominator}-{denominator}
+  @each $width, $fraction in $fractions {
+    .#{$prefix}w-#{$fraction} {
+      width: $width !important;
+    }
+  }
+}

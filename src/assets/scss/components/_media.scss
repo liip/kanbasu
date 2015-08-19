@@ -1,0 +1,37 @@
+/*----------------------------------------*\
+  THE MEDIA OBJECT
+\*----------------------------------------*/
+
+// The famous Media object created by Nicole Sullivan
+// http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+
+.media {
+  @extend %clearfix;
+  display: block;
+}
+
+  .media__left {
+    float: left;
+    margin-right: $spacing-unit-default;
+  }
+
+  .media__right {
+    float: right;
+    margin-left: $spacing-unit-default;
+  }
+
+  .media__image {
+    display: block;
+  }
+
+  .media__body {
+    overflow: hidden;
+    display: block;
+
+    > :first-child {
+      margin-top: 0;
+    }
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }

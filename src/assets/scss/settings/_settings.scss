@@ -1,0 +1,167 @@
+/*----------------------------------------*\
+  GLOBAL SETTINGS
+\*----------------------------------------*/
+
+/**
+ * Colors
+ */
+
+$brand-color:                       #6ea644 !default;
+$alt-color-lighter:                 #eee !default;
+$alt-color-light:                   #999 !default;
+$alt-color:                         #777 !default;
+$alt-color-dark:                    #555 !default;
+$alt-color-darker:                  #333 !default;
+
+
+/**
+ * Typography
+ */
+
+$font-family-default:               'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+
+$font-size-default:                 16px !default;
+$font-size-small:                   0.75rem !default;
+$font-size-large:                   1.5rem !default;
+
+$line-height-default:               1.45 !default;
+
+$text-color:                        $alt-color-darker !default;
+$link-color:                        $brand-color !default;
+
+
+/**
+ * Spacings
+ */
+
+$ratio:                             1.61803398875 !default;
+
+$spacing-unit-default:              24px !default;
+$spacing-unit-tiny:                 floor($spacing-unit-default / ($ratio*2)) !default;
+$spacing-unit-small:                floor($spacing-unit-default / $ratio) !default;
+$spacing-unit-large:                floor($spacing-unit-default * $ratio) !default;
+$spacing-unit-huge:                 floor($spacing-unit-default * ($ratio*2)) !default;
+
+
+/**
+ * Responsiveness
+ */
+
+$screen-xs-max:                     640px !default;
+$screen-sm-min:                     $screen-xs-max + 1px !default;
+$screen-sm-max:                     768px !default;
+$screen-md-min:                     $screen-sm-max + 1px !default;
+$screen-md-max:                     1024px !default;
+$screen-lg-min:                     $screen-md-max + 1px !default;
+
+$mq-xs:                             '(max-width: #{$screen-xs-max})' !default;
+$mq-sm:                             '(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})' !default;
+$mq-md:                             '(min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})' !default;
+$mq-lg:                             '(min-width: #{$screen-lg-min})' !default;
+
+$breakpoints-default:               (
+                                      'xs' $mq-xs,
+                                      'sm' $mq-sm,
+                                      'md' $mq-md,
+                                      'lg' $mq-lg
+                                    ) !default;
+
+
+/**
+ * Miscellaneous
+ */
+
+$border-radius-default:             4px !default;
+$border-radius-small:               2px !default;
+$border-radius-large:               6px !default;
+
+
+/*----------------------------------------*\
+  COMPONENTS
+\*----------------------------------------*/
+
+/**
+ * Buttons
+ */
+
+$btn-padding:                       $spacing-unit-small !default;
+$btn-color:                         inherit !default;
+$btn-border:                        1px solid transparent !default;
+$btn-bkg:                           transparent !default;
+$btn-border-radius:                 $border-radius-default !default;
+
+$btn-small-padding:                 $spacing-unit-tiny !default;
+$btn-small-font-size:               $font-size-small !default;
+$btn-small-border-radius:           $border-radius-small !default;
+
+$btn-large-padding:                 $spacing-unit-default !default;
+$btn-large-font-size:               $font-size-large !default;
+$btn-large-border-radius:           $border-radius-large !default;
+
+$btn-default-color:                 inherit !default;
+$btn-default-bkg-color:             $alt-color-lighter !default;
+$btn-default-hover-bkg-color:       lighten($btn-default-bkg-color, 3%) !default;
+$btn-default-active-bkg-color:      darken($btn-default-bkg-color, 5%) !default;
+
+$btn-primary-color:                 white !default;
+$btn-primary-bkg-color:             $brand-color !default;
+$btn-primary-hover-bkg-color:       lighten($btn-primary-bkg-color, 8%) !default;
+$btn-primary-active-bkg-color:      darken($btn-primary-bkg-color, 5%) !default;
+
+
+/**
+ * Forms
+ */
+
+$field-padding:                     $spacing-unit-small !default;
+$field-bkg-color:                   white !default;
+$field-border:                      1px solid $alt-color-light !default;
+$field-focus-border-color:          $alt-color-darker !default;
+$field-border-radius:               $border-radius-default !default;
+
+$field-small-padding:               $spacing-unit-tiny !default;
+$field-small-font-size:             $font-size-small !default;
+$field-small-border-radius:         $border-radius-small !default;
+
+$field-large-padding:               $spacing-unit-default !default;
+$field-large-font-size:             $font-size-large !default;
+$field-large-border-radius:         $border-radius-large !default;
+
+$field-help-color:                  $alt-color-light !default;
+
+
+/**
+ * Lists
+ */
+
+$list-separator-style:              1px solid $alt-color-lighter !default;
+
+
+/**
+ * Box
+ */
+
+$box-default-color:                 inherit !default;
+$box-default-bkg-color:             $alt-color-lighter !default;
+
+$box-primary-color:                 white !default;
+$box-primary-bkg-color:             $brand-color !default;
+
+
+/**
+ * Widths
+ */
+
+$widths-columns:                    6,5,4,3,2,1 !default;
+$widths-breakpoints:                (
+                                      'sm' '(min-width: #{$screen-sm-min})',
+                                      'md' '(min-width: #{$screen-md-min})',
+                                      'lg' '(min-width: #{$screen-lg-min})',
+                                    ) !default;
+
+
+/**
+ * Media responsive
+ */
+
+$media-collapse:                    $screen-sm-max !default;

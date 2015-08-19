@@ -1,0 +1,24 @@
+/*----------------------------------------*\
+  SPACINGS RESPONSIVE
+\*----------------------------------------*/
+
+// Build spacings values for each breakpoint
+// Extend the usual classes prefixed with the breakpoint name
+// For example `sm-mrgt++`
+
+/**
+ * Margins
+ */
+
+@include foreach-breakpoint() {
+  @include spacing-margins('#{$breakpoint-name}-');
+}
+
+
+/**
+ * Paddings
+ */
+
+@include foreach-breakpoint() {
+  @include spacing-paddings('#{$breakpoint-name}-');
+}

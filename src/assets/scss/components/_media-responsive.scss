@@ -1,0 +1,22 @@
+/*----------------------------------------*\
+  MEDIA RESPONSIVE
+\*----------------------------------------*/
+
+@media (max-width: $media-collapse) {
+  .media--responsive {
+    .media__left,
+    .media__right {
+      float: none;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: $spacing-unit-default;
+      width: 100%;
+    }
+
+    .media__image {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}

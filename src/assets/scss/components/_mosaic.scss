@@ -1,0 +1,28 @@
+/*----------------------------------------*\
+  MOSAIC
+\*----------------------------------------*/
+
+.mosaic {
+  display: table;
+  width: 100%;
+}
+
+// Equal width for all cells
+.mosaic--fixed {
+  table-layout: fixed;
+}
+
+  .mosaic__row {
+    display: table-row;
+  }
+
+  .mosaic__cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+    // Make the cell fit its content
+    .mosaic__cell--fit {
+      width: 1px;
+      white-space: nowrap;
+    }
