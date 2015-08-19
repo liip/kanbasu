@@ -102,6 +102,15 @@ gulp.task('favicon', function () {
 });
 
 
+// Copy various files
+gulp.task('copy', function () {
+	return gulp.src([
+			'CNAME'
+		])
+		.pipe(gulp.dest(config.dest));
+});
+
+
 // assemble
 gulp.task('assemble', function (done) {
 	assemble({
@@ -160,7 +169,7 @@ gulp.task('serve', function () {
 
 
 // deploy to GitHub pages
-gulp.task('deploy', ['default'], function() {
+gulp.task('deploy', function() {
 	return gulp.src(config.dest + '/**/*').pipe(ghPages());
 });
 
@@ -173,7 +182,8 @@ gulp.task('default', ['clean'], function () {
 		'styles',
 		'scripts',
 		'images',
-		'assemble'
+		'assemble',
+		'copy'
 	];
 
 	// run build
