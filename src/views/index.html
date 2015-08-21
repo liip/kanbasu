@@ -1,9 +1,9 @@
 ---
-title: キャンバス Kanbasu CSS Framework
+title: カンバス Kanbasu CSS Framework
 fabricator: true
 ---
 
-<h1>キャンバス Kanbasu</h1>
+<h1>カンバス Kanbasu</h1>
 
 <p class="text-large">Kanbasu is a CSS framework with very basic styling. It can be used as a base for any web project or for prototyping. It will provides you all the basics and common patterns used to display content on the web today.</p>
 
@@ -15,27 +15,31 @@ fabricator: true
 
 <h2>How to use</h2>
 
-<h3>Install with NPM</h3>
+<h3>Install</h3>
 
-<pre>
-$ npm install --save-dev kanbasu
-</pre>
+<p><strong>With NPM</strong></p>
 
-<p>It’s recommended to copy the framework main file to your project to customize it as you wish. You’ll have to change all "import" paths to match the framwork location.</p>
+<pre>$ npm install --save-dev kanbasu</pre>
 
-<pre>
-$ cp node_modules/kanbasu/src/assets/scss/kanbasu.scss destination/kanbasu.scss
-</pre>
+<p><strong>As a Git submodule</strong></p>
+
+<pre>$ git submodule add git@github.com:liip/kanbasu.git</pre>
+
+<p>Or simply <a href="https://github.com/liip/kanbasu/archive/master.zip">download the zip</a>.</p>
+
+<h3>Setup</h3>
+
+<p>It’s recommended to copy the framework main file to your project to customize it as you wish. You’ll have to change all "import" paths to match the framwork location then.</p>
+
+<pre>$ cp node_modules/kanbasu/src/assets/scss/kanbasu.scss destination/kanbasu.scss</pre>
 
 <p>It’s also recommended to duplicated the settings file to have a quick access to all the variables and adapt them to your needs.</p>
 
-<pre>
-$ cp node_modules/kanbasu/src/assets/scss/settings/_settings.scss destination/settings/_kanbasu.scss
-</pre>
+<pre>$ cp node_modules/kanbasu/src/assets/scss/settings/_settings.scss destination/settings/_kanbasu.scss</pre>
 
-<p>You should then import it in your main Sass file, <strong>before</strong> other Kanbasu files, to overrides the framework default settings.</p>
+<p>You should then import it in your main Sass file, <strong>before</strong> other Kanbasu files, to overrides the framework default settings. Learn more about <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variable_defaults_">Sass default variables</a>.</p>
 
-<p><strong>Notice:</strong> Kanbasu does not include vendor-prefixed properties in the Sass files. If you build them by yourself, we recommend you to use <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> and configure it according to your needs.</p>
+<p><strong>Notice:</strong> Kanbasu does not include vendor-prefixed properties. If you build it by yourself, we recommend you to use <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>.</p>
 
 <h2>Report issues</h2>
 
@@ -52,3 +56,7 @@ $ npm start
 <p>Guidelines are simple; keep the code <abbr title="Don’t repeat yourself">DRY</abbr>, follow the <code>.editorconfig</code> and <a href="http://benoitburgener.ch/blog/organize-your-css-declarations/">organize declarations</a>.</p>
 
 <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+<h2>About</h2>
+
+<p>Kanbasu is proudly made at <a href="http://liip.ch">Liip</a>.</p>
