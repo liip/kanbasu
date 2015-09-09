@@ -90,8 +90,8 @@ label {
     padding-top: ratio($spacing-unit-small);
     padding-bottom: ratio($spacing-unit-small);
 
-    ~ .label--inline {
-      margin-left: $spacing-unit-default;
+    &:not(:last-child) {
+      margin-right: $spacing-unit-default;
     }
   }
 
