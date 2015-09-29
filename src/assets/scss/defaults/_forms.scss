@@ -52,8 +52,9 @@ textarea {
 select {
   // Select doesn’t care about vertical padding, we have to set the height instead
   // First find the field border width from $field-border parameter
+  $field-border-width: 0px;
+
   @each $value in $field-border {
-    $field-border-width: 0px;
     @if type-of($value) == 'number' {
       $field-border-width: $value;
     }
