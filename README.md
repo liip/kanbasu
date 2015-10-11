@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/liip/kanbasu.svg)](https://travis-ci.org/liip/kanbasu)
+
 # カンバス Kanbasu
 
 Kanbasu is a CSS framework with very basic styling. It can be used as a base for any web project or for prototyping. It will provide you all the basics and common patterns used to display content on the web today.
