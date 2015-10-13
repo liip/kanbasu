@@ -2,7 +2,7 @@
   GRID
 \*----------------------------------------*/
 
-.grid {
+.#{$namespace}grid {
   display: block;
   margin-left: -$spacing-unit-default;
 
@@ -10,7 +10,7 @@
   font-size: 0;
 }
 
-  .grid__item {
+  .#{$namespace}grid__item {
     display: inline-block;
     width: 100%;
     padding-left: $spacing-unit-default;
@@ -25,42 +25,42 @@
  * Gutters size
  */
 
-.grid--tight {
+.#{$namespace}grid--tight {
   margin-left: 0;
 
-  > .grid__item {
+  > .#{$namespace}grid__item {
     padding-left: 0;
   }
 }
 
-.grid--tiny {
+.#{$namespace}grid--tiny {
   margin-left: -$spacing-unit-tiny;
 
-  > .grid__item {
+  > .#{$namespace}grid__item {
     padding-left: $spacing-unit-tiny;
   }
 }
 
-.grid--small {
+.#{$namespace}grid--small {
   margin-left: -$spacing-unit-small;
 
-  > .grid__item {
+  > .#{$namespace}grid__item {
     padding-left: $spacing-unit-small;
   }
 }
 
-.grid--large {
+.#{$namespace}grid--large {
   margin-left: -$spacing-unit-large;
 
-  > .grid__item {
+  > .#{$namespace}grid__item {
     padding-left: $spacing-unit-large;
   }
 }
 
-.grid--huge {
+.#{$namespace}grid--huge {
   margin-left: -$spacing-unit-huge;
 
-  > .grid__item {
+  > .#{$namespace}grid__item {
     padding-left: $spacing-unit-huge;
   }
 }
@@ -70,30 +70,30 @@
  * Alignment
  */
 
-.grid--center {
+.#{$namespace}grid--center {
   text-align: center;
 
-  > .grid__item {
+  > .#{$namespace}grid__item {
     text-align: left;
   }
 }
 
-.grid--right {
+.#{$namespace}grid--right {
   text-align: right;
 
-  > .grid__item {
+  > .#{$namespace}grid__item {
     text-align: left;
   }
 }
 
-.grid--middle {
-  > .grid__item {
+.#{$namespace}grid--middle {
+  > .#{$namespace}grid__item {
     vertical-align: middle;
   }
 }
 
-.grid--bottom {
-  > .grid__item {
+.#{$namespace}grid--bottom {
+  > .#{$namespace}grid__item {
     vertical-align: bottom;
   }
 }
@@ -103,11 +103,11 @@
  * Order
  */
 
-.grid--rev {
+.#{$namespace}grid--rev {
   direction: rtl;
   text-align: left;
 
-  > .grid__item {
+  > .#{$namespace}grid__item {
     direction: ltr;
     text-align: left;
   }
