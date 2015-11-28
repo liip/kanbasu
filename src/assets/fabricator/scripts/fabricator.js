@@ -272,28 +272,6 @@ fabricator.singleItemToggle = function () {
 
 
 /**
- * Automatically select code when code block is clicked
- */
-fabricator.bindCodeAutoSelect = function () {
-
-	var codeBlocks = document.querySelectorAll('.f-item-code');
-
-	var select = function (block) {
-		var selection = window.getSelection();
-		var range = document.createRange();
-		range.selectNodeContents(block.querySelector('code'));
-		selection.removeAllRanges();
-		selection.addRange(range);
-	};
-
-	for (var i = codeBlocks.length - 1; i >= 0; i--) {
-		codeBlocks[i].addEventListener('click', select.bind(this, codeBlocks[i]));
-	}
-
-};
-
-
-/**
  * Open/Close menu based on session var.
  * Also attach a media query listener to close the menu when resizing to smaller screen.
  */
@@ -337,7 +315,6 @@ fabricator.setInitialMenuState = function () {
 		.allItemsToggles()
 		.singleItemToggle()
 		.buildColorChips()
-		.setActiveItem()
-		.bindCodeAutoSelect();
+		.setActiveItem();
 
 }());
