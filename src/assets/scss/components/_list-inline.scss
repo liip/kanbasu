@@ -5,15 +5,9 @@
 .list-inline {
   @extend %list;
 
-  // Remove extra-space between items due to inline block
-  font-size: 0;
-
   > li {
     display: inline-block;
     padding: 0 $spacing-unit-default/2;
-
-    // Reset font size to default (see comment above)
-    font-size: $font-size-default;
 
     &:first-child {
       padding-left: 0;
