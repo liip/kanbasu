@@ -1,0 +1,17 @@
+/*----------------------------------------*\
+  MOSAIC RESPONSIVE
+\*----------------------------------------*/
+
+@media (max-width: $mosaic-collapse) {
+  .mosaic--responsive {
+    &,
+    .mosaic__row,
+    .mosaic__cell {
+      display: block;
+    }
+
+    .mosaic__cell--fit {
+      width: auto;
+    }
+  }
+}

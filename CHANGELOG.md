@@ -4,6 +4,7 @@
 
 * Vertically align list-inline elements in the middle
 * Do not handle list-inline extra white space with font-size reset anymore
+* Introduce responsive Mosaic component
 
 ## 1.0.3
 
