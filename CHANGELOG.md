@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.1.0
+
+* Vertically align list-inline elements in the middle
+* Do not handle list-inline extra white space with font-size reset anymore
+
 ## 1.0.3
 
 * Fix Sass compilation error due to missing $field-border-width
