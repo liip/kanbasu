@@ -2,7 +2,7 @@
   BOX
 \*----------------------------------------*/
 
-.box {
+.#{$namespace}box {
   padding: $spacing-unit-default;
 
   > :first-child {
@@ -22,23 +22,23 @@
  * Spacings
  */
 
-.box--tight {
+.#{$namespace}box--tight {
   padding: 0;
 }
 
-.box--tiny {
+.#{$namespace}box--tiny {
   padding: $spacing-unit-tiny;
 }
 
-.box--small {
+.#{$namespace}box--small {
   padding: $spacing-unit-small;
 }
 
-.box--large {
+.#{$namespace}box--large {
   padding: $spacing-unit-large;
 }
 
-.box--huge {
+.#{$namespace}box--huge {
   padding: $spacing-unit-huge;
 }
 
@@ -47,13 +47,13 @@
  * Styles
  */
 
-.box--default {
+.#{$namespace}box--default {
   color: $box-default-color;
 
   background-color: $box-default-bkg-color;
 }
 
-.box--primary {
+.#{$namespace}box--primary {
   color: $box-primary-color;
 
   background-color: $box-primary-bkg-color;
