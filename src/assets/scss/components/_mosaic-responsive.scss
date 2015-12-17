@@ -3,14 +3,14 @@
 \*----------------------------------------*/
 
 @media (max-width: $mosaic-collapse) {
-  .mosaic--responsive {
+  .#{$namespace}mosaic--responsive {
     &,
-    .mosaic__row,
-    .mosaic__cell {
+    .#{$namespace}mosaic__row,
+    .#{$namespace}mosaic__cell {
       display: block;
     }
 
-    .mosaic__cell--fit {
+    .#{$namespace}mosaic__cell--fit {
       width: auto;
     }
   }

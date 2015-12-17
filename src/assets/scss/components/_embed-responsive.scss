@@ -4,7 +4,7 @@
 
 // Credit: Nicolas Gallagher and SUIT CSS.
 
-.embed-responsive {
+.#{$namespace}embed-responsive {
   display: block;
   height: 0;
   padding: 0;
@@ -12,7 +12,7 @@
 
   position: relative;
 
-  .embed-responsive__item {
+  .#{$namespace}embed-responsive__item {
     height: 100%;
     width: 100%;
 
@@ -25,10 +25,10 @@
   }
 }
 
-.embed-responsive--16\/9 {
+.#{$namespace}embed-responsive--16\/9 {
   padding-bottom: 56.25%;
 }
 
-.embed-responsive--4\/3 {
+.#{$namespace}embed-responsive--4\/3 {
   padding-bottom: 75%;
 }
