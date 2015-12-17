@@ -3,9 +3,9 @@
 \*----------------------------------------*/
 
 @media (max-width: $media-collapse) {
-  .media--responsive {
-    .media__left,
-    .media__right {
+  .#{$namespace}media--responsive {
+    .#{$namespace}media__left,
+    .#{$namespace}media__right {
       float: none;
       margin-right: 0;
       margin-left: 0;
@@ -13,7 +13,7 @@
       width: 100%;
     }
 
-    .media__image {
+    .#{$namespace}media__image {
       max-width: 100%;
       height: auto;
       margin: 0 auto;

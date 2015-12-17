@@ -2,6 +2,10 @@
   GLOBAL SETTINGS
 \*----------------------------------------*/
 
+// Use this setting to prefix all the components classes
+$namespace:                         '';
+
+
 /**
  * Colors
  */
@@ -165,3 +169,10 @@ $widths-breakpoints:                (
  */
 
 $media-collapse:                    $screen-sm-max !default;
+
+
+/**
+ * Mosaic responsive
+ */
+
+$mosaic-collapse:                   $screen-sm-max !default;

@@ -5,26 +5,26 @@
 // The famous Media object created by Nicole Sullivan
 // http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
 
-.media {
+.#{$namespace}media {
   @extend %clearfix;
   display: block;
 }
 
-  .media__left {
+  .#{$namespace}media__left {
     float: left;
     margin-right: $spacing-unit-default;
   }
 
-  .media__right {
+  .#{$namespace}media__right {
     float: right;
     margin-left: $spacing-unit-default;
   }
 
-  .media__image {
+  .#{$namespace}media__image {
     display: block;
   }
 
-  .media__body {
+  .#{$namespace}media__body {
     overflow: hidden;
     display: block;
 

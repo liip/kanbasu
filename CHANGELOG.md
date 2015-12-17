@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.1.0
+
+* Vertically align list-inline elements in the middle
+* Do not handle list-inline extra white space with font-size reset anymore
+* Introduce responsive Mosaic component
+* Allow component namespacing (Thanks @maiis)
+* Moved "Embed responsive" from helpers to components
+
 ## 1.0.3
 
 * Fix Sass compilation error due to missing $field-border-width
