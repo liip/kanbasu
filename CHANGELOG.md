@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.1
+
+* Apply default styling to input type datetime & datetime-local
+
 ## 1.1.0
 
 * Vertically align list-inline elements in the middle
