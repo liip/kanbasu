@@ -3,6 +3,7 @@
 ## 1.1.1
 
 * Apply default styling to input type datetime & datetime-local
+* Correctly set $namespace as !default value (Thanks @maiis)
 
 ## 1.1.0
 
