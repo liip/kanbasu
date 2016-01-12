@@ -84,19 +84,28 @@
 
 
 .f-item-controls {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.5rem;
+  margin-top: 0.5rem;
 
   .f-control {
-    width: 14px;
-    height: 14px;
-    display: block;
-    float: left;
+    vertical-align: baseline;
+
+    font-size: 0.75rem;
+    color: map-get($colors, medium);
+
+    svg {
+      vertical-align: text-bottom;
+      margin-right: 0.25rem;
+    }
+
+    use {
+      fill: map-get($colors, medium);
+    }
 
     &:hover {
+      color: map-get($colors, dark);
+
       use {
-        fill: map-get($colors, normal);
+        fill: map-get($colors, dark);
       }
     }
   }
