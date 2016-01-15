@@ -1,6 +1,6 @@
 {
   "name": "kanbasu",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Bare OOCSS Framework written in Sass",
   "homepage": "http://kanbasu.liip.ch",
   "main": "README.md",

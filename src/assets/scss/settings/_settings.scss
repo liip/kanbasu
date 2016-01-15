@@ -123,6 +123,9 @@ $field-border:                      1px solid $alt-color-light !default;
 $field-focus-border-color:          $alt-color-darker !default;
 $field-border-radius:               $border-radius-default !default;
 
+$field-disabled-bkg-color:          $alt-color-lighter !default;
+$field-disabled-color:              $alt-color !default;
+
 $field-small-padding:               $spacing-unit-tiny !default;
 $field-small-font-size:             $font-size-small !default;
 $field-small-border-radius:         $border-radius-small !default;

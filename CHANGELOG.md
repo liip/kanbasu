@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.2.0
+
+* Add basic styling for disabled input
+* Improve documentation readability and usability
+
 ## 1.1.1
 
 * Apply default styling to input type datetime & datetime-local
