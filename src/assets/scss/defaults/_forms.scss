@@ -31,10 +31,10 @@ textarea {
   width: 100%;
   padding: ratio($field-padding) $field-padding;
 
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
+  color: $field-color;
+  font-size: $field-font-size;
+  font-family: $field-font-family;
+  line-height: $field-line-height;
 
   border: $field-border;
   background-color: $field-bkg-color;

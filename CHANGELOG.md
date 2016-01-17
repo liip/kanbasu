@@ -4,6 +4,7 @@
 
 * Add basic styling for disabled input
 * Improve documentation readability and usability
+* Expose inputs typography styling as variables
 
 ## 1.1.1
 
