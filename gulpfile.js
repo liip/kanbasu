@@ -16,6 +16,7 @@ var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
+var metadata = require('./package.json');
 
 
 // configuration
@@ -114,7 +115,12 @@ gulp.task('copy', function () {
 // assemble
 gulp.task('assemble', function (done) {
 	assemble({
-		logErrors: config.dev
+		logErrors: config.dev,
+		helpers: {
+			currentVersion: function() {
+				return metadata.version;
+			}
+		}
 	});
 	done();
 });
