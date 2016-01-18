@@ -1,11 +1,11 @@
 <div class="f-search-materials">
-	<input type="search" id="search-materials" class="awesomplete form-control" list="materials-list" placeholder="Quick search…">
+	<input type="search" id="search-materials" class="form-control" list="materials-list" placeholder="Quick search…">
 	<datalist id="materials-list">
 		{{#each materials}}
 			{{#each items}}
 				{{#if items}}
 					{{#each items}}
-						<option value="/{{@../../key}}.html#{{@../key}}">{{../name}} &middot; {{name}}</option>
+						<option value="/{{@../../key}}.html#{{@key}}">{{../name}} &middot; {{name}}</option>
 					{{/each}}
 				{{else}}
 					<option value="/{{@../key}}.html#{{@key}}">{{name}}</option>

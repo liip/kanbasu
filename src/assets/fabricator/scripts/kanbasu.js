@@ -11,9 +11,12 @@ class Kanbasu {
 	}
 
 	/**
-	 * Listen for change on the search field
+	 * Init quick search field
 	 */
 	initSearch() {
+		new Awesomplete(this.searchField);
+
+		// Listen for change and go to URL
 		this.searchField.addEventListener('awesomplete-selectcomplete', (e) => {
 			let text = e.currentTarget.value;
 			let url = this.getMaterial(text);
@@ -25,6 +28,11 @@ class Kanbasu {
 				window.location = window.location.origin + url;
 			}
 		});
+
+		// Autofocus field when there’s no hash in the URL
+		if (!window.location.hash.length) {
+			this.searchField.focus();
+		}
 	}
 
 	/**

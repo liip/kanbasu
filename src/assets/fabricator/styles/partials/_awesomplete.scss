@@ -29,8 +29,6 @@ div.awesomplete {
     display: block;
     padding-left: 36px;
 
-    font-size: 0.875rem;
-
     &::-webkit-calendar-picker-indicator {
       display: none;
     }
@@ -40,6 +38,7 @@ div.awesomplete {
     min-width: 100%;
     padding: 0;
     margin: .2em 0 0;
+    overflow: hidden;
 
     position: absolute;
     left: 0;
@@ -59,26 +58,14 @@ div.awesomplete {
       cursor: pointer;
 
       mark {
-        background: hsl(65, 100%, 50%);
+        color: inherit;
+        background: rgba(0,0,0,.1);
       }
 
-      &:hover {
-        background: hsl(200, 40%, 80%);
-        color: black;
-
-        mark {
-          background: hsl(68, 101%, 41%);
-        }
-      }
-
+      &:hover,
       &[aria-selected="true"] {
-        background: hsl(205, 40%, 40%);
+        background: map-get($colors, accent);
         color: white;
-
-        mark {
-          background: hsl(86, 102%, 21%);
-          color: inherit;
-        }
       }
     }
 
