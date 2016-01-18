@@ -5,6 +5,7 @@
 * Add basic styling for disabled input
 * Improve documentation readability and usability
 * Expose inputs typography styling as variables
+* Add documentation for box component
 
 ## 1.1.1
 
