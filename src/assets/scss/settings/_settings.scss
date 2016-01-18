@@ -118,10 +118,19 @@ $btn-primary-active-bkg-color:      darken($btn-primary-bkg-color, 5%) !default;
  */
 
 $field-padding:                     $spacing-unit-small !default;
+
+$field-color:                       inherit !default;
+$field-font-size:                   inherit !default;
+$field-font-family:                 inherit !default;
+$field-line-height:                 $line-height-default !default;
+
 $field-bkg-color:                   white !default;
 $field-border:                      1px solid $alt-color-light !default;
 $field-focus-border-color:          $alt-color-darker !default;
 $field-border-radius:               $border-radius-default !default;
+
+$field-disabled-bkg-color:          $alt-color-lighter !default;
+$field-disabled-color:              $alt-color !default;
 
 $field-small-padding:               $spacing-unit-tiny !default;
 $field-small-font-size:             $font-size-small !default;

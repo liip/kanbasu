@@ -56,8 +56,6 @@
   position: relative;
   z-index: 2;
 
-  font-size: 0.875rem;
-
   background-color: white;
   border: 1px solid #eaeaea;
   border-bottom-color: darken(#eaeaea, 5%);
@@ -84,19 +82,31 @@
 
 
 .f-item-controls {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.5rem;
+  margin-top: 0.5rem;
 
   .f-control {
-    width: 14px;
-    height: 14px;
-    display: block;
-    float: left;
+    vertical-align: baseline;
+
+    font-size: 0.75rem;
+    color: map-get($colors, medium);
+
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 0.25rem;
+
+      vertical-align: text-bottom;
+    }
+
+    use {
+      fill: map-get($colors, medium);
+    }
 
     &:hover {
+      color: map-get($colors, dark);
+
       use {
-        fill: map-get($colors, normal);
+        fill: map-get($colors, dark);
       }
     }
   }

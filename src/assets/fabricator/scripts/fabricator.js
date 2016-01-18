@@ -72,25 +72,6 @@ fabricator.getOptions = function () {
 
 
 /**
- * Build color chips
- */
-fabricator.buildColorChips = function () {
-
-	var chips = document.querySelectorAll('.f-color-chip'),
-		color;
-
-	for (var i = chips.length - 1; i >= 0; i--) {
-		color = chips[i].querySelector('.f-color-chip__color').innerHTML;
-		chips[i].style.borderTopColor = color;
-		chips[i].style.borderBottomColor = color;
-	}
-
-	return this;
-
-};
-
-
-/**
  * Add `f-active` class to active menu item
  */
 fabricator.setActiveItem = function () {
@@ -256,7 +237,7 @@ fabricator.singleItemToggle = function () {
 
 	// toggle single
 	var toggleSingleItemCode = function (e) {
-		var group = this.parentNode.parentNode.parentNode,
+		var group = this.parentNode.parentNode,
 			type = e.currentTarget.getAttribute('data-f-toggle-control');
 
 		group.querySelector('[data-f-toggle=' + type + ']').classList.toggle('f-item-hidden');
@@ -314,7 +295,6 @@ fabricator.setInitialMenuState = function () {
 		.menuToggle()
 		.allItemsToggles()
 		.singleItemToggle()
-		.buildColorChips()
 		.setActiveItem();
 
 }());

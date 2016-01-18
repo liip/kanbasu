@@ -23,3 +23,10 @@
 @function ratio($value, $ratio: $ratio) {
   @return floor($value/$ratio);
 }
+
+/**
+ * Return a unitless value
+ */
+@function parseInt($value) {
+  @return $value / ($value * 0 + 1);
+}

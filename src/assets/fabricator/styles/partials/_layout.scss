@@ -30,7 +30,7 @@ body {
   @include clearfix;
   @include border-box;
   position: relative;
-  padding: 0 2em;
+  padding: 0 2em 4em;
   z-index: 0;
   min-height: 100vh;
 
@@ -47,6 +47,18 @@ body {
 .f-content {
   max-width: 55rem;
   margin: 0 auto;
+}
+
+
+.f-search-materials {
+  float: right;
+  width: 300px;
+  max-width: 80%;
+  margin-top: 10px;
+
+  input[type="search"] {
+    font-size: 0.875rem;
+  }
 }
 
 .logo {
