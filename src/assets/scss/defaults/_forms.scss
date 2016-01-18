@@ -144,3 +144,13 @@ label {
   font-size: $field-large-font-size !important;
   border-radius: $field-large-border-radius !important;
 }
+
+select.input--large {
+  height: $select-large-height !important;
+  line-height: $select-large-height !important;
+}
+
+select.input--small {
+  height: $select-small-height !important;
+  line-height: $select-small-height !important;
+}
