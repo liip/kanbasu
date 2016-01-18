@@ -24,14 +24,17 @@ var config = {
 	dev: gutil.env.dev,
 	src: {
 		scripts: {
-			fabricator: './src/assets/fabricator/scripts/fabricator.js',
+			fabricator: [
+				'./src/assets/fabricator/scripts/fabricator.js',
+				'./src/assets/fabricator/scripts/kanbasu.js'
+			],
 			kanbasu: './src/assets/scripts/kanbasu.js'
 		},
 		styles: {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
 			kanbasu: 'src/assets/scss/kanbasu.scss'
 		},
-		images: 'src/assets/kanbasu/images/**/*',
+		images: 'src/assets/fabricator/images/**/*',
 		views: 'src/kanbasu/views/*.html'
 	},
 	dest: 'dist',
@@ -94,7 +97,7 @@ gulp.task('scripts', function (done) {
 gulp.task('images', ['favicon'], function () {
 	return gulp.src(config.src.images)
 		.pipe(imagemin())
-		.pipe(gulp.dest(config.dest + '/assets/kanbasu/images'));
+		.pipe(gulp.dest(config.dest + '/assets/fabricator/images'));
 });
 
 gulp.task('favicon', function () {

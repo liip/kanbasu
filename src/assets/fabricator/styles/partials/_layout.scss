@@ -49,6 +49,18 @@ body {
   margin: 0 auto;
 }
 
+
+.f-search-materials {
+  float: right;
+  width: 300px;
+  max-width: 80%;
+  margin-top: 10px;
+
+  input[type="search"] {
+    font-size: 0.875rem;
+  }
+}
+
 .logo {
   max-width: 80%;
   height: auto;
