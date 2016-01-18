@@ -6,6 +6,7 @@
 * Improve documentation readability and usability
 * Expose inputs typography styling as variables
 * Add documentation for box component
+* Extend input size classes to select element
 
 ## 1.1.1
 

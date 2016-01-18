@@ -122,7 +122,7 @@ $field-padding:                     $spacing-unit-small !default;
 $field-color:                       inherit !default;
 $field-font-size:                   inherit !default;
 $field-font-family:                 inherit !default;
-$field-line-height:                 inherit !default;
+$field-line-height:                 $line-height-default !default;
 
 $field-bkg-color:                   white !default;
 $field-border:                      1px solid $alt-color-light !default;
