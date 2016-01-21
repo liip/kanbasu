@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.1
+
+* Introduce visibility helper
+
 ## 1.2.0
 
 * Add basic styling for disabled input
