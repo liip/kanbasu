@@ -3,11 +3,11 @@
 \*----------------------------------------*/
 
 .is-hidden {
-  display: none;
+  display: none !important;
 }
 
 .is-invisible {
-  visibility: hidden;
+  visibility: hidden !important;
 }
 
 /**
