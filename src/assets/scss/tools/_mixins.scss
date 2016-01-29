@@ -11,12 +11,12 @@
 //
 // Usage: @include foreach-breakpoint() {}
 
-@mixin foreach-breakpoint($breakpoints: $breakpoints-default) {
+@mixin foreach-breakpoint($breakpoints: $breakpoints-default, $prefix: null) {
   @each $breakpoint in $breakpoints {
     $breakpoint-name: nth($breakpoint, 1) !global; // Set it as global so it can be used inside the @content
     $breakpoint-mq: nth($breakpoint, 2);
 
-    @media #{$breakpoint-mq} {
+    @media #{$prefix} #{$breakpoint-mq} {
       @content;
     }
 
@@ -44,7 +44,6 @@
   }
 
   // Now generate all the classes
-  // .w-{prefix}{nominator}-{denominator}
   @each $width, $fraction in $fractions {
     .#{$namespace}#{$prefix}w-#{$fraction} {
       width: $width !important;
