@@ -12,7 +12,7 @@
     margin-bottom: 0;
   }
 
-  a {
+  a:not([class]) {
     color: inherit;
   }
 }
