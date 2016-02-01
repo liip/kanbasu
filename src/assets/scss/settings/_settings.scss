@@ -32,6 +32,7 @@ $line-height-default:               1.45 !default;
 
 $text-color:                        $alt-color-darker !default;
 $link-color:                        $brand-color !default;
+$muted-color:                       transparentize($text-color,.4) !default;
 
 
 /**
