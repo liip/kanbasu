@@ -12,14 +12,15 @@
   visibility: hidden !important;
 }
 
-// Generate hidden & invisible classes scoped to each breakpoint
+// Generate hidden classes scoped to each breakpoint
 @include foreach-breakpoint() {
-  .hidden-#{$breakpoint-name} {
+  .hidden-#{$breakpoint-name}-up {
     display: none !important;
   }
-
-  .invisible-#{$breakpoint-name} {
-    visibility: hidden !important;
+}
+@include foreach-breakpoint($breakpoints-desc) {
+  .hidden-#{$breakpoint-name}-down {
+    display: none !important;
   }
 }
 
@@ -36,13 +37,6 @@
 
 
 // SHOW
-
-// Generate visible classes scoped to each breakpoint
-@include foreach-breakpoint($breakpoints-default, 'not all and') {
-  .visible-#{$breakpoint-name} {
-    display: none !important;
-  }
-}
 
 // Display a block only when printed
 @media not print {

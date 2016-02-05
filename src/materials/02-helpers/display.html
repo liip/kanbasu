@@ -1,206 +1,104 @@
 ---
 notes: |
-  Show or hide content depending on the media type. “Visible” classes preserve the inherited `display` property. “Invisible” element use `visibility: hidden` which means they still take up space in the page. “Hidden” classes completely remove the element from the flow.
+  Show or hide content depending on the media type.
 
   <table>
-  	<tbody>
-  		<tr>
-  			<th width="22%">Class</th>
-  			<th width="13%">Extra-small<sup>1</sup></th>
-  			<th width="13%">Small<sup>1</sup></th>
-  			<th width="13%">Medium<sup>1</sup></th>
-  			<th width="13%">Large<sup>1</sup></th>
-  			<th width="13%">Print</th>
-  			<th width="13%">Screen reader</th>
-  		</tr>
-  		<tr>
-  			<td><code>.visible-xs</code><sup>1</sup></td>
-  			<td>Visible</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.visible-sm</code><sup>1</sup></td>
-  			<td class="text-muted">Hidden</td>
-  			<td>Visible</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.visible-md</code><sup>1</sup></td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td>Visible</td>
-  			<td class="text-muted">Hidden</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.visible-lg</code><sup>1</sup></td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td>Visible</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.visible-print</code></td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td>Visible</td>
-  			<td class="text-muted">Hidden</td>
-  		</tr>
-  		<tr>
-  			<td><code>.visible-sr</code></td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td>Visible</td>
-  		</tr>
-  		<tr>
-  			<td colspan="7"></td>
-  		</tr>
-  		<tr>
-  			<td><code>.invisible</code></td>
-  			<td class="text-muted">Invisible</td>
-  			<td class="text-muted">Invisible</td>
-  			<td class="text-muted">Invisible</td>
-  			<td class="text-muted">Invisible</td>
-  			<td class="text-muted">Invisible</td>
-  			<td class="text-muted">Invisible</td>
-  		</tr>
-  		<tr>
-  			<td><code>.invisible-xs</code><sup>1</sup></td>
-  			<td class="text-muted">Invisible</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.invisible-sm</code><sup>1</sup></td>
-  			<td>Visible</td>
-  			<td class="text-muted">Invisible</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.invisible-md</code><sup>1</sup></td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td class="text-muted">Invisible</td>
-  			<td>Visible</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.invisible-lg</code><sup>1</sup></td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td class="text-muted">Invisible</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.invisible-print</code></td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td class="text-muted">Invisible</td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td colspan="7"></td>
-  		</tr>
-  		<tr>
-  			<td><code>.hidden</code></td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  			<td class="text-muted">Hidden</td>
-  		</tr>
-  		<tr>
-  			<td><code>.hidden-xs</code><sup>1</sup></td>
-  			<td class="text-muted">Hidden</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.hidden-sm</code><sup>1</sup></td>
-  			<td>Visible</td>
-  			<td class="text-muted">Hidden</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.hidden-md</code><sup>1</sup></td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td class="text-muted">Hidden</td>
-  			<td>Visible</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.hidden-lg</code><sup>1</sup></td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td class="text-muted">Hidden</td>
-  			<td><em>n/a</em></td>
-  			<td><em>n/a</em></td>
-  		</tr>
-  		<tr>
-  			<td><code>.hidden-print</code></td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td>Visible</td>
-  			<td class="text-muted">Hidden</td>
-  			<td>Visible</td>
-  		</tr>
-  	</tbody>
+    <tbody>
+      <tr>
+      </tr>
+        <td class="w-1/3"><code>.hidden</code></td>
+        <td class="w-2/3">Completely hidden, in any case.</td>
+      <tr>
+        <td><code>.hidden-print</code></td>
+        <td>Hidden when printed.</td>
+      </tr>
+      <tr>
+        <td><code>.invisible</code></td>
+        <td>Invisible but takes place in the flow.</td>
+      </tr>
+      <tr>
+        <td><code>.invisible-print</code></td>
+        <td>Invisible when printed.</td>
+      </tr>
+      <tr>
+        <td><code>.visible-print</code></td>
+        <td>Visible only when printed.</td>
+      </tr>
+      <tr>
+        <td><code>.visible-sr</code></td>
+        <td>Visible only to screen readers.</td>
+      </tr>
+    </tbody>
   </table>
 
-  <sup>1</sup>These values depends on your breakpoints, the table above includes the naming/behavior for the default settings.
+  <table>
+  	<caption>The following classes depends on breakpoints, here are default settings.</caption>
+    <thead>
+      <tr>
+        <th class="w-2/6">Class</th>
+        <th class="w-1/6">Extra-small</th>
+        <th class="w-1/6">Small</th>
+        <th class="w-1/6">Medium</th>
+        <th class="w-1/6">Large</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>.hidden-sm-up</code></td>
+        <td>Visible</td>
+        <td class="text-muted">Hidden</td>
+        <td class="text-muted">Hidden</td>
+        <td class="text-muted">Hidden</td>
+      </tr>
+      <tr>
+        <td><code>.hidden-md-up</code></td>
+        <td>Visible</td>
+        <td>Visible</td>
+        <td class="text-muted">Hidden</td>
+        <td class="text-muted">Hidden</td>
+      </tr>
+      <tr>
+        <td><code>.hidden-lg-up</code></td>
+        <td>Visible</td>
+        <td>Visible</td>
+        <td>Visible</td>
+        <td class="text-muted">Hidden</td>
+      </tr>
+      <tr>
+        <td><code>.hidden-xs-down</code></td>
+        <td class="text-muted">Hidden</td>
+        <td>Visible</td>
+        <td>Visible</td>
+        <td>Visible</td>
+      </tr>
+      <tr>
+        <td><code>.hidden-sm-down</code></td>
+        <td class="text-muted">Hidden</td>
+        <td class="text-muted">Hidden</td>
+        <td>Visible</td>
+        <td>Visible</td>
+      </tr>
+      <tr>
+        <td><code>.hidden-md-down</code></td>
+        <td class="text-muted">Hidden</td>
+        <td class="text-muted">Hidden</td>
+        <td class="text-muted">Hidden</td>
+        <td>Visible</td>
+      </tr>
+    </tbody>
+  </table>
 ---
 
-<div class="visible-xs">Visible on extra-small screens</div>
-<div class="visible-sm">Visible on small screens</div>
-<div class="visible-md">Visible on medium screens</div>
-<div class="visible-lg">Visible on large screens</div>
-<div class="visible-print">Visible when printed</div>
-<div class="visible-sr">Visible for screen readers</div>
-<div class="invisible">Invisible</div>
-<div class="invisible-xs">Invisible on extra-small screens</div>
-<div class="invisible-sm">Invisible on small screens</div>
-<div class="invisible-md">Invisible on medium screens</div>
-<div class="invisible-lg">Invisible on large screens</div>
 <div class="hidden">Hidden</div>
-<div class="hidden-xs">Hidden on extra-small screens</div>
-<div class="hidden-sm">Hidden on small screens</div>
-<div class="hidden-md">Hidden on medium screens</div>
-<div class="hidden-lg">Hidden on large screens</div>
+<div class="hidden-print">Hidden when printed</div>
+<div class="invisible">Invisible</div>
+<div class="invisible-print">Invisible when printed</div>
+<div class="visible-print">Visible only when printed</div>
+<div class="visible-sr">Visible only to screen readers</div>
+<div class="hidden-sm-up">Hidden on small screens and above</div>
+<div class="hidden-md-up">Hidden on medium screens and above</div>
+<div class="hidden-lg-up">Hidden on large screens and above</div>
+<div class="hidden-xs-down">Hidden on extra-small screens</div>
+<div class="hidden-sm-down">Hidden on small screens and under</div>
+<div class="hidden-md-down">Hidden on medium screens and under</div>
 <div class="hidden-print">Hidden when printed</div>

@@ -2,6 +2,6 @@
   WIDTHS RESPONSIVE
 \*----------------------------------------*/
 
-@include foreach-breakpoint($widths-breakpoints) {
+@include foreach-breakpoint() {
   @include widths($widths-columns, '#{$breakpoint-name}-');
 }
