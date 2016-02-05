@@ -140,6 +140,7 @@ dl {
     }
 
     dd {
+      @extend %clearfix;
       margin-left: calc(100px + #{$spacing-unit-small});
     }
   }
