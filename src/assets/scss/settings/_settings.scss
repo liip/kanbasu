@@ -32,6 +32,7 @@ $line-height-default:               1.45 !default;
 
 $text-color:                        $alt-color-darker !default;
 $link-color:                        $brand-color !default;
+$muted-color:                       transparentize($text-color,.4) !default;
 
 
 /**
@@ -101,7 +102,7 @@ $btn-large-padding:                 $spacing-unit-default !default;
 $btn-large-font-size:               $font-size-large !default;
 $btn-large-border-radius:           $border-radius-large !default;
 
-$btn-default-color:                 inherit !default;
+$btn-default-color:                 $text-color !default;
 $btn-default-bkg-color:             $alt-color-lighter !default;
 $btn-default-hover-bkg-color:       lighten($btn-default-bkg-color, 3%) !default;
 $btn-default-active-bkg-color:      darken($btn-default-bkg-color, 5%) !default;
