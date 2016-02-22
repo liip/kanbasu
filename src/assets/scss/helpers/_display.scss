@@ -1,0 +1,61 @@
+/*----------------------------------------*\
+  DISPLAY
+\*----------------------------------------*/
+
+// HIDE
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+// Generate hidden classes scoped to each breakpoint
+@include foreach-breakpoint() {
+  .hidden-#{$breakpoint-name}-up {
+    display: none !important;
+  }
+}
+@include foreach-breakpoint($breakpoints-desc) {
+  .hidden-#{$breakpoint-name}-down {
+    display: none !important;
+  }
+}
+
+// Prevent content to be printed
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+
+  .invisible-print {
+    visibility: hidden !important;
+  }
+}
+
+
+// SHOW
+
+// Display a block only when printed
+@media not print {
+  .visible-print {
+    display: none !important;
+  }
+}
+
+
+// Provide content to screen readers only
+// https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+.visible-sr {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+
+  position: absolute !important;
+
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}

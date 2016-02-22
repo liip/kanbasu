@@ -59,16 +59,15 @@ $screen-md-min:                     $screen-sm-max + 1px !default;
 $screen-md-max:                     1024px !default;
 $screen-lg-min:                     $screen-md-max + 1px !default;
 
-$mq-xs:                             '(max-width: #{$screen-xs-max})' !default;
-$mq-sm:                             '(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})' !default;
-$mq-md:                             '(min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})' !default;
-$mq-lg:                             '(min-width: #{$screen-lg-min})' !default;
-
 $breakpoints-default:               (
-                                      'xs' $mq-xs,
-                                      'sm' $mq-sm,
-                                      'md' $mq-md,
-                                      'lg' $mq-lg
+                                      'sm' '(min-width: #{$screen-sm-min})',
+                                      'md' '(min-width: #{$screen-md-min})',
+                                      'lg' '(min-width: #{$screen-lg-min})'
+                                    ) !default;
+$breakpoints-desc:                  (
+                                      'xs' '(max-width: #{$screen-xs-max})',
+                                      'sm' '(max-width: #{$screen-sm-max})',
+                                      'md' '(max-width: #{$screen-md-max})'
                                     ) !default;
 
 
@@ -167,11 +166,6 @@ $box-primary-bkg-color:             $brand-color !default;
  */
 
 $widths-columns:                    6,5,4,3,2,1 !default;
-$widths-breakpoints:                (
-                                      'sm' '(min-width: #{$screen-sm-min})',
-                                      'md' '(min-width: #{$screen-md-min})',
-                                      'lg' '(min-width: #{$screen-lg-min})',
-                                    ) !default;
 
 
 /**
