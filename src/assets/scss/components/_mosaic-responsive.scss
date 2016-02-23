@@ -5,12 +5,12 @@
 @media (max-width: $mosaic-collapse) {
   .#{$namespace}mosaic--responsive {
     &,
-    .#{$namespace}mosaic__row,
-    .#{$namespace}mosaic__cell {
+    > .#{$namespace}mosaic__row,
+    > .#{$namespace}mosaic__cell {
       display: block;
     }
 
-    .#{$namespace}mosaic__cell--fit {
+    > .#{$namespace}mosaic__cell--fit {
       width: auto;
     }
   }
