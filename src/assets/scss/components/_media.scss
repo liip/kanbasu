@@ -12,12 +12,12 @@
 
   .#{$namespace}media__left {
     float: left;
-    margin-right: $spacing-unit-default;
+    margin-right: $media-gutter;
   }
 
   .#{$namespace}media__right {
     float: right;
-    margin-left: $spacing-unit-default;
+    margin-left: $media-gutter;
   }
 
   .#{$namespace}media__image {
