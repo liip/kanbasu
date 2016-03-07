@@ -5,18 +5,22 @@
 
 // color vars
 $code-colors: (
-  blue: #183691,
-  teal: #0086b3,
+  blue: #466C95,
+  teal: #3FC1C9,
   black: #333,
-  purple: #a71d5d,
-  maroon: #a71d5d,
-  green: #63a35c,
+  purple: #EC7263,
+  maroon: #E23E57,
+  green: #5DAE8B,
   light-gray: #f7f7f7,
   dark-gray: #969896
 );
 
 // token colors
 .token {
+
+  &.function {
+    color: #4B89AC;
+  }
 
   &.comment,
   &.prolog,
@@ -25,7 +29,6 @@ $code-colors: (
     color: map-get($code-colors, dark-gray);
   }
 
-  &.punctuation,
   &.string,
   &.atrule,
   &.attr-value {
@@ -33,7 +36,8 @@ $code-colors: (
   }
 
   &.property,
-  &.tag {
+  &.tag,
+  &.variable {
     color: map-get($code-colors, green);
   }
 
@@ -50,7 +54,6 @@ $code-colors: (
   &.important {
     color: map-get($code-colors, maroon);
   }
-
 
   &.operator,
   &.entity,
