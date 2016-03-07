@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.2.2
+
+* Move awesomplete to dev dependencies
+
 ## 1.2.1
 
 * Introduce visibility helper
