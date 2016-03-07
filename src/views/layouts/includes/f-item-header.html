@@ -1,6 +1,9 @@
 <div class="f-item-heading-group" data-f-toggle="labels">
 	<{{header}} class="f-item-heading">{{name}}</{{header}}>
 	{{#if data.notice}}
-		<p class="text-muted">{{data.notice}}</p>
+		<div class="text-muted">{{{markdown data.notice}}}</div>
+	{{/if}}
+	{{#if data.warning}}
+		<div class="warning">{{{markdown data.warning}}}</div>
 	{{/if}}
 </div>

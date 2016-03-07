@@ -29,6 +29,7 @@
     "npm": ">=2.0.0"
   },
   "devDependencies": {
+    "awesomplete": "^1.0.0",
     "babel-core": "^5.2.17",
     "babel-loader": "5.0.0",
     "browser-sync": "^2.7.1",
@@ -44,9 +45,9 @@
     "gulp-sass": "^2.0.0",
     "gulp-util": "^3.0.4",
     "imports-loader": "^0.6.3",
+    "markdown-it": "^6.0.0",
     "run-sequence": "^1.0.2",
     "script-loader": "^0.6.1",
-    "webpack": "^1.8.11",
-    "awesomplete": "^1.0.0"
+    "webpack": "^1.8.11"
   }
 }
