@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 1.3.0
+
+* **Change default breakpoints to be minimum width and above**
+* Replace visibility helper by display helper with extended features
+* Allow customization of media gutter size
+* Introduce horizontal alignment for blocks
+* Add heading classes for styling without semantic
+* Responsive embed matches element (iframe, object, embed) in addition to classes
+* Allow top and bottom alignment of mosaic cells
+* Mosaic responsive target direct child only to allow nesting with default mosaic
+* Add basic `caption` styling
+* Fix missing float clear on definition list
+
 ## 1.2.2
 
 * Move awesomplete to dev dependencies
