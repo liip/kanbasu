@@ -17,6 +17,7 @@ var sass = require('gulp-sass');
 var webpack = require('webpack');
 var ghPages = require('gulp-gh-pages');
 var metadata = require('./package.json');
+var markdown = require('markdown-it')();
 
 
 // configuration
@@ -122,8 +123,11 @@ gulp.task('assemble', function (done) {
 		helpers: {
 			currentVersion: function() {
 				return metadata.version;
+			},
+			markdown: function(value) {
+				return markdown.render(value);
 			}
-		}
+		},
 	});
 	done();
 });
@@ -137,7 +141,8 @@ gulp.task('serve', function () {
 			baseDir: config.dest
 		},
 		notify: false,
-		logPrefix: 'FABRICATOR'
+		logPrefix: 'FABRICATOR',
+		open: false
 	});
 
 	/**

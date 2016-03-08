@@ -1,0 +1,14 @@
+.warning {
+  margin-top: 1em;
+  padding: 1em;
+
+  background-color: #FCE38A;
+  border-radius: 3px;
+
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}

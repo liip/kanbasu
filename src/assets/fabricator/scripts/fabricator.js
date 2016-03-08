@@ -3,6 +3,14 @@
 require('./prism');
 
 /**
+ * Wrap classes between parenthesis `( )`
+ */
+Prism.hooks.add('before-insert', function(env) {
+	return env.highlightedCode = env.highlightedCode.replace(/\(\s([\w\s\-\/\+]*)\s\)/g, '<span class="irrelevant">$1</span>');
+});
+
+
+/**
  * Global `fabricator` object
  * @namespace
  */

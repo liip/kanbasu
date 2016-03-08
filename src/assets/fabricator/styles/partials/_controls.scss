@@ -62,4 +62,8 @@
     float: left;
     margin-bottom: -1px;
   }
+
+  @media (min-width: 60em) {
+    display: none;
+  }
 }

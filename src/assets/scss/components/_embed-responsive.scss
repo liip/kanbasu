@@ -12,6 +12,14 @@
 
   position: relative;
 
+  > iframe,
+  > object,
+  > embed {
+    @extend %embed-responsive__item;
+  }
+}
+
+  %embed-responsive__item,
   .#{$namespace}embed-responsive__item {
     height: 100%;
     width: 100%;
@@ -23,7 +31,6 @@
 
     border: 0;
   }
-}
 
 .#{$namespace}embed-responsive--16\/9 {
   padding-bottom: 56.25%;

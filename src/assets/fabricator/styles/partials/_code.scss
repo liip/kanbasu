@@ -1,70 +1,54 @@
-/**
- * Github-like theme for Prism.js
- * @author Luke Askew http://github.com/lukeaskew
- */
-
-// color vars
-$code-colors: (
-  blue: #183691,
-  teal: #0086b3,
-  black: #333,
-  purple: #a71d5d,
-  maroon: #a71d5d,
-  green: #63a35c,
-  light-gray: #f7f7f7,
-  dark-gray: #969896
-);
-
-// token colors
 .token {
+
+  &.function {
+    color: darken(#6297CF,10%);
+  }
 
   &.comment,
   &.prolog,
   &.doctype,
   &.cdata {
-    color: map-get($code-colors, dark-gray);
+    color: darken(#64737F,10%);
   }
 
-  &.punctuation,
   &.string,
   &.atrule,
   &.attr-value {
-    color: map-get($code-colors, blue);
+    color: darken(#95C991,15%);
   }
 
   &.property,
-  &.tag {
-    color: map-get($code-colors, green);
+  &.tag,
+  &.variable {
+    color: darken(#F15F68,3%);
   }
 
   &.boolean,
   &.number {
-    color: map-get($code-colors, teal);
+    color: darken(#FE924D,10%);
   }
 
   &.selector,
   &.attr-name,
-  &.attr-value .punctuation:first-child,
   &.keyword,
   &.regex,
-  &.important {
-    color: map-get($code-colors, maroon);
-  }
-
-
+  &.important,
   &.operator,
   &.entity,
-  &.url,
-  .language-css &.string {
-    color: map-get($code-colors, purple);
+  &.url {
+    color: darken(#BE7EAC,10%);
   }
 
-  &.entity {
-    cursor: help;
+  &.punctuation {
+    color: darken(#56B3B4,10%)
   }
 
 }
 
 .namespace {
   opacity: 0.7;
+}
+
+.irrelevant {
+  opacity: .5;
 }

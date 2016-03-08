@@ -1,0 +1,15 @@
+---
+title: FAQ
+fabricator: true
+---
+
+<h1>Frenquently Asked Questions</h1>
+
+<h3>Why some classes are faded in code examples?</h3>
+<p>Those classes are required to make the documentation looks great but they are not required in the context of the example.</p>
+
+<h3>Kanbasu class names conflict with other stylesheets</h3>
+<p>If you’re introducing Kanbasu in an existing project, it’s recommended to prefix classes with a namespace. To do so, change the <code>$namespace</code> variable in the settings file.</p>
+
+<h3>Changing settings break the build</h3>
+<p>It’s possible changing some settings break the build of your stylesheet. This is most probably because you entered a wrong value or changed the type of it. In fact some values are used to calculate others and therefor have to be set in a specific unit (pixels for example).</p>

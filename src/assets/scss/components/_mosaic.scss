@@ -19,6 +19,14 @@
   .#{$namespace}mosaic__cell {
     display: table-cell;
     vertical-align: middle;
+
+    .mosaic--top & {
+      vertical-align: top;
+    }
+
+    .mosaic--bottom & {
+      vertical-align: bottom;
+    }
   }
 
     // Make the cell fit its content

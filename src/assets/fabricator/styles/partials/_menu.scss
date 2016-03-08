@@ -13,6 +13,10 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
+  @media (min-width: 60em) {
+    transform: translate(0, 0);
+  }
+
   .f-menu-active & {
     transform: translate(0, 0);
   }
@@ -41,18 +45,19 @@
   a {
     display: block;
     padding: 0.5rem 2rem;
-    color: map-get($colors, menu-text) !important;
+    color: map-get($colors, menu-text);
     text-decoration: none;
     font-size: 0.875rem;
     line-height: 1;
 
     &:hover {
-      color: map-get($colors, menu-text) !important;
-      text-decoration: underline;
+      color: white;
+      background-color: map-get($colors, accent);
     }
 
     &.f-active {
-      box-shadow: inset 3px 0 0 0 map-get($colors, accent);
+      color: map-get($colors, dark);
+      background-color: #fcfcfc;
     }
   }
 
@@ -61,9 +66,5 @@
     font-weight: 700;
     font-size: .8125rem;
     text-transform: uppercase;
-
-    &:hover {
-      color: map-get($colors, normal);
-    }
   }
 }

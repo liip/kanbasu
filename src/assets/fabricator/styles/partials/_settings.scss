@@ -1,0 +1,19 @@
+.settings {
+  font-size: 0.875em;
+
+  tr {
+    border-top: 1px solid #eee;
+
+    &.settings--section {
+      border-top-width: 2px;
+
+      th {
+        padding-top: 1.5em;
+      }
+    }
+
+    &:nth-child(odd):not(.settings--section) {
+      background-color: #fefefe;
+    }
+  }
+}

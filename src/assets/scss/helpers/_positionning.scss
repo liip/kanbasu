@@ -2,6 +2,14 @@
   VERTICAL & HORIZONTAL ALIGN
 \*----------------------------------------*/
 
+// Horizontally align element in the middle
+// Element should be a block
+// Otherwise use .text-center
+.h-align {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // Vertically align an element in the middle
 // The referent container has to be relative
 .v-align,
