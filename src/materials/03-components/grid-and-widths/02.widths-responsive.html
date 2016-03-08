@@ -3,11 +3,12 @@ notes: |
   Change an element width depending on predefined breakpoints. This use a mobile-first approach — it use breakpoints defined as `min-width` only — and therefor cover all upper resolutions.
 ---
 
-<div class="grid grid--center">
-	<div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/4">
-		<div class="box box--default box--tiny text-center"><strong>XS</strong> 1/1 &middot; <strong>SM</strong> 1/2 &middot; <strong>MD</strong> 1/3 &middot; <strong>LG</strong> 1/4</div>
+<div class="( grid grid--center )">
+	<div class="sm-w-1/2 md-w-1/3 lg-w-1/4 ( grid__item )">
+		<div class="( box box--default box--tiny text-center )"><strong>XS</strong> 1/1 &middot; <strong>SM</strong> 1/2 &middot; <strong>MD</strong> 1/3 &middot; <strong>LG</strong> 1/4</div>
 	</div>
-	<div class="grid__item sm-w-1/2 md-w-1/3 lg-w-1/4 xs-mrgt">
-		<div class="box box--default box--tiny text-center"><strong>XS</strong> 1/1 &middot; <strong>SM</strong> 1/2 &middot; <strong>MD</strong> 1/3 &middot; <strong>LG</strong> 1/4</div>
+	<div class="sm-w-1/2 md-w-1/3 lg-w-1/4 ( grid__item xs-mrgt )">
+		<div class="( box box--default box--tiny text-center )"><strong>XS</strong> 1/1 &middot; <strong>SM</strong> 1/2 &middot; <strong>MD</strong> 1/3 &middot; <strong>LG</strong> 1/4</div>
 	</div>
 </div>
+

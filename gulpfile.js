@@ -127,7 +127,7 @@ gulp.task('assemble', function (done) {
 			markdown: function(value) {
 				return markdown.render(value);
 			}
-		}
+		},
 	});
 	done();
 });
@@ -141,7 +141,8 @@ gulp.task('serve', function () {
 			baseDir: config.dest
 		},
 		notify: false,
-		logPrefix: 'FABRICATOR'
+		logPrefix: 'FABRICATOR',
+		open: false
 	});
 
 	/**
