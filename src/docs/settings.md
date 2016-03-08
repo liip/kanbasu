@@ -1,5 +1,7 @@
 # Settings
 
+The complete list of Kanbasu overridable settings.
+
 <table class="settings">
 	<tbody>
 		<tr class="settings--section">

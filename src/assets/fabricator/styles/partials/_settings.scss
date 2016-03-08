@@ -11,5 +11,9 @@
         padding-top: 1.5em;
       }
     }
+
+    &:nth-child(odd):not(.settings--section) {
+      background-color: #fefefe;
+    }
   }
 }

@@ -1,6 +1,10 @@
 ---
 notes: |
-  Widths are percentages represented by fractions. All classes are constructed like `.w-{nominator}/{denominator}`. By default you have halves, thirds, quarters, fifths and sixths. You can easily add more by changing the `$widths-columns` setting. Widths are independent from the grid, you’re free to use them anywhere, with other components such as mosaic, media, etc.
+  Widths are percentages represented by fractions. All classes are constructed like `.w-{nominator}/{denominator}`. By default you have halves, thirds, quarters, fifths and sixths. You can easily add more by changing the `$widths-columns` setting.
+
+  Widths are independent from the grid, you’re free to use them anywhere, with other components such as mosaic, media, etc.
+
+  Note that only the smallest fractions are generated; for example `.w-2/4` doesn’t exist when both quarters and halves are in the settings, `.w-1/2` take over it.
 ---
 
 <div class="( grid )">
