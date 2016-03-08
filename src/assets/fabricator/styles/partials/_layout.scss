@@ -37,8 +37,11 @@ body {
 }
 
 .f-content {
-  max-width: 55rem;
   margin: 0 auto;
+
+  body:not(.page--settings) & {
+    max-width: 55rem;
+  }
 }
 
 .f-search-materials {
