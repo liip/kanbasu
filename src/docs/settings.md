@@ -209,7 +209,7 @@
 		</tr>
 		<tr>
 			<th>$breakpoints-default</th>
-			<td><pre class="mrg0"><code class="language-scss">(
+			<td><pre class="mrg0 pdg-- language-scss"><code>(
 	'sm' '(min-width: #{$screen-sm-min})',
 	'md' '(min-width: #{$screen-md-min})',
 	'lg' '(min-width: #{$screen-lg-min})'
@@ -218,7 +218,7 @@
 		</tr>
 		<tr>
 			<th>$breakpoints-desc</th>
-			<td><pre class="mrg0"><code class="language-scss">(
+			<td><pre class="mrg0 pdg-- language-scss"><code>(
 	'xs' '(max-width: #{$screen-xs-max})',
 	'sm' '(max-width: #{$screen-sm-max})',
 	'md' '(max-width: #{$screen-md-max})'

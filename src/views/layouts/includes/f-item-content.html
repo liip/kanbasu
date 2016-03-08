@@ -1,6 +1,16 @@
-{{#if notes}}<div class="f-item-notes" data-f-toggle="notes">
-	{{{notes}}}
-</div>{{/if}}
+<div class="f-item-notes" data-f-toggle="notes">
+	{{#if data.notice}}
+		<div class="text-muted">{{{markdown data.notice}}}</div>
+	{{/if}}
+
+	{{#if data.warning}}
+		<div class="warning">{{{markdown data.warning}}}</div>
+	{{/if}}
+
+	{{#if notes}}
+		{{{notes}}}
+	{{/if}}
+</div>
 <div class="f-item-preview">
 	{{{material @key @root}}}
 </div>

@@ -1,69 +1,46 @@
-/**
- * Github-like theme for Prism.js
- * @author Luke Askew http://github.com/lukeaskew
- */
-
-// color vars
-$code-colors: (
-  blue: #466C95,
-  teal: #3FC1C9,
-  black: #333,
-  purple: #EC7263,
-  maroon: #E23E57,
-  green: #5DAE8B,
-  light-gray: #f7f7f7,
-  dark-gray: #969896
-);
-
-// token colors
 .token {
 
   &.function {
-    color: #4B89AC;
+    color: darken(#6297CF,10%);
   }
 
   &.comment,
   &.prolog,
   &.doctype,
   &.cdata {
-    color: map-get($code-colors, dark-gray);
+    color: darken(#64737F,10%);
   }
 
   &.string,
   &.atrule,
   &.attr-value {
-    color: map-get($code-colors, blue);
+    color: darken(#95C991,15%);
   }
 
   &.property,
   &.tag,
   &.variable {
-    color: map-get($code-colors, green);
+    color: darken(#F15F68,3%);
   }
 
   &.boolean,
   &.number {
-    color: map-get($code-colors, teal);
+    color: darken(#FE924D,10%);
   }
 
   &.selector,
   &.attr-name,
-  &.attr-value .punctuation:first-child,
   &.keyword,
   &.regex,
-  &.important {
-    color: map-get($code-colors, maroon);
-  }
-
+  &.important,
   &.operator,
   &.entity,
-  &.url,
-  .language-css &.string {
-    color: map-get($code-colors, purple);
+  &.url {
+    color: darken(#BE7EAC,10%);
   }
 
-  &.entity {
-    cursor: help;
+  &.punctuation {
+    color: darken(#56B3B4,10%)
   }
 
 }

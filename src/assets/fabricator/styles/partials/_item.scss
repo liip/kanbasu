@@ -36,14 +36,11 @@
   position: relative;
   z-index: 1;
 
-  background: #eaeaea;
-  border: 1px solid darken(#eaeaea, 5%);
   border-radius: 3px;
+  border: 1px solid darken(#eaeaea, 5%);
 
-  pre,
-  code {
-    margin: 0;
-    background-color: #eaeaea;
+  pre {
+    margin-bottom: 0;
   }
 }
 

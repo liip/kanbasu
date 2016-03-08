@@ -26,13 +26,13 @@ body {
   z-index: 0;
   min-height: 100vh;
 
-  .f-menu-active & {
-    transform: translate($menu-width, 0);
-
-    @media (min-width: 60em) {
-      margin-left: $menu-width;
-      transform: translate(0, 0);
+  @media (max-width: 60em) {
+    .f-menu-active & {
+      transform: translate($menu-width, 0);
     }
+  }
+  @media (min-width: 60em) {
+    margin-left: $menu-width;
   }
 }
 

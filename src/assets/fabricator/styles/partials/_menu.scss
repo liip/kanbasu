@@ -13,6 +13,10 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
+  @media (min-width: 60em) {
+    transform: translate(0, 0);
+  }
+
   .f-menu-active & {
     transform: translate(0, 0);
   }
