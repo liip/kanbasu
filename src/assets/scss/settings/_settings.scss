@@ -52,12 +52,14 @@ $spacing-unit-huge:                 floor($spacing-unit-default * ($ratio * 2)) 
  * Responsiveness
  */
 
-$screen-xs-max:                     640px !default;
-$screen-sm-min:                     $screen-xs-max + 1px !default;
-$screen-sm-max:                     768px !default;
-$screen-md-min:                     $screen-sm-max + 1px !default;
-$screen-md-max:                     1024px !default;
-$screen-lg-min:                     $screen-md-max + 1px !default;
+// Use EM media-queries for better browser consistency
+// See http://zellwk.com/blog/media-query-units
+$screen-xs-max:                     640px  / 16px * 1em !default;
+$screen-sm-min:                     641px  / 16px * 1em !default;
+$screen-sm-max:                     768px  / 16px * 1em !default;
+$screen-md-min:                     769px  / 16px * 1em !default;
+$screen-md-max:                     1024px / 16px * 1em !default;
+$screen-lg-min:                     1025px / 16px * 1em !default;
 
 $mq-xs:                             '(max-width: #{$screen-xs-max})' !default; // DEPRECATED
 $mq-sm:                             '(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})' !default; // DEPRECATED
