@@ -4,7 +4,9 @@
 
 html {
   font-family: $font-family-default;
-  font-size: $font-size-default;
+  // Use percentage value for root font-size
+  // see https://github.com/liip/kanbasu/issues/29
+  font-size: 100% * $font-size-default / 16px;
   line-height: $line-height-default;
   color: $text-color;
 
