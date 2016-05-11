@@ -11,7 +11,7 @@ Read more and browse the documentation on [kanbasu.liip.ch](http://kanbasu.liip.
 
 ### Install
 
-**With NPM**
+**With NPM** (recommended)
 
 	$ npm install --save-dev kanbasu
 
@@ -25,13 +25,16 @@ Or simply [download the zip](https://github.com/liip/kanbasu/archive/master.zip)
 
 Easily scaffold a new project by running the script below in your project directory to:
 
-1. duplicate `kanbasu.scss` and `settings/_settings.scss` to the specified destination
-2. adapt paths inside `kanbasu.scss` to match the Node module location
+1. duplicate `kanbasu.scss` (renamed `main.scss`) and `settings/_settings.scss` to the specified destination
+2. adapt paths inside `main.scss` to match the Node module location
 3. remove Sass `!default` flags from `settings/_settings.scss`
-4. import `settings/_settings.scss` into `kanbasu.scss`
+4. import `settings/_settings.scss` into `main.scss`
 
 ```
-node node_modules/kanbasu/scaffold.js path/to/your/project/scss/folder
+node node_modules/kanbasu/scaffold.js path/to/your/project/sass/directory
 ```
+Note: the script might be in a different location if you didn’t use NPM to install Kanbasu.
 
-**Notice:** Kanbasu does not include vendor-prefixed properties. If you build it by yourself, we recommend you to use [Autoprefixer](https://github.com/postcss/autoprefixer).
+### Disclaimer
+
+Kanbasu does not include vendor-prefixed properties. You should consider using a tool like [Autoprefixer](https://github.com/postcss/autoprefixer) to ensure the properties used match the desired browser support.

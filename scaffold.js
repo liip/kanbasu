@@ -29,7 +29,7 @@ mkdirp(path.join(dest, 'settings'), function(err) {
 			.replace(/@import '/g, "@import '"+pathToAssets+"/")
 			.replace(/(settings\/settings';[\r\n])/g, "$1@import 'settings/settings';\r\n");
 
-		var destFile = path.join(dest, 'kanbasu.scss');
+		var destFile = path.join(dest, 'main.scss');
 		fs.writeFile(destFile, result, 'utf8', function(err) {
 			if (err) {
 				return console.error(err);
