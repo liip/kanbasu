@@ -11,7 +11,7 @@ Read more and browse the documentation on [kanbasu.liip.ch](http://kanbasu.liip.
 
 ### Install
 
-**With NPM**
+**With NPM** (recommended)
 
 	$ npm install --save-dev kanbasu
 
@@ -23,14 +23,18 @@ Or simply [download the zip](https://github.com/liip/kanbasu/archive/master.zip)
 
 ### Setup
 
-It’s recommended to copy the framework main file to your project to customize it as you wish. You’ll have to change all "import" paths to match the framwork location then.
+Easily scaffold a new project by running the script below in your project directory to:
 
-	$ cp node_modules/kanbasu/src/assets/scss/kanbasu.scss destination/kanbasu.scss
+1. duplicate `kanbasu.scss` (renamed `main.scss`) and `settings/_settings.scss` to the specified destination
+2. adapt paths inside `main.scss` to match the Node module location
+3. remove Sass `!default` flags from `settings/_settings.scss`
+4. import `settings/_settings.scss` into `main.scss`
 
-It’s also recommended to duplicated the settings file to have a quick access to all the variables and adapt them to your needs.
+```
+node node_modules/kanbasu/scaffold.js path/to/your/project/sass/directory
+```
+Note: the script might be in a different location if you didn’t use NPM to install Kanbasu.
 
-	$ cp node_modules/kanbasu/src/assets/scss/settings/_settings.scss destination/settings/_kanbasu.scss
+### Disclaimer
 
-You should then import it in your main Sass file, **before** other Kanbasu files, to overrides the framework default settings. Learn more about [Sass default variables](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variable_defaults_).
-
-**Notice:** Kanbasu does not include vendor-prefixed properties. If you build it by yourself, we recommend you to use [Autoprefixer](https://github.com/postcss/autoprefixer).
+Kanbasu does not include vendor-prefixed properties. You should consider using a tool like [Autoprefixer](https://github.com/postcss/autoprefixer) to ensure the properties used match the desired browser support.
