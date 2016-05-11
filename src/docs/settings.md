@@ -77,7 +77,7 @@ The complete list of Kanbasu overridable settings.
 		<tr>
 			<th>$font-size-default</th>
 			<td><code class="language-scss">16px</code></td>
-			<td></td>
+			<td>Has to be in pixels.</td>
 		</tr>
 		<tr>
 			<th>$font-size-small</th>
@@ -161,33 +161,33 @@ The complete list of Kanbasu overridable settings.
 		</tr>
 		<tr>
 			<th>$screen-xs-max</th>
-			<td><code class="language-scss">640px</code></td>
-			<td></td>
+			<td><code class="language-scss">640px / 16px * 1em</code></td>
+			<td>Use EMs since 1.3.1</td>
 		</tr>
 		<tr>
 			<th>$screen-sm-min</th>
-			<td><code class="language-scss">$screen-xs-max + 1px</code></td>
-			<td></td>
+			<td><code class="language-scss">641px / 16px * 1em</code></td>
+			<td>Use EMs since 1.3.1</td>
 		</tr>
 		<tr>
 			<th>$screen-sm-max</th>
-			<td><code class="language-scss">768px</code></td>
-			<td></td>
+			<td><code class="language-scss">768px / 16px * 1em</code></td>
+			<td>Use EMs since 1.3.1</td>
 		</tr>
 		<tr>
 			<th>$screen-md-min</th>
-			<td><code class="language-scss">$screen-sm-max + 1px</code></td>
-			<td></td>
+			<td><code class="language-scss">769px / 16px * 1em</code></td>
+			<td>Use EMs since 1.3.1</td>
 		</tr>
 		<tr>
 			<th>$screen-md-max</th>
-			<td><code class="language-scss">1024px</code></td>
-			<td></td>
+			<td><code class="language-scss">1024px / 16px * 1em</code></td>
+			<td>Use EMs since 1.3.1</td>
 		</tr>
 		<tr>
 			<th>$screen-lg-min</th>
-			<td><code class="language-scss">$screen-md-max + 1px</code></td>
-			<td></td>
+			<td><code class="language-scss">1025px / 16px * 1em</code></td>
+			<td>Use EMs since 1.3.1</td>
 		</tr>
 		<tr>
 			<th>$mq-xs</th>
