@@ -45,7 +45,8 @@
 
   // Now generate all the classes
   @each $width, $fraction in $fractions {
-    .#{$namespace}#{$prefix}w-#{$fraction} {
+    .#{$namespace}#{$prefix}w-#{$fraction},
+    %#{$prefix}w-#{$fraction} {
       width: $width !important;
     }
   }

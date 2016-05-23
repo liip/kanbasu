@@ -2,7 +2,8 @@
   LIST STACKED
 \*----------------------------------------*/
 
-.#{$namespace}list-stacked {
+.#{$namespace}list-stacked,
+%list-stacked {
   @extend %list;
 
   > li {
@@ -19,7 +20,8 @@
 }
 
   // Add separators
-  .#{$namespace}list-stacked--divided {
+  .#{$namespace}list-stacked--divided,
+  %list-stacked--divided {
     > li + li {
       border-top: $list-separator-style;
     }
@@ -29,31 +31,36 @@
    * Sizes
    */
 
-  .#{$namespace}list-stacked--tight {
+  .#{$namespace}list-stacked--tight,
+  %list-stacked--tight {
     > li {
       padding: 0;
     }
   }
 
-  .#{$namespace}list-stacked--tiny {
+  .#{$namespace}list-stacked--tiny,
+  %list-stacked--tiny {
     > li {
       padding: $spacing-unit-tiny/2 0;
     }
   }
 
-  .#{$namespace}list-stacked--small {
+  .#{$namespace}list-stacked--small,
+  %list-stacked--small {
     > li {
       padding: $spacing-unit-small/2 0;
     }
   }
 
-  .#{$namespace}list-stacked--large {
+  .#{$namespace}list-stacked--large,
+  %list-stacked--large {
     > li {
       padding: $spacing-unit-large/2 0;
     }
   }
 
-  .#{$namespace}list-stacked--huge {
+  .#{$namespace}list-stacked--huge,
+  %list-stacked--huge {
     > li {
       padding: $spacing-unit-huge/2 0;
     }

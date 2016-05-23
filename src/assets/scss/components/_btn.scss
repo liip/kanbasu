@@ -2,7 +2,8 @@
   BUTTON
 \*----------------------------------------*/
 
-.#{$namespace}btn {
+.#{$namespace}btn,
+%btn {
   display: inline-block;
   overflow: hidden;
   padding: ratio($btn-padding) $btn-padding;
@@ -43,13 +44,15 @@
  */
 
 // Use all the width available
-.#{$namespace}btn--block {
+.#{$namespace}btn--block,
+%btn--block {
   display: block;
   width: 100%;
 }
 
 // Remove default styling for special buttons
-.#{$namespace}btn--bare {
+.#{$namespace}btn--bare,
+%btn--bare {
   padding: 0;
   border-radius: 0;
 }
@@ -59,7 +62,8 @@
  * Styles
  */
 
-.#{$namespace}btn--default {
+.#{$namespace}btn--default,
+%btn--default {
   color: $btn-default-color;
 
   background-color: $btn-default-bkg-color;
@@ -74,7 +78,8 @@
   }
 }
 
-.#{$namespace}btn--primary {
+.#{$namespace}btn--primary,
+%btn--primary {
   color: $btn-primary-color;
 
   background-color: $btn-primary-bkg-color;
@@ -95,7 +100,8 @@
  */
 
 .#{$namespace}btn--disabled,
-.#{$namespace}btn[disabled] {
+.#{$namespace}btn[disabled],
+%btn--disabled {
   opacity: 0.5;
 
   cursor: not-allowed;
@@ -106,7 +112,8 @@
  * Sizes
  */
 
-.#{$namespace}btn--small {
+.#{$namespace}btn--small,
+%btn--small {
   padding: ratio($btn-small-padding) $btn-small-padding;
 
   font-size: $btn-small-font-size;
@@ -114,7 +121,8 @@
   border-radius: $btn-small-border-radius;
 }
 
-.#{$namespace}btn--large {
+.#{$namespace}btn--large,
+%btn--large {
   padding: ratio($btn-large-padding) $btn-large-padding;
 
   font-size: $btn-large-font-size;

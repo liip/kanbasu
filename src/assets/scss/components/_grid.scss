@@ -2,7 +2,8 @@
   GRID
 \*----------------------------------------*/
 
-.#{$namespace}grid {
+.#{$namespace}grid,
+%grid {
   display: block;
   margin-left: -$spacing-unit-default;
 
@@ -10,7 +11,8 @@
   font-size: 0;
 }
 
-  .#{$namespace}grid__item {
+  .#{$namespace}grid__item,
+  %grid__item {
     display: inline-block;
     width: 100%;
     padding-left: $spacing-unit-default;
@@ -25,7 +27,8 @@
  * Gutters size
  */
 
-.#{$namespace}grid--tight {
+.#{$namespace}grid--tight,
+%grid--tight {
   margin-left: 0;
 
   > .#{$namespace}grid__item {
@@ -33,7 +36,8 @@
   }
 }
 
-.#{$namespace}grid--tiny {
+.#{$namespace}grid--tiny,
+%grid--tiny {
   margin-left: -$spacing-unit-tiny;
 
   > .#{$namespace}grid__item {
@@ -41,7 +45,8 @@
   }
 }
 
-.#{$namespace}grid--small {
+.#{$namespace}grid--small,
+%grid--small {
   margin-left: -$spacing-unit-small;
 
   > .#{$namespace}grid__item {
@@ -49,7 +54,8 @@
   }
 }
 
-.#{$namespace}grid--large {
+.#{$namespace}grid--large,
+%grid--large {
   margin-left: -$spacing-unit-large;
 
   > .#{$namespace}grid__item {
@@ -57,7 +63,8 @@
   }
 }
 
-.#{$namespace}grid--huge {
+.#{$namespace}grid--huge,
+%grid--huge {
   margin-left: -$spacing-unit-huge;
 
   > .#{$namespace}grid__item {
@@ -70,7 +77,8 @@
  * Alignment
  */
 
-.#{$namespace}grid--center {
+.#{$namespace}grid--center,
+%grid--center {
   text-align: center;
 
   > .#{$namespace}grid__item {
@@ -78,7 +86,8 @@
   }
 }
 
-.#{$namespace}grid--right {
+.#{$namespace}grid--right,
+%grid--right {
   text-align: right;
 
   > .#{$namespace}grid__item {
@@ -86,13 +95,15 @@
   }
 }
 
-.#{$namespace}grid--middle {
+.#{$namespace}grid--middle,
+%grid--middle {
   > .#{$namespace}grid__item {
     vertical-align: middle;
   }
 }
 
-.#{$namespace}grid--bottom {
+.#{$namespace}grid--bottom,
+%grid--bottom {
   > .#{$namespace}grid__item {
     vertical-align: bottom;
   }
@@ -103,7 +114,8 @@
  * Order
  */
 
-.#{$namespace}grid--rev {
+.#{$namespace}grid--rev,
+%grid--rev {
   direction: rtl;
   text-align: left;
 
