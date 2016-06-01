@@ -1,5 +1,8 @@
 /*----------------------------------------*\
   GLOBAL SETTINGS
+
+  Check the following page for details:
+  kanbasu.liip.ch/settings.html
 \*----------------------------------------*/
 
 // Use this setting to prefix all the components classes
@@ -94,6 +97,8 @@ $border-radius-large:               6px !default;
 /**
  * Buttons
  */
+
+$btn-use-padding-ratio:             true !default;
 
 $btn-padding:                       $spacing-unit-small !default;
 $btn-color:                         inherit !default;
