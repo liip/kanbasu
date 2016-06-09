@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.3.1
+
+* Use percentage value for font-size on html element, fix #29
+* Use EM unit for media queries, fix #31
+* Introduce scaffolding script, fix #30
+
 ## 1.3.0
 
 * **Change default breakpoints to be minimum width and above**
