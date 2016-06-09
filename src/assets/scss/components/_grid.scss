@@ -2,125 +2,241 @@
   GRID
 \*----------------------------------------*/
 
-.#{$namespace}grid,
-%grid {
-  display: block;
-  margin-left: -$spacing-unit-default;
+/**
+ * Modern grid using flexbox
+ */
 
-  // Remove extra-space between items due to inline block
-  font-size: 0;
-}
+@if ($grid-flex == true) {
 
-  .#{$namespace}grid__item,
-  %grid__item {
-    display: inline-block;
-    width: 100%;
-    padding-left: $spacing-unit-default;
-
-    // Reset font size to default (see comment above)
-    font-size: $font-size-default;
-    vertical-align: top;
+  .#{$namespace}grid,
+  %grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$spacing-unit-default;
   }
+
+    .#{$namespace}grid__item,
+    %grid__item {
+      width: 100%;
+      flex: 0 0 100%;
+      padding-left: $spacing-unit-default;
+    }
+
+
+  /**
+   * Gutters size
+   */
+
+  .#{$namespace}grid--tight,
+  %grid--tight {
+    margin-left: 0;
+
+    > .#{$namespace}grid__item {
+      padding-left: 0;
+    }
+  }
+
+  .#{$namespace}grid--tiny,
+  %grid--tiny {
+    margin-left: -$spacing-unit-tiny;
+
+    > .#{$namespace}grid__item {
+      padding-left: $spacing-unit-tiny;
+    }
+  }
+
+  .#{$namespace}grid--small,
+  %grid--small {
+    margin-left: -$spacing-unit-small;
+
+    > .#{$namespace}grid__item {
+      padding-left: $spacing-unit-small;
+    }
+  }
+
+  .#{$namespace}grid--large,
+  %grid--large {
+    margin-left: -$spacing-unit-large;
+
+    > .#{$namespace}grid__item {
+      padding-left: $spacing-unit-large;
+    }
+  }
+
+  .#{$namespace}grid--huge,
+  %grid--huge {
+    margin-left: -$spacing-unit-huge;
+
+    > .#{$namespace}grid__item {
+      padding-left: $spacing-unit-huge;
+    }
+  }
+
+
+  /**
+   * Alignment
+   */
+
+  .#{$namespace}grid--center,
+  %grid--center {
+    justify-content: center;
+  }
+
+  .#{$namespace}grid--right,
+  %grid--right {
+    justify-content: flex-end;
+  }
+
+  .#{$namespace}grid--middle,
+  %grid--middle {
+    align-items: center;
+  }
+
+  .#{$namespace}grid--bottom,
+  %grid--bottom {
+    align-items: flex-end;
+  }
+
+
+  /**
+   * Order
+   */
+
+  .#{$namespace}grid--rev,
+  %grid--rev {
+    flex-direction: row-reverse;
+  }
+
+}
 
 
 /**
- * Gutters size
+ * Legacy grid using inline-block
  */
 
-.#{$namespace}grid--tight,
-%grid--tight {
-  margin-left: 0;
+@else {
 
-  > .#{$namespace}grid__item {
-    padding-left: 0;
+  .#{$namespace}grid,
+  %grid {
+    display: block;
+    margin-left: -$spacing-unit-default;
+
+    // Remove extra-space between items due to inline block
+    font-size: 0;
   }
-}
 
-.#{$namespace}grid--tiny,
-%grid--tiny {
-  margin-left: -$spacing-unit-tiny;
+    .#{$namespace}grid__item,
+    %grid__item {
+      display: inline-block;
+      width: 100%;
+      padding-left: $spacing-unit-default;
 
-  > .#{$namespace}grid__item {
-    padding-left: $spacing-unit-tiny;
+      // Reset font size to default (see comment above)
+      font-size: $font-size-default;
+      vertical-align: top;
+    }
+
+
+  /**
+   * Gutters size
+   */
+
+  .#{$namespace}grid--tight,
+  %grid--tight {
+    margin-left: 0;
+
+    > .#{$namespace}grid__item {
+      padding-left: 0;
+    }
   }
-}
 
-.#{$namespace}grid--small,
-%grid--small {
-  margin-left: -$spacing-unit-small;
+  .#{$namespace}grid--tiny,
+  %grid--tiny {
+    margin-left: -$spacing-unit-tiny;
 
-  > .#{$namespace}grid__item {
-    padding-left: $spacing-unit-small;
+    > .#{$namespace}grid__item {
+      padding-left: $spacing-unit-tiny;
+    }
   }
-}
 
-.#{$namespace}grid--large,
-%grid--large {
-  margin-left: -$spacing-unit-large;
+  .#{$namespace}grid--small,
+  %grid--small {
+    margin-left: -$spacing-unit-small;
 
-  > .#{$namespace}grid__item {
-    padding-left: $spacing-unit-large;
+    > .#{$namespace}grid__item {
+      padding-left: $spacing-unit-small;
+    }
   }
-}
 
-.#{$namespace}grid--huge,
-%grid--huge {
-  margin-left: -$spacing-unit-huge;
+  .#{$namespace}grid--large,
+  %grid--large {
+    margin-left: -$spacing-unit-large;
 
-  > .#{$namespace}grid__item {
-    padding-left: $spacing-unit-huge;
+    > .#{$namespace}grid__item {
+      padding-left: $spacing-unit-large;
+    }
   }
-}
+
+  .#{$namespace}grid--huge,
+  %grid--huge {
+    margin-left: -$spacing-unit-huge;
+
+    > .#{$namespace}grid__item {
+      padding-left: $spacing-unit-huge;
+    }
+  }
 
 
-/**
- * Alignment
- */
+  /**
+   * Alignment
+   */
 
-.#{$namespace}grid--center,
-%grid--center {
-  text-align: center;
+  .#{$namespace}grid--center,
+  %grid--center {
+    text-align: center;
 
-  > .#{$namespace}grid__item {
+    > .#{$namespace}grid__item {
+      text-align: left;
+    }
+  }
+
+  .#{$namespace}grid--right,
+  %grid--right {
+    text-align: right;
+
+    > .#{$namespace}grid__item {
+      text-align: left;
+    }
+  }
+
+  .#{$namespace}grid--middle,
+  %grid--middle {
+    > .#{$namespace}grid__item {
+      vertical-align: middle;
+    }
+  }
+
+  .#{$namespace}grid--bottom,
+  %grid--bottom {
+    > .#{$namespace}grid__item {
+      vertical-align: bottom;
+    }
+  }
+
+
+  /**
+   * Order
+   */
+
+  .#{$namespace}grid--rev,
+  %grid--rev {
+    direction: rtl;
     text-align: left;
+
+    > .#{$namespace}grid__item {
+      direction: ltr;
+      text-align: left;
+    }
   }
-}
 
-.#{$namespace}grid--right,
-%grid--right {
-  text-align: right;
-
-  > .#{$namespace}grid__item {
-    text-align: left;
-  }
-}
-
-.#{$namespace}grid--middle,
-%grid--middle {
-  > .#{$namespace}grid__item {
-    vertical-align: middle;
-  }
-}
-
-.#{$namespace}grid--bottom,
-%grid--bottom {
-  > .#{$namespace}grid__item {
-    vertical-align: bottom;
-  }
-}
-
-
-/**
- * Order
- */
-
-.#{$namespace}grid--rev,
-%grid--rev {
-  direction: rtl;
-  text-align: left;
-
-  > .#{$namespace}grid__item {
-    direction: ltr;
-    text-align: left;
-  }
 }
