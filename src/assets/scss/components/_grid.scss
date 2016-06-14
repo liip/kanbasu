@@ -18,7 +18,7 @@
     .#{$namespace}grid__item,
     %grid__item {
       width: 100%;
-      flex: 0 0 100%;
+      flex: 0 0 auto;
       padding-left: $spacing-unit-default;
     }
 

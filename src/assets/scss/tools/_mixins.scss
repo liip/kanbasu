@@ -48,7 +48,6 @@
     .#{$namespace}#{$prefix}w-#{$fraction},
     %#{$prefix}w-#{$fraction} {
       width: $width !important;
-      flex-basis: $width;
     }
   }
 }
