@@ -18,6 +18,7 @@ class Kanbasu {
 
 		// Listen for change and go to URL
 		this.searchField.addEventListener('awesomplete-selectcomplete', (e) => {
+
 			let text = e.currentTarget.value;
 			let url = this.getMaterial(text);
 
@@ -41,10 +42,11 @@ class Kanbasu {
 	 * @return {String|Bool}
 	 */
 	getMaterial(text) {
+
 		for (var i = 0; i < this.materials.length; i++) {
 			let material = this.materials[i];
 
-			if (material.innerHTML === text) {
+			if (material.value === text) {
 				return material.value;
 			}
 		}
