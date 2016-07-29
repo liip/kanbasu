@@ -25,12 +25,12 @@
 }
 
 // Scope the content given into the defined media query
-// $mq    {String}  The ID of the media query defined in $breakpoints-default
+// $mq    {String}  The ID of the media query your list of breakpoints ($breakpoints-default by default)
 //
 // Usage: @include media('md') {}
 
-@mixin media($mq) {
-  @each $breakpoint in $breakpoints-default {
+@mixin media($mq, $breakpoints: $breakpoints-default) {
+  @each $breakpoint in $breakpoints {
     $breakpoint-name: nth($breakpoint, 1);
     $breakpoint-mq: nth($breakpoint, 2);
 
