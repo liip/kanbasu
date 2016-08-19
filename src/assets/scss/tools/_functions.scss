@@ -7,8 +7,8 @@
  * Calculate REM value based on the default font-size
  */
 
-@function rem($value) {
-  @return ($value / $font-size-default) * 1rem;
+@function rem($value, $base: $font-size-default) {
+  @return ($value / $base) * 1rem;
 }
 
 
