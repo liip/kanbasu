@@ -10,9 +10,9 @@ The complete list of Kanbasu overridable settings.
 			</th>
 		</tr>
 		<tr class="text-muted">
-			<td>Variable</td>
-			<td>Default value</td>
-			<td>Notice</td>
+			<td width="20%">Variable</td>
+			<td width="30%">Default value</td>
+			<td width="30%">Notice</td>
 		</tr>
 		<tr>
 			<th>$namespace</th>
@@ -268,6 +268,14 @@ The complete list of Kanbasu overridable settings.
 			<td>Notice</td>
 		</tr>
 		<tr>
+			<th>$btn-use-padding-ratio</th>
+			<td><code class="language-scss">true</code></td>
+			<td>
+				<p class="mrgt0">Since 1.4.0</p>
+				<p class="mrgb0">Use the <code>$ratio</code> to calculate buttons’ top and bottom padding resulting in more natural proportions.<br>This apply only if the variable (<code>$btn-padding</code>, <code>$btn-small-padding</code>, <code>$btn-large-padding</code>) is a single value.</p>
+			</td>
+		</tr>
+		<tr>
 			<th>$btn-padding</th>
 			<td><code class="language-scss">$spacing-unit-small</code></td>
 			<td></td>
@@ -506,6 +514,24 @@ The complete list of Kanbasu overridable settings.
 			<th>$box-primary-bkg-color</th>
 			<td><code class="language-scss">$brand-color</code></td>
 			<td></td>
+		</tr>
+		<tr class="settings--section">
+			<th colspan="3">
+				<h3 class="mrg0">Grid</h3>
+			</th>
+		</tr>
+		<tr class="text-muted">
+			<td>Variable</td>
+			<td>Default value</td>
+			<td>Notice</td>
+		</tr>
+		<tr>
+			<th>$grid-flex</th>
+			<td><code class="language-scss">false</code></td>
+			<td>
+				<p class="mrgt0">Since 1.4.0</p>
+				<p class="mrgb0">Use the modern grid (using Flexbox) instead of the legacy one (using inline-block)</p>
+			</td>
 		</tr>
 		<tr class="settings--section">
 			<th colspan="3">

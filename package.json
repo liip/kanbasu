@@ -1,14 +1,12 @@
 {
   "name": "kanbasu",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "Bare OOCSS Framework written in Sass",
   "homepage": "http://kanbasu.liip.ch",
   "scripts": {
-    "gulp": "gulp",
-    "prestart": "npm install",
-    "build": "npm install && gulp",
+    "build": "gulp",
     "start": "gulp --dev",
-    "test": "npm run build"
+    "deploy": "gulp deploy"
   },
   "keywords": [
     "css",

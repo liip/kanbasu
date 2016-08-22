@@ -2,12 +2,14 @@
   IMAGES
 \*----------------------------------------*/
 
-.img-responsive {
+.img-responsive,
+%img-responsive {
   max-width: 100%;
   height: auto;
 }
 
-.img-block {
+.img-block,
+%img-block {
   width: 100%;
   height: auto;
 }

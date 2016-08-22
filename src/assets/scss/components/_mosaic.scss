@@ -2,21 +2,25 @@
   MOSAIC
 \*----------------------------------------*/
 
-.#{$namespace}mosaic {
+.#{$namespace}mosaic,
+%mosaic {
   display: table;
   width: 100%;
 }
 
 // Equal width for all cells
-.#{$namespace}mosaic--fixed {
+.#{$namespace}mosaic--fixed,
+%mosaic--fixed {
   table-layout: fixed;
 }
 
-  .#{$namespace}mosaic__row {
+  .#{$namespace}mosaic__row,
+  %mosaic__row {
     display: table-row;
   }
 
-  .#{$namespace}mosaic__cell {
+  .#{$namespace}mosaic__cell,
+  %mosaic__cell {
     display: table-cell;
     vertical-align: middle;
 
@@ -30,7 +34,8 @@
   }
 
     // Make the cell fit its content
-    .#{$namespace}mosaic__cell--fit {
+    .#{$namespace}mosaic__cell--fit,
+    %mosaic__cell--fit {
       width: 1px;
       white-space: nowrap;
     }

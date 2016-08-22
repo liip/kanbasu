@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 1.4.0
+
+* Add silent-classes in addition to classes where it makes sense to extend, fix #33
+* Allow more flexibility on buttons’ padding with optional ratio ($btn-use-padding-ratio)
+* Introduce optional flexbox grid ($grid-flex), fix #23
+* Add media query shortcut mixin
+* Allow to pass a custom base font-size to rem function
+* Document mixins and functions, fix #35
+
 ## 1.3.1
 
 * Use percentage value for font-size on html element, fix #29

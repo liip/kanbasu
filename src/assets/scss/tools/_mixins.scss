@@ -25,6 +25,25 @@
 }
 
 
+// Scope the content given into the defined media query
+// $mq    {String}  The ID of the media query your list of breakpoints ($breakpoints-default by default)
+//
+// Usage: @include media('md') {}
+
+@mixin media($mq, $breakpoints: $breakpoints-default) {
+  @each $breakpoint in $breakpoints {
+    $breakpoint-name: nth($breakpoint, 1);
+    $breakpoint-mq: nth($breakpoint, 2);
+
+    @if ($breakpoint-name == $mq) {
+      @media #{$breakpoint-mq} {
+        @content;
+      }
+    }
+  }
+}
+
+
 // Generate fractions classes to be used as fluid widths
 // $columns   {List}    A list of numbers in reverse order for which you want to create fractions
 //                      "3,2,1" will create 1/1 1/2 1/3 2/3
@@ -45,7 +64,8 @@
 
   // Now generate all the classes
   @each $width, $fraction in $fractions {
-    .#{$namespace}#{$prefix}w-#{$fraction} {
+    .#{$namespace}#{$prefix}w-#{$fraction},
+    %#{$prefix}w-#{$fraction} {
       width: $width !important;
     }
   }

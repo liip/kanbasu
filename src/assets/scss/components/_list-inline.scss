@@ -2,7 +2,8 @@
   LIST STACKED
 \*----------------------------------------*/
 
-.#{$namespace}list-inline {
+.#{$namespace}list-inline,
+%list-inline {
   @extend %list;
 
   > li {
@@ -22,7 +23,8 @@
 }
 
   // Add separators
-  .#{$namespace}list-inline--divided {
+  .#{$namespace}list-inline--divided,
+  %list-inline--divided {
     > li + li {
       border-left: $list-separator-style;
     }
@@ -32,31 +34,36 @@
    * Sizes
    */
 
-  .#{$namespace}list-inline--tight {
+  .#{$namespace}list-inline--tight,
+  %list-inline--tight {
     > li {
       padding: 0;
     }
   }
 
-  .#{$namespace}list-inline--tiny {
+  .#{$namespace}list-inline--tiny,
+  %list-inline--tiny {
     > li {
       padding: 0 $spacing-unit-tiny/2;
     }
   }
 
-  .#{$namespace}list-inline--small {
+  .#{$namespace}list-inline--small,
+  %list-inline--small {
     > li {
       padding: 0 $spacing-unit-small/2;
     }
   }
 
-  .#{$namespace}list-inline--large {
+  .#{$namespace}list-inline--large,
+  %list-inline--large {
     > li {
       padding: 0 $spacing-unit-large/2;
     }
   }
 
-  .#{$namespace}list-inline--huge {
+  .#{$namespace}list-inline--huge,
+  %list-inline--huge {
     > li {
       padding: 0 $spacing-unit-huge/2;
     }
