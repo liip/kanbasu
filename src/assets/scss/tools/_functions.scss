@@ -17,7 +17,7 @@
  * It uses the golden ratio by default
  *
  * Useful to create "visually equal" spacings
- * As perfectly equal spacings never "visually" look equal when close to text
+ * As mathematically equal spacings never "visually" look equal around text
  */
 
 @function ratio($value, $ratio: $ratio) {
