@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Current development
+
+* Remove the declaration about links inside boxes which cause more headhache than solve problems
+
 ## 1.4.0
 
 * Add silent-classes in addition to classes where it makes sense to extend, fix #33
