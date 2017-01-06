@@ -3,6 +3,7 @@
 ## Current development
 
 * Remove the declaration about links inside boxes which cause more headhache than solve problems
+* Add per-breakpoint text alignement classes
 
 ## 1.4.0
 
