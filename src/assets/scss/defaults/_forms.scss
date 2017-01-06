@@ -40,7 +40,12 @@ input[type='file'],
 select,
 textarea {
   width: 100%;
-  padding: ratio($field-padding) $field-padding;
+  @if ($field-use-padding-ratio and length($field-padding) == 1) {
+    padding: ratio($field-padding) $field-padding;
+  }
+  @else {
+    padding: $field-padding;
+  }
 
   color: $field-color;
   font-size: $field-font-size;
@@ -142,7 +147,12 @@ label {
 }
 
 .input--small {
-  padding: ratio($field-small-padding) $field-small-padding !important;
+  @if ($field-use-padding-ratio and length($field-padding) == 1) {
+    padding: ratio($field-small-padding) $field-small-padding !important;
+  }
+  @else {
+    padding: $field-small-padding;
+  }
 }
 
 .select--small {
@@ -159,7 +169,12 @@ label {
 }
 
 .input--large {
-  padding: ratio($field-large-padding) $field-large-padding !important;
+  @if ($field-use-padding-ratio and length($field-padding) == 1) {
+    padding: ratio($field-large-padding) $field-large-padding !important;
+  }
+  @else {
+    padding: $field-large-padding;
+  }
 }
 
 .select--large {

@@ -129,6 +129,8 @@ $btn-primary-active-bkg-color:      darken($btn-primary-bkg-color, 5%) !default;
  * Forms
  */
 
+$field-use-padding-ratio:           true !default;
+
 $field-padding:                     $spacing-unit-small !default;
 
 $field-color:                       inherit !default;
