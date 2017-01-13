@@ -1,9 +1,9 @@
 # CHANGELOG
 
-## Current development
+## 1.5.0
 
 * Remove the declaration about links inside boxes which cause more headhache than solve problems
-* Add per-breakpoint text alignement classes
+* Add per-breakpoint text alignment classes
 * Allow more flexibility on fields’ padding with optional ratio ($field-use-padding-ratio) 
 
 ## 1.4.0
