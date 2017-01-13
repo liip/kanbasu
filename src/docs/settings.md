@@ -381,6 +381,14 @@ The complete list of Kanbasu overridable settings.
 			<td>Notice</td>
 		</tr>
 		<tr>
+			<th>$field-use-padding-ratio</th>
+			<td><code class="language-scss">true</code></td>
+			<td>
+				<p class="mrgt0">Since 1.5.0</p>
+				<p class="mrgb0">Use the <code>$ratio</code> to calculate fields’ top and bottom padding resulting in more natural proportions.<br>This apply only if the variable (<code>$field-padding</code>, <code>$field-small-padding</code>, <code>$field-large-padding</code>) is a single value.</p>
+			</td>
+		</tr>
+		<tr>
 			<th>$field-padding</th>
 			<td><code class="language-scss">$spacing-unit-small</code></td>
 			<td></td>
