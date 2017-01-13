@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.5.0
+
+* Remove the declaration about links inside boxes which cause more headhache than solve problems
+* Add per-breakpoint text alignment classes
+* Allow more flexibility on fields’ padding with optional ratio ($field-use-padding-ratio) 
+
 ## 1.4.0
 
 * Add silent-classes in addition to classes where it makes sense to extend, fix #33
