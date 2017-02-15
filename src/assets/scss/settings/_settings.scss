@@ -50,6 +50,14 @@ $spacing-unit-small:                floor($spacing-unit-default / $ratio) !defau
 $spacing-unit-large:                floor($spacing-unit-default * $ratio) !default;
 $spacing-unit-huge:                 floor($spacing-unit-default * ($ratio * 2)) !default;
 
+$spacings:                          (
+                                      'tight' 0,
+                                      'tiny' $spacing-unit-tiny,
+                                      'small' $spacing-unit-small,
+                                      'large' $spacing-unit-large,
+                                      'huge' $spacing-unit-huge
+                                    ) !default;
+
 
 /**
  * Responsiveness

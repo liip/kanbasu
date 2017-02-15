@@ -158,3 +158,25 @@
   }
 }
 
+
+/**
+ * Add spacings betweens row
+ */
+
+.grid--multiline {
+  margin-top: -$spacing-unit-default;
+
+  > .grid__item {
+    padding-top: $spacing-unit-default;
+  }
+
+  @include foreach-alternative-spacing() {
+    &.grid--#{$spacing-name} {
+      margin-top: -#{$spacing-value};
+
+      > .grid__item {
+        padding-top: $spacing-value;
+      }
+    }
+  }
+}
