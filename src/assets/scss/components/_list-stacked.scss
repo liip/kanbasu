@@ -35,8 +35,8 @@
     .#{$namespace}list-stacked--#{$spacing-name},
     %list-stacked--#{$spacing-name} {
       > li {
-        padding-top: #{$spacing-value};
-        padding-bottom: #{$spacing-value};
+        padding-top: $spacing-value / 2;
+        padding-bottom: $spacing-value / 2;
       }
     }
   }

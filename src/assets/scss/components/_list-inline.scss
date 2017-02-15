@@ -34,37 +34,12 @@
    * Sizes
    */
 
-  .#{$namespace}list-inline--tight,
-  %list-inline--tight {
-    > li {
-      padding: 0;
-    }
-  }
-
-  .#{$namespace}list-inline--tiny,
-  %list-inline--tiny {
-    > li {
-      padding: 0 $spacing-unit-tiny/2;
-    }
-  }
-
-  .#{$namespace}list-inline--small,
-  %list-inline--small {
-    > li {
-      padding: 0 $spacing-unit-small/2;
-    }
-  }
-
-  .#{$namespace}list-inline--large,
-  %list-inline--large {
-    > li {
-      padding: 0 $spacing-unit-large/2;
-    }
-  }
-
-  .#{$namespace}list-inline--huge,
-  %list-inline--huge {
-    > li {
-      padding: 0 $spacing-unit-huge/2;
+  @include foreach-alternative-spacing() {
+    .#{$namespace}list-inline--#{$spacing-name},
+    %list-inline--#{$spacing-name} {
+      > li {
+        padding-left: $spacing-value / 2;
+        padding-right: $spacing-value / 2;
+      }
     }
   }
