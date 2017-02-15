@@ -1,10 +1,7 @@
 /*----------------------------------------*\
   GRID
+  Modern grid using flexbox
 \*----------------------------------------*/
-
-/**
- * Modern grid using flexbox
- */
 
 @if ($grid-flex == true) {
 
@@ -21,56 +18,6 @@
       flex: 0 0 auto;
       padding-left: $spacing-unit-default;
     }
-
-
-  /**
-   * Gutters size
-   */
-
-  .#{$namespace}grid--tight,
-  %grid--tight {
-    margin-left: 0;
-
-    > .#{$namespace}grid__item {
-      padding-left: 0;
-    }
-  }
-
-  .#{$namespace}grid--tiny,
-  %grid--tiny {
-    margin-left: -$spacing-unit-tiny;
-
-    > .#{$namespace}grid__item {
-      padding-left: $spacing-unit-tiny;
-    }
-  }
-
-  .#{$namespace}grid--small,
-  %grid--small {
-    margin-left: -$spacing-unit-small;
-
-    > .#{$namespace}grid__item {
-      padding-left: $spacing-unit-small;
-    }
-  }
-
-  .#{$namespace}grid--large,
-  %grid--large {
-    margin-left: -$spacing-unit-large;
-
-    > .#{$namespace}grid__item {
-      padding-left: $spacing-unit-large;
-    }
-  }
-
-  .#{$namespace}grid--huge,
-  %grid--huge {
-    margin-left: -$spacing-unit-huge;
-
-    > .#{$namespace}grid__item {
-      padding-left: $spacing-unit-huge;
-    }
-  }
 
 
   /**
@@ -110,9 +57,9 @@
 }
 
 
-/**
- * Legacy grid using inline-block
- */
+/*----------------------------------------*\
+  Legacy grid using inline-block
+\*----------------------------------------*/
 
 @else {
 
@@ -135,56 +82,6 @@
       font-size: $font-size-default;
       vertical-align: top;
     }
-
-
-  /**
-   * Gutters size
-   */
-
-  .#{$namespace}grid--tight,
-  %grid--tight {
-    margin-left: 0;
-
-    > .#{$namespace}grid__item {
-      padding-left: 0;
-    }
-  }
-
-  .#{$namespace}grid--tiny,
-  %grid--tiny {
-    margin-left: -$spacing-unit-tiny;
-
-    > .#{$namespace}grid__item {
-      padding-left: $spacing-unit-tiny;
-    }
-  }
-
-  .#{$namespace}grid--small,
-  %grid--small {
-    margin-left: -$spacing-unit-small;
-
-    > .#{$namespace}grid__item {
-      padding-left: $spacing-unit-small;
-    }
-  }
-
-  .#{$namespace}grid--large,
-  %grid--large {
-    margin-left: -$spacing-unit-large;
-
-    > .#{$namespace}grid__item {
-      padding-left: $spacing-unit-large;
-    }
-  }
-
-  .#{$namespace}grid--huge,
-  %grid--huge {
-    margin-left: -$spacing-unit-huge;
-
-    > .#{$namespace}grid__item {
-      padding-left: $spacing-unit-huge;
-    }
-  }
 
 
   /**
@@ -240,3 +137,24 @@
   }
 
 }
+
+
+/*----------------------------------------*\
+  Same for both old and new Grid
+\*----------------------------------------*/
+
+/**
+ * Gutters size
+ */
+
+@include foreach-alternative-spacing() {
+  .#{$namespace}grid--#{$spacing-name},
+  %grid--#{$spacing-name} {
+    margin-left: -#{$spacing-value};
+
+    > .#{$namespace}grid__item {
+      padding-left: $spacing-value;
+    }
+  }
+}
+

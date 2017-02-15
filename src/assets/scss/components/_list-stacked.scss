@@ -31,37 +31,12 @@
    * Sizes
    */
 
-  .#{$namespace}list-stacked--tight,
-  %list-stacked--tight {
-    > li {
-      padding: 0;
-    }
-  }
-
-  .#{$namespace}list-stacked--tiny,
-  %list-stacked--tiny {
-    > li {
-      padding: $spacing-unit-tiny/2 0;
-    }
-  }
-
-  .#{$namespace}list-stacked--small,
-  %list-stacked--small {
-    > li {
-      padding: $spacing-unit-small/2 0;
-    }
-  }
-
-  .#{$namespace}list-stacked--large,
-  %list-stacked--large {
-    > li {
-      padding: $spacing-unit-large/2 0;
-    }
-  }
-
-  .#{$namespace}list-stacked--huge,
-  %list-stacked--huge {
-    > li {
-      padding: $spacing-unit-huge/2 0;
+  @include foreach-alternative-spacing() {
+    .#{$namespace}list-stacked--#{$spacing-name},
+    %list-stacked--#{$spacing-name} {
+      > li {
+        padding-top: #{$spacing-value};
+        padding-bottom: #{$spacing-value};
+      }
     }
   }
