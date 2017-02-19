@@ -3,7 +3,7 @@
 \*----------------------------------------*/
 
 // Output something for each spacings
-// $spacing-name is available inside @content
+// $spacing-name and $spacing-value are available inside @content
 //
 // Usage: @include foreach-alternative-spacing() {}
 
@@ -15,8 +15,9 @@
 
     @content;
 
-    $spacing-name: null !global; // Reset global variable
-    $spacing-value: null !global; // Reset global variable
+    // Reset global variables
+    $spacing-name: null !global;
+    $spacing-value: null !global;
   }
 }
 
