@@ -5,6 +5,7 @@
 * Remove optional/documentation-related files from the NPM package (see .npmignore)
 * Generate all alternative spacings classes using a mixin based on new $spacings variable.
 * Introduce `.grid--multiline` to add space between grid rows.
+* Add `$btn-font-size` settings to allow changing default button font-size.
 
 ## 1.5.0
 

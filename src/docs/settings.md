@@ -295,6 +295,11 @@ The complete list of Kanbasu overridable settings.
 			<td></td>
 		</tr>
 		<tr>
+			<th>$btn-font-size</th>
+			<td><code class="language-scss">inherit</code></td>
+			<td>Since 1.6.0</td>
+		</tr>
+		<tr>
 			<th>$btn-color</th>
 			<td><code class="language-scss">inherit</code></td>
 			<td></td>
