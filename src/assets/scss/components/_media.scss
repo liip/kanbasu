@@ -32,11 +32,4 @@
   %media__body {
     overflow: hidden;
     display: block;
-
-    > :first-child {
-      margin-top: 0;
-    }
-    > :last-child {
-      margin-bottom: 0;
-    }
   }

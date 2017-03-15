@@ -6,6 +6,7 @@
 * Generate all alternative spacings classes using a mixin based on new $spacings variable.
 * Introduce `.grid--multiline` to add space between grid rows.
 * Add `$btn-font-size` settings to allow changing default button font-size.
+* Do not remove margins on first/last children of `.media__body` element (prevent `.grid--multiline` to work properly).
 
 ## 1.5.0
 
