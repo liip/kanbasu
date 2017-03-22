@@ -7,6 +7,7 @@
 * Introduce `.grid--multiline` to add space between grid rows.
 * Add `$btn-font-size` settings to allow changing default button font-size.
 * Do not remove margins on first/last children of `.media__body` element (prevent `.grid--multiline` to work properly).
+* Apply disabled form fields styling also to read-only fields
 
 ## 1.5.0
 
