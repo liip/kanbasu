@@ -172,7 +172,7 @@
   }
 
   @include foreach-alternative-spacing() {
-    &.grid--#{$spacing-name} {
+    &.#{$namespace}grid--#{$spacing-name} {
       margin-top: -#{$spacing-value};
 
       > .#{$namespace}grid__item {
