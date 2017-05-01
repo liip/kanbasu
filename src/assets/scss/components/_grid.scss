@@ -163,7 +163,8 @@
  * Add spacing between rows
  */
 
-.grid--multiline {
+.#{$namespace}grid--multiline,
+%grid--multiline {
   margin-top: -$spacing-unit-default;
 
   > .grid__item {
