@@ -50,6 +50,14 @@ $spacing-unit-small:                floor($spacing-unit-default / $ratio) !defau
 $spacing-unit-large:                floor($spacing-unit-default * $ratio) !default;
 $spacing-unit-huge:                 floor($spacing-unit-default * ($ratio * 2)) !default;
 
+$spacings:                          (
+                                      'tight' 0,
+                                      'tiny' $spacing-unit-tiny,
+                                      'small' $spacing-unit-small,
+                                      'large' $spacing-unit-large,
+                                      'huge' $spacing-unit-huge
+                                    ) !default;
+
 
 /**
  * Responsiveness
@@ -101,6 +109,7 @@ $border-radius-large:               6px !default;
 $btn-use-padding-ratio:             true !default;
 
 $btn-padding:                       $spacing-unit-small !default;
+$btn-font-size:                     inherit !default;
 $btn-color:                         inherit !default;
 $btn-border:                        1px solid transparent !default;
 $btn-bkg:                           transparent !default;

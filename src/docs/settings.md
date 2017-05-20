@@ -149,6 +149,20 @@ The complete list of Kanbasu overridable settings.
 			<td><code class="language-scss">floor($spacing-unit-default * ($ratio * 2))</code></td>
 			<td></td>
 		</tr>
+		<tr>
+			<th>$spacings</th>
+			<td><pre class="mrg0 pdg-- language-scss"><code>(
+	'tight' 0,
+	'tiny' $spacing-unit-tiny,
+	'small' $spacing-unit-small,
+	'large' $spacing-unit-large,
+	'huge' $spacing-unit-huge
+)</code></pre></td>
+			<td>
+				<p>Since 1.6.0</p>
+				<p>Used to generate all the alternative spacings for lists, boxes, grid, …</p>
+			</td>
+		</tr>
 		<tr class="settings--section">
 			<th colspan="3">
 				<h3 class="mrg0">Breakpoints</h3>
@@ -279,6 +293,11 @@ The complete list of Kanbasu overridable settings.
 			<th>$btn-padding</th>
 			<td><code class="language-scss">$spacing-unit-small</code></td>
 			<td></td>
+		</tr>
+		<tr>
+			<th>$btn-font-size</th>
+			<td><code class="language-scss">inherit</code></td>
+			<td>Since 1.6.0</td>
 		</tr>
 		<tr>
 			<th>$btn-color</th>

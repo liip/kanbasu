@@ -89,7 +89,8 @@ textarea {
     outline: none;
   }
 
-  &[disabled] {
+  &[disabled],
+  &[readonly] {
     color: $field-disabled-color;
     background-color: $field-disabled-bkg-color;
     cursor: not-allowed;

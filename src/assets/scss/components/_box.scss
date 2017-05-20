@@ -19,29 +19,11 @@
  * Spacings
  */
 
-.#{$namespace}box--tight,
-%box--tight {
-  padding: 0;
-}
-
-.#{$namespace}box--tiny,
-%box--tiny {
-  padding: $spacing-unit-tiny;
-}
-
-.#{$namespace}box--small,
-%box--small {
-  padding: $spacing-unit-small;
-}
-
-.#{$namespace}box--large,
-%box--large {
-  padding: $spacing-unit-large;
-}
-
-.#{$namespace}box--huge,
-%box--huge {
-  padding: $spacing-unit-huge;
+@include foreach-alternative-spacing() {
+  .#{$namespace}box--#{$spacing-name},
+  %box--#{$spacing-name} {
+    padding: #{$spacing-value};
+  }
 }
 
 
