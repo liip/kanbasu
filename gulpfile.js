@@ -15,7 +15,6 @@ var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var webpack = require('webpack');
-var ghPages = require('gulp-gh-pages');
 var metadata = require('./package.json');
 var markdown = require('markdown-it')();
 
@@ -179,12 +178,6 @@ gulp.task('serve', function () {
 	gulp.task('images:watch', ['images'], reload);
 	gulp.watch(config.src.images, ['images:watch']);
 
-});
-
-
-// deploy to GitHub pages
-gulp.task('deploy', function() {
-	return gulp.src(config.dest + '/**/*').pipe(ghPages());
 });
 
 
