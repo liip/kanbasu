@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## 1.6.0
 
 * Remove optional/documentation-related files from the NPM package (see .npmignore)
 * Generate all alternative spacings classes using a mixin based on new $spacings variable.
