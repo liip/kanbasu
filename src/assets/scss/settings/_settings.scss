@@ -72,11 +72,6 @@ $screen-md-min:                     769px  / 16px * 1em !default;
 $screen-md-max:                     1024px / 16px * 1em !default;
 $screen-lg-min:                     1025px / 16px * 1em !default;
 
-$mq-xs:                             '(max-width: #{$screen-xs-max})' !default; // DEPRECATED
-$mq-sm:                             '(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})' !default; // DEPRECATED
-$mq-md:                             '(min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})' !default; // DEPRECATED
-$mq-lg:                             '(min-width: #{$screen-lg-min})' !default; // DEPRECATED
-
 $breakpoints-default:               (
                                       'sm' '(min-width: #{$screen-sm-min})',
                                       'md' '(min-width: #{$screen-md-min})',

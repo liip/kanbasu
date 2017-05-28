@@ -204,26 +204,6 @@ The complete list of Kanbasu overridable settings.
 			<td>Use EMs since 1.3.1</td>
 		</tr>
 		<tr>
-			<th>$mq-xs</th>
-			<td><code class="language-scss">'(max-width: #{$screen-xs-max})'</code></td>
-			<td>Deprecated</td>
-		</tr>
-		<tr>
-			<th>$mq-sm</th>
-			<td><code class="language-scss">'(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})'</code></td>
-			<td>Deprecated</td>
-		</tr>
-		<tr>
-			<th>$mq-md</th>
-			<td><code class="language-scss">'(min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})'</code></td>
-			<td>Deprecated</td>
-		</tr>
-		<tr>
-			<th>$mq-lg</th>
-			<td><code class="language-scss">'(min-width: #{$screen-lg-min})'</code></td>
-			<td>Deprecated</td>
-		</tr>
-		<tr>
 			<th>$breakpoints-default</th>
 			<td><pre class="mrg0 pdg-- language-scss"><code>(
 	'sm' '(min-width: #{$screen-sm-min})',
