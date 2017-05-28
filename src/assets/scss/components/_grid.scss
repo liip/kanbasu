@@ -3,139 +3,53 @@
   Modern grid using flexbox
 \*----------------------------------------*/
 
-@if ($grid-flex == true) {
+.#{$namespace}grid,
+%grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$spacing-unit-default;
+}
 
-  .#{$namespace}grid,
-  %grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -$spacing-unit-default;
-  }
-
-    .#{$namespace}grid__item,
-    %grid__item {
-      width: 100%;
-      flex: 0 0 auto;
-      padding-left: $spacing-unit-default;
-    }
-
-
-  /**
-   * Alignment
-   */
-
-  .#{$namespace}grid--center,
-  %grid--center {
-    justify-content: center;
-  }
-
-  .#{$namespace}grid--right,
-  %grid--right {
-    justify-content: flex-end;
-  }
-
-  .#{$namespace}grid--middle,
-  %grid--middle {
-    align-items: center;
-  }
-
-  .#{$namespace}grid--bottom,
-  %grid--bottom {
-    align-items: flex-end;
+  .#{$namespace}grid__item,
+  %grid__item {
+    width: 100%;
+    flex: 0 0 auto;
+    padding-left: $spacing-unit-default;
   }
 
 
-  /**
-   * Order
-   */
+/**
+  * Alignment
+  */
 
-  .#{$namespace}grid--rev,
-  %grid--rev {
-    flex-direction: row-reverse;
-  }
+.#{$namespace}grid--center,
+%grid--center {
+  justify-content: center;
+}
 
+.#{$namespace}grid--right,
+%grid--right {
+  justify-content: flex-end;
+}
+
+.#{$namespace}grid--middle,
+%grid--middle {
+  align-items: center;
+}
+
+.#{$namespace}grid--bottom,
+%grid--bottom {
+  align-items: flex-end;
 }
 
 
-/*----------------------------------------*\
-  Legacy grid using inline-block
-\*----------------------------------------*/
+/**
+  * Order
+  */
 
-@else {
-
-  .#{$namespace}grid,
-  %grid {
-    display: block;
-    margin-left: -$spacing-unit-default;
-
-    // Remove extra-space between items due to inline block
-    font-size: 0;
-  }
-
-    .#{$namespace}grid__item,
-    %grid__item {
-      display: inline-block;
-      width: 100%;
-      padding-left: $spacing-unit-default;
-
-      // Reset font size to default (see comment above)
-      font-size: $font-size-default;
-      vertical-align: top;
-    }
-
-
-  /**
-   * Alignment
-   */
-
-  .#{$namespace}grid--center,
-  %grid--center {
-    text-align: center;
-
-    > .#{$namespace}grid__item {
-      text-align: left;
-    }
-  }
-
-  .#{$namespace}grid--right,
-  %grid--right {
-    text-align: right;
-
-    > .#{$namespace}grid__item {
-      text-align: left;
-    }
-  }
-
-  .#{$namespace}grid--middle,
-  %grid--middle {
-    > .#{$namespace}grid__item {
-      vertical-align: middle;
-    }
-  }
-
-  .#{$namespace}grid--bottom,
-  %grid--bottom {
-    > .#{$namespace}grid__item {
-      vertical-align: bottom;
-    }
-  }
-
-
-  /**
-   * Order
-   */
-
-  .#{$namespace}grid--rev,
-  %grid--rev {
-    direction: rtl;
-    text-align: left;
-
-    > .#{$namespace}grid__item {
-      direction: ltr;
-      text-align: left;
-    }
-  }
-
+.#{$namespace}grid--rev,
+%grid--rev {
+  flex-direction: row-reverse;
 }
 
 

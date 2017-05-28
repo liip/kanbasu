@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.0
+
+* The flex grid becomes the default, the legacy inline-block version has been removed as well as the $grid-flex option
+
 ## 1.6.0
 
 * Remove optional/documentation-related files from the NPM package (see .npmignore)
@@ -13,7 +17,7 @@
 
 * Remove the declaration about links inside boxes which cause more headhache than solve problems
 * Add per-breakpoint text alignment classes
-* Allow more flexibility on fields’ padding with optional ratio ($field-use-padding-ratio) 
+* Allow more flexibility on fields’ padding with optional ratio ($field-use-padding-ratio)
 
 ## 1.4.0
 
