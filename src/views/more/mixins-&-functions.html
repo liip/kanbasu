@@ -64,6 +64,25 @@ Both parameters are optional.</p>
 }</code></pre>
 
 
+<h3><strong>clearfix</strong>()</h3>
+
+<p>The famous self-clear technique as a mixin for quick reuse.</p>
+
+<pre class="language-scss"><code>.foo {
+	@include clearfix();
+}</code></pre>
+
+<p>Will generate:</p>
+
+<pre class="language-scss"><code>.foo {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}</code></pre>
+
+
 
 <h2>Functions</h2>
 

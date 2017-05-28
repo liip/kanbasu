@@ -3,14 +3,15 @@
 ## 2.0.0
 
 * The flex grid becomes the default, the legacy inline-block version has been removed as well as the $grid-flex option
+* %clearfix placeholder selector gets replaced by a clearfix() mixin
 
 ## 1.6.0
 
 * Remove optional/documentation-related files from the NPM package (see .npmignore)
-* Generate all alternative spacings classes using a mixin based on new $spacings variable.
-* Introduce `.grid--multiline` to add space between grid rows.
-* Add `$btn-font-size` settings to allow changing default button font-size.
-* Do not remove margins on first/last children of `.media__body` element (prevent `.grid--multiline` to work properly).
+* Generate all alternative spacings classes using a mixin based on new $spacings variable
+* Introduce `.grid--multiline` to add space between grid rows
+* Add `$btn-font-size` settings to allow changing default button font-size
+* Do not remove margins on first/last children of `.media__body` element (prevent `.grid--multiline` to work properly)
 * Apply disabled form fields styling also to read-only fields
 
 ## 1.5.0

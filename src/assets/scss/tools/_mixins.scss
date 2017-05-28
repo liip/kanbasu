@@ -86,3 +86,14 @@
     }
   }
 }
+
+
+// The famous self-clear technique as a mixin for quick reuse
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

@@ -132,7 +132,7 @@ ol {
 }
 
 dl {
-  @extend %clearfix;
+  @include clearfix();
 }
   dt {
     font-weight: bold;
@@ -149,7 +149,7 @@ dl {
     }
 
     dd {
-      @extend %clearfix;
+      @include clearfix();
       margin-left: calc(100px + #{$spacing-unit-small});
     }
   }

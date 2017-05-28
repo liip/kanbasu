@@ -7,7 +7,7 @@
 
 .#{$namespace}media,
 %media {
-  @extend %clearfix;
+  @include clearfix();
   display: block;
 }
 

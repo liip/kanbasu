@@ -10,11 +10,6 @@
   float: right;
 }
 
-.clearfix,
-%clearfix {
-  &:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
+.clearfix {
+  @include clearfix();
 }
