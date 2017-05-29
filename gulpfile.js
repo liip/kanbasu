@@ -38,7 +38,7 @@ var config = {
 		views: 'src/kanbasu/views/*.html'
 	},
 	dest: 'dist',
-	browsers: 'last 2 versions, ie 9'
+	browsers: ['last 2 versions', 'ie >= 11']
 };
 
 
@@ -49,7 +49,7 @@ var webpackCompiler = webpack(webpackConfig);
 
 // clean
 gulp.task('clean', function (cb) {
-	del([config.dest], cb);
+	return del([config.dest], cb);
 });
 
 
