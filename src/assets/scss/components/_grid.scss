@@ -42,6 +42,18 @@
   align-items: flex-end;
 }
 
+.#{$namespace}grid--even,
+%grid--even {
+  .grid__item {
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      flex: 1 0 auto;
+    }
+  }
+}
+
 
 /**
   * Order
@@ -52,10 +64,6 @@
   flex-direction: row-reverse;
 }
 
-
-/*----------------------------------------*\
-  Same for both old and new Grid
-\*----------------------------------------*/
 
 /**
  * Gutters size
