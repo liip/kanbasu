@@ -99,6 +99,7 @@ code {
 pre {
   padding: $spacing-unit-default;
   margin: 0 0 2em;
+  overflow: auto;
 
   font-size: rem(14px);
 
