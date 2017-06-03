@@ -5,6 +5,7 @@
 * The flex grid becomes the default, the legacy inline-block version has been removed as well as the $grid-flex option
 * %clearfix placeholder selector gets replaced by a clearfix() mixin
 * Introduce `grid--even` for equal grid items height per row
+* Mosaic component has been removed, use grid or media instead
 
 ## 1.6.0
 

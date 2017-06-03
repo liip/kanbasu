@@ -572,20 +572,5 @@ The complete list of Kanbasu overridable settings.
 			<td><code class="language-scss">$screen-sm-max</code></td>
 			<td></td>
 		</tr>
-		<tr class="settings--section">
-			<th colspan="3">
-				<h3 class="mrg0">Mosaic responsive</h3>
-			</th>
-		</tr>
-		<tr class="text-muted">
-			<td>Variable</td>
-			<td>Default value</td>
-			<td>Notice</td>
-		</tr>
-		<tr>
-			<th>$mosaic-collapse</th>
-			<td><code class="language-scss">$screen-sm-max</code></td>
-			<td>Since 1.1.0</td>
-		</tr>
 	</tbody>
 </table>
