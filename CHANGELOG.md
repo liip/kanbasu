@@ -6,6 +6,7 @@
 * %clearfix placeholder selector gets replaced by a clearfix() mixin
 * Introduce `grid--even` for equal grid items height per row
 * Mosaic component has been removed, use grid or media instead
+* Media component is now made with Flex, with alternate gutter sizes and customizable vertical alignment
 
 ## 1.6.0
 

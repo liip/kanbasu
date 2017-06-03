@@ -2,34 +2,54 @@
   THE MEDIA OBJECT
 \*----------------------------------------*/
 
-// The famous Media object created by Nicole Sullivan
+// Inspired by the famous Media object created by Nicole Sullivan
 // http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
 
 .#{$namespace}media,
 %media {
-  @include clearfix();
-  display: block;
+  display: flex;
 }
 
   .#{$namespace}media__left,
   %media__left {
-    float: left;
-    margin-right: $media-gutter;
+    flex: 0 0 auto;
+    margin-right: $spacing-unit-default;
   }
-
   .#{$namespace}media__right,
   %media__right {
-    float: right;
-    margin-left: $media-gutter;
-  }
-
-  .#{$namespace}media__image,
-  %media__image {
-    display: block;
+    flex: 0 0 auto;
+    order: 2;
+    margin-left: $spacing-unit-default;
   }
 
   .#{$namespace}media__body,
   %media__body {
-    overflow: hidden;
-    display: block;
+    flex: 1 1 auto;
   }
+
+.#{$namespace}media--middle,
+%media--middle {
+  align-items: center;
+}
+
+.#{$namespace}media--bottom,
+%media--bottom {
+  align-items: flex-end;
+}
+
+
+/**
+ * Spacings
+ */
+
+@include foreach-alternative-spacing() {
+  .#{$namespace}media--#{$spacing-name},
+  %media--#{$spacing-name} {
+    .media__left {
+      margin-right: $spacing-value;
+    }
+    .media__right {
+      margin-left: $spacing-value;
+    }
+  }
+}

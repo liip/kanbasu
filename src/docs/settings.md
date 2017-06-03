@@ -544,21 +544,6 @@ The complete list of Kanbasu overridable settings.
 		</tr>
 		<tr class="settings--section">
 			<th colspan="3">
-				<h3 class="mrg0">Media</h3>
-			</th>
-		</tr>
-		<tr class="text-muted">
-			<td>Variable</td>
-			<td>Default value</td>
-			<td>Notice</td>
-		</tr>
-		<tr>
-			<th>$media-gutter</th>
-			<td><code class="language-scss">$spacing-unit-default</code></td>
-			<td>Since 1.3.0</td>
-		</tr>
-		<tr class="settings--section">
-			<th colspan="3">
 				<h3 class="mrg0">Media responsive</h3>
 			</th>
 		</tr>
