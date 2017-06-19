@@ -8,6 +8,10 @@
 * Mosaic component has been removed, use grid or media instead
 * Media component is now made with Flex, with alternate gutter sizes and customizable vertical alignment
 
+## Unreleased
+
+* Do not remove margins on first/last children of `.box` element (prevent `.grid--multiline` to work properly).
+
 ## 1.6.0
 
 * Remove optional/documentation-related files from the NPM package (see .npmignore)
