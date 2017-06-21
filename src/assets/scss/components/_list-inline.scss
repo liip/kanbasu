@@ -5,12 +5,12 @@
 .#{$namespace}list-inline,
 %list-inline {
   @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
   > li {
-    display: inline-block;
     padding: 0 $spacing-unit-default/2;
-
-    vertical-align: middle;
 
     &:first-child {
       padding-left: 0;
@@ -28,6 +28,12 @@
     > li + li {
       border-left: $list-separator-style;
     }
+  }
+
+  // Distribute items on the available horizontal space
+  .#{$namespace}list-inline--justified,
+  %list-inline--justified {
+    justify-content: space-between;
   }
 
   /**

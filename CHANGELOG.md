@@ -8,6 +8,7 @@
 * Mosaic component has been removed, use grid or media instead
 * Media component is now made with Flex, with alternate gutter sizes and customizable vertical alignment
 * `text-nowrap` helper was added
+* Move `list-inline` to flex & introduce `list-inline--justified`
 
 ## Unreleased
 
