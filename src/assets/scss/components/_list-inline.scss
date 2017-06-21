@@ -30,11 +30,21 @@
     }
   }
 
-  // Distribute items on the available horizontal space
   .#{$namespace}list-inline--justified,
   %list-inline--justified {
     justify-content: space-between;
   }
+
+  .#{$namespace}list-inline--center,
+  %list-inline--center {
+    justify-content: center;
+  }
+
+  .#{$namespace}list-inline--right,
+  %list-inline--right {
+    justify-content: flex-end;
+  }
+
 
   /**
    * Sizes
