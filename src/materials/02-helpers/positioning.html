@@ -1,16 +1,8 @@
 ---
 notes: |
-  Use transforms to position a container within the closest relative parent.
+  A simple `relative-parent` class to align absolute children consequently.
 ---
 
-<div class="( mrgb )">
-	<img src="https://placehold.it/200x100" class="h-align">
-</div>
-
-<div class="relative-parent ( box box--default mrgb )" style="height: 200px">
-	<div class="v-align">Vertically aligned</div>
-</div>
-
-<div class="relative-parent ( box box--default )" style="height: 200px">
-	<div class="vh-align">Vertically &amp; horizontally aligned</div>
+<div class="relative-parent" style="height: 200px">
+	<img src="https://placehold.it/200x100" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%)">
 </div>

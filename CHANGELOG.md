@@ -9,6 +9,8 @@
 * Media component is now made with Flex, with alternate gutter sizes and customizable vertical alignment
 * `text-nowrap` helper was added
 * Move `list-inline` to flex & introduce `center`, `right` and `justified` alignments
+* Drop positionning classes `h-align`, `v-align` and `vh-align`
+* Introduce alignment helper to align block elements (including images) easily
 
 ## Unreleased
 
