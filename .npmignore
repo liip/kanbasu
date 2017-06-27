@@ -7,3 +7,9 @@
 /src/views
 /src/favicon.ico
 /test
+/.publish
+/.travis.yml
+/CNAME
+/deploy.sh
+/kanbasu.sublime-project
+/kanbasu.sublime-workspace
