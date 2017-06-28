@@ -9,6 +9,8 @@
 * Media component is now made with Flex, with alternate gutter sizes and customizable vertical alignment
 * Move `list-inline` to flex & introduce `center`, `right` and `justified` alignments
 * No more auto-styling of form elements, a class is always required (`.field`, `.label`, `.checkbox`, …)
+* `field--large` and `select--large` have been replaced by `field--large`
+* `field--small` and `select--small` have been replaced by `field--small`
 
 ### Added
 

@@ -35,10 +35,6 @@ $padding-vertical: total-vertical-padding($field-padding);
 $padding-vertical-small: total-vertical-padding($field-small-padding);
 $padding-vertical-large: total-vertical-padding($field-large-padding);
 
-@debug $field-border-width;
-@debug $field-border-width-large;
-@debug $padding-vertical-large;
-
 // In case the fields font-size is a number (ie. not 'inherit'), use it instead of default font-size for calculation
 $field-calc-font-size: $font-size-default;
 
