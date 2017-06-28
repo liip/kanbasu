@@ -101,21 +101,22 @@ $border-radius-large:               6px !default;
  * Buttons
  */
 
-$btn-use-padding-ratio:             true !default;
-
-$btn-padding:                       $spacing-unit-small !default;
-$btn-font-size:                     inherit !default;
+$btn-padding:                       $spacing-unit-small/$ratio $spacing-unit-small !default;
 $btn-color:                         inherit !default;
+$btn-font-size:                     inherit !default;
+$btn-font-family:                   inherit !default;
 $btn-border:                        1px solid transparent !default;
 $btn-bkg:                           transparent !default;
 $btn-border-radius:                 $border-radius-default !default;
 
-$btn-small-padding:                 $spacing-unit-tiny !default;
+$btn-small-padding:                 $spacing-unit-tiny/$ratio $spacing-unit-tiny !default;
 $btn-small-font-size:               $font-size-small !default;
+$btn-small-border:                  $btn-border !default;
 $btn-small-border-radius:           $border-radius-small !default;
 
-$btn-large-padding:                 $spacing-unit-default !default;
+$btn-large-padding:                 $spacing-unit-default/$ratio $spacing-unit-default !default;
 $btn-large-font-size:               $font-size-large !default;
+$btn-large-border:                  $btn-border !default;
 $btn-large-border-radius:           $border-radius-large !default;
 
 $btn-default-color:                 $text-color !default;
@@ -133,9 +134,7 @@ $btn-primary-active-bkg-color:      darken($btn-primary-bkg-color, 5%) !default;
  * Forms
  */
 
-$field-use-padding-ratio:           true !default;
-
-$field-padding:                     $spacing-unit-small !default;
+$field-padding:                     $spacing-unit-small/$ratio $spacing-unit-small !default;
 
 $field-color:                       inherit !default;
 $field-font-size:                   inherit !default;
@@ -150,12 +149,14 @@ $field-border-radius:               $border-radius-default !default;
 $field-disabled-bkg-color:          $alt-color-lighter !default;
 $field-disabled-color:              $alt-color !default;
 
-$field-small-padding:               $spacing-unit-tiny !default;
+$field-small-padding:               $spacing-unit-tiny/$ratio $spacing-unit-tiny !default;
 $field-small-font-size:             $font-size-small !default;
+$field-small-border:                $field-border !default;
 $field-small-border-radius:         $border-radius-small !default;
 
-$field-large-padding:               $spacing-unit-default !default;
+$field-large-padding:               $spacing-unit-default/$ratio $spacing-unit-default !default;
 $field-large-font-size:             $font-size-large !default;
+$field-large-border:                $field-border !default;
 $field-large-border-radius:         $border-radius-large !default;
 
 $field-help-color:                  $alt-color-light !default;

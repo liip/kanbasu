@@ -2,15 +2,15 @@
 <form>
 	<div class="form-group">
 		<label for="name" class="field-label">Name</label>
-		<input type="text" id="name">
+		<input type="text" id="name" class="field">
 	</div>
 	<div class="form-group">
 		<label for="email" class="field-label">Email</label>
-		<input type="text" id="email">
+		<input type="text" id="email" class="field">
 	</div>
 	<div class="form-group">
 		<label for="subject" class="field-label">Subject</label>
-		<select id="subject">
+		<select id="subject" class="field">
 			<option></option>
 			<option>Lorem ipsum</option>
 			<option>Dolor sit amet</option>
@@ -19,7 +19,7 @@
 	</div>
 	<div class="form-group">
 		<label for="message" class="field-label">Message</label>
-		<textarea id="message" rows="4"></textarea>
+		<textarea id="message" rows="4" class="field"></textarea>
 	</div>
 	<div class="form-group">
 		<button type="submit" class="btn btn--primary">Send</button>
@@ -31,13 +31,13 @@
 	<div class="form-group grid">
 		<label for="email" class="field-label grid__item w-1/5">Email</label>
 		<div class="grid__item w-4/5">
-			<input type="email" name="email">
+			<input type="email" name="email" class="field">
 		</div>
 	</div>
 	<div class="form-group grid">
 		<label for="password" class="field-label grid__item w-1/5">Password</label>
 		<div class="grid__item w-4/5">
-			<input type="password" name="password">
+			<input type="password" name="password" class="field">
 			<p class="field-help">
 				A least 8 characters.
 			</p>
@@ -45,7 +45,7 @@
 	</div>
 	<div class="form-group grid grid--right">
 		<div class="grid__item w-4/5">
-			<label class="label--inline"><input type="checkbox"> Remember me</label>
+			<label class="label label--inline"><input type="checkbox" class="checkbox"> Remember me</label>
 		</div>
 	</div>
 	<div class="form-group grid grid--right">
@@ -58,7 +58,9 @@
 <h3>Fields group</h3>
 <div class="form-group">
 	<div class="media media--small">
-		<input type="text" class="input--small media__body">
+		<div class="media__body">
+			<input type="text" class="field field--small">
+		</div>
 		<div class="media__right">
 			<button class="btn btn--small btn--primary">Button</button>
 		</div>
@@ -66,7 +68,9 @@
 </div>
 <div class="form-group">
 	<div class="media media--small">
-		<input type="text" class="media__body">
+		<div class="media__body">
+			<input type="text" class="field">
+		</div>
 		<div class="media__right">
 			<button class="btn btn--primary">Button</button>
 		</div>
@@ -74,7 +78,9 @@
 </div>
 <div class="form-group">
 	<div class="media media--small">
-		<input type="text" class="input--large media__body">
+		<div class="media__body">
+			<input type="text" class="field field--large">
+		</div>
 		<div class="media__right">
 			<button class="btn btn--large btn--primary">Button</button>
 		</div>

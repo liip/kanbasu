@@ -2,15 +2,26 @@
 
 ## 2.0.0
 
+### Changed
+
 * The flex grid becomes the default, the legacy inline-block version has been removed as well as the $grid-flex option
 * %clearfix placeholder selector gets replaced by a clearfix() mixin
-* Introduce `grid--even` for equal grid items height per row
-* Mosaic component has been removed, use grid or media instead
 * Media component is now made with Flex, with alternate gutter sizes and customizable vertical alignment
-* `text-nowrap` helper was added
 * Move `list-inline` to flex & introduce `center`, `right` and `justified` alignments
-* Drop positionning classes `h-align`, `v-align` and `vh-align`
+* No more auto-styling of form elements, a class is always required (`.field`, `.label`, `.checkbox`, …)
+
+### Added
+
+* Introduce `grid--even` for equal grid items height per row
+* `text-nowrap` helper was added
 * Introduce alignment helper to align block elements (including images) easily
+* More flexibility on default values with `$btn-font-family`, `$btn-small-border`, `$btn-large-border`, `$field-small-border` and `$field-large-border`.
+
+### Removed
+
+* Mosaic component has been removed, use grid or media instead
+* Drop positionning classes `h-align`, `v-align` and `vh-align`
+* `$btn-use-padding-ratio` and `$field-use-padding-ratio` have been removed, buttons and fields default padding changed accordingly
 
 ## Unreleased
 

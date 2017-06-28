@@ -6,13 +6,9 @@
 %btn {
   display: inline-block;
   overflow: hidden;
-  @if ($btn-use-padding-ratio and length($btn-padding) == 1) {
-    padding: ratio($btn-padding) $btn-padding;
-  }
-  @else {
-    padding: $btn-padding;
-  }
+  padding: $btn-padding;
 
+  font-family: $btn-font-family;
   font-size: $btn-font-size;
   color: $btn-color;
 
@@ -120,28 +116,20 @@
 
 .#{$namespace}btn--small,
 %btn--small {
-  @if ($btn-use-padding-ratio and length($btn-small-padding) == 1) {
-    padding: ratio($btn-small-padding) $btn-small-padding;
-  }
-  @else {
-    padding: $btn-small-padding;
-  }
+  padding: $btn-small-padding;
 
   font-size: $btn-small-font-size;
 
+  border: $btn-small-border;
   border-radius: $btn-small-border-radius;
 }
 
 .#{$namespace}btn--large,
 %btn--large {
-  @if ($btn-use-padding-ratio and length($btn-large-padding) == 1) {
-    padding: ratio($btn-large-padding) $btn-large-padding;
-  }
-  @else {
-    padding: $btn-large-padding;
-  }
+  padding: $btn-large-padding;
 
   font-size: $btn-large-font-size;
 
+  border: $btn-large-border;
   border-radius: $btn-large-border-radius;
 }

@@ -262,16 +262,8 @@ The complete list of Kanbasu overridable settings.
 			<td>Notice</td>
 		</tr>
 		<tr>
-			<th>$btn-use-padding-ratio</th>
-			<td><code class="language-scss">true</code></td>
-			<td>
-				<p class="mrgt0">Since 1.4.0</p>
-				<p class="mrgb0">Use the <code>$ratio</code> to calculate buttons’ top and bottom padding resulting in more natural proportions.<br>This apply only if the variable (<code>$btn-padding</code>, <code>$btn-small-padding</code>, <code>$btn-large-padding</code>) is a single value.</p>
-			</td>
-		</tr>
-		<tr>
 			<th>$btn-padding</th>
-			<td><code class="language-scss">$spacing-unit-small</code></td>
+			<td><code class="language-scss">$spacing-unit-small/$ratio $spacing-unit-small</code></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -301,7 +293,7 @@ The complete list of Kanbasu overridable settings.
 		</tr>
 		<tr>
 			<th>$btn-small-padding</th>
-			<td><code class="language-scss">$spacing-unit-tiny</code></td>
+			<td><code class="language-scss">$spacing-unit-tiny/2 $spacing-unit-tiny</code></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -316,7 +308,7 @@ The complete list of Kanbasu overridable settings.
 		</tr>
 		<tr>
 			<th>$btn-large-padding</th>
-			<td><code class="language-scss">$spacing-unit-default</code></td>
+			<td><code class="language-scss">$spacing-unit-default/2 $spacing-unit-default</code></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -378,14 +370,6 @@ The complete list of Kanbasu overridable settings.
 			<td>Variable</td>
 			<td>Default value</td>
 			<td>Notice</td>
-		</tr>
-		<tr>
-			<th>$field-use-padding-ratio</th>
-			<td><code class="language-scss">true</code></td>
-			<td>
-				<p class="mrgt0">Since 1.5.0</p>
-				<p class="mrgb0">Use the <code>$ratio</code> to calculate fields’ top and bottom padding resulting in more natural proportions.<br>This apply only if the variable (<code>$field-padding</code>, <code>$field-small-padding</code>, <code>$field-large-padding</code>) is a single value.</p>
-			</td>
 		</tr>
 		<tr>
 			<th>$field-padding</th>
