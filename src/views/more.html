@@ -6,11 +6,9 @@ fabricator: true
 <h1 data-f-toggle="labels">More</h1>
 
 <ul>
-{{#each views.more.items}}
-
-	<li>
-		<a href="more/{{@key}}.html" class="f-item-heading">{{name}}</a>
-	</li>
-
-{{/each}}
+  {{#each views.more.items}}
+    <li>
+      <a href="more/{{@key}}.html" class="f-item-heading">{{name}}</a>
+    </li>
+  {{/each}}
 </ul>

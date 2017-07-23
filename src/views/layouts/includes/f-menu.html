@@ -1,47 +1,43 @@
-<!-- fabricator menu -->
 <div class="f-menu">
+  {{> f-controls}}
 
-	{{> f-controls}}
+  <ul>
+    <li>
+      <a href="/index.html" class="f-menu__heading">Overview</a>
 
-	<ul>
-		<li>
-			<a href="/index.html" class="f-menu__heading">Overview</a>
+      <ul>
+        {{#each docs}}
+          <li>
+            <a href="/{{@key}}.html">{{name}}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </li>
 
-			<ul>
-				{{#each docs}}
-					<li>
-						<a href="/{{@key}}.html">{{name}}</a>
-					</li>
-				{{/each}}
-			</ul>
-		</li>
+    {{#each materials}}
+    <li>
+      <a href="/{{@key}}.html" class="f-menu__heading">{{name}}</a>
+      <ul>
+        {{#each items}}
+        <li>
+          <a href="/{{@../key}}.html#{{@key}}">{{name}}</a>
+        </li>
+        {{/each}}
+      </ul>
+    </li>
+    {{/each}}
 
-		{{#each materials}}
-		<li>
-			<a href="/{{@key}}.html" class="f-menu__heading">{{name}}</a>
-			<ul>
-				{{#each items}}
-				<li>
-					<a href="/{{@../key}}.html#{{@key}}">{{name}}</a>
-				</li>
-				{{/each}}
-			</ul>
-		</li>
-		{{/each}}
-
-		{{#each views}}
-		<li>
-			<a href="/{{@key}}.html" class="f-menu__heading">{{name}}</a>
-			<ul>
-				{{#each items}}
-				<li>
-					<a href="/{{@../key}}/{{@key}}.html">{{name}}</a>
-				</li>
-				{{/each}}
-			</ul>
-		</li>
-		{{/each}}
-	</ul>
-
+    {{#each views}}
+    <li>
+      <a href="/{{@key}}.html" class="f-menu__heading">{{name}}</a>
+      <ul>
+        {{#each items}}
+        <li>
+          <a href="/{{@../key}}/{{@key}}.html">{{name}}</a>
+        </li>
+        {{/each}}
+      </ul>
+    </li>
+    {{/each}}
+  </ul>
 </div>
-<!-- /fabricator menu -->

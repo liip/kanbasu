@@ -6,7 +6,7 @@ fabricator: true
 <h1>Mixins & functions</h1>
 
 <div class="box box--primary box--small mrgb">
-	<p><strong>Notice:</strong> most of the mixins and functions use values defined in the settings file by default.
+  <p><strong>Notice:</strong> most of the mixins and functions use values defined in the settings file by default.
 The exact outputed value may differ from the examples below.</p>
 </div>
 
@@ -26,21 +26,21 @@ Both parameters are optional.</p>
 <p>Will generate:</p>
 
 <pre class="language-scss"><code>@media screen and (min-width: 40.0625em) {
-	.sm-text-center {
-		text-align: center;
-	}
+  .sm-text-center {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 48.0625em) {
-	.md-text-center {
-		text-align: center;
-	}
+  .md-text-center {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 64.0625em) {
-	.lg-text-center {
-		text-align: center;
-	}
+  .lg-text-center {
+    text-align: center;
+  }
 }
 </code></pre>
 
@@ -50,17 +50,17 @@ Both parameters are optional.</p>
 <p>Shortcut to scope content into a media query by using the breakpoint name as a parameter.</p>
 
 <pre class="language-scss"><code>@include media('md') {
-	.foo {
-		bar: baz;
-	}
+  .foo {
+    bar: baz;
+  }
 }</code></pre>
 
 <p>Will generate:</p>
 
 <pre class="language-scss"><code>@media (min-width: 48.0625em) {
-	.foo {
-		bar: baz;
-	}
+  .foo {
+    bar: baz;
+  }
 }</code></pre>
 
 
@@ -69,17 +69,17 @@ Both parameters are optional.</p>
 <p>The famous self-clear technique as a mixin for quick reuse.</p>
 
 <pre class="language-scss"><code>.foo {
-	@include clearfix();
+  @include clearfix();
 }</code></pre>
 
 <p>Will generate:</p>
 
 <pre class="language-scss"><code>.foo {
-	&::after {
-		content: '';
-		display: table;
-		clear: both;
-	}
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }</code></pre>
 
 
