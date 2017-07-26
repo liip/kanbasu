@@ -39,5 +39,9 @@
   },
   "dependencies": {
     "mkdirp": "^0.5.1"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE >= 11"
+  ]
 }
