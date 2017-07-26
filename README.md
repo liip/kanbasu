@@ -13,13 +13,19 @@ Read more and browse the documentation on [kanbasu.liip.ch](http://kanbasu.liip.
 
 **With NPM** (recommended)
 
-	$ npm install --save-dev kanbasu
+```bash
+npm install --save-dev kanbasu
+```
 
 **As a Git submodule**
 
-	$ git submodule add git@github.com:liip/kanbasu.git
+```bash
+git submodule add git@github.com:liip/kanbasu.git
+```
 
-Or simply [download the zip](https://github.com/liip/kanbasu/archive/master.zip).
+**Manually**
+
+[Download the latest release archive](https://github.com/liip/kanbasu/archive/master.tar.gz)
 
 ### Setup
 
@@ -30,8 +36,8 @@ Easily scaffold a new project by running the script below in your project direct
 3. remove Sass `!default` flags from `settings/_settings.scss`
 4. import `settings/_settings.scss` into `main.scss`
 
-```
-node node_modules/kanbasu/scaffold.js path/to/your/project/sass/directory
+```bash
+node node_modules/kanbasu/scripts/scaffold.js path/to/your/project/sass/directory
 ```
 Note: the script might be in a different location if you didn’t use NPM to install Kanbasu.
 

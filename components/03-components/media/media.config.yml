@@ -1,0 +1,30 @@
+notes: |
+  Inspired by the famous media object created by [Nicole Sullivan](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/).
+variants:
+  - name: tiny
+    context:
+      modifier: media--tiny
+  - name: small
+    context:
+      modifier: media--small
+  - name: large
+    context:
+      modifier: media--large
+  - name: huge
+    context:
+      modifier: media--huge
+  - name: tight
+    context:
+      modifier: media--tight
+  - name: middle
+    notes: Align media content in the middle of the container.
+    context:
+      modifier: media--middle
+  - name: bottom
+    notes: Align media content to the bottom of the container.
+    context:
+      modifier: media--bottom
+  - name: responsive
+    notes: Extend the default media component but vertically align image and content under a specific breakpoint.
+    context:
+      modifier: media--responsive

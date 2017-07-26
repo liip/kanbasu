@@ -1,50 +1,41 @@
 {
   "name": "kanbasu",
   "version": "2.0.0-beta.0",
-  "description": "Bare OOCSS Framework written in Sass",
+  "description": "A customizable CSS framework focused on layouting to easily scaffold responsive web interfaces.",
   "homepage": "http://kanbasu.liip.ch",
   "scripts": {
-    "build": "gulp",
-    "start": "gulp --dev",
-    "deploy": "./deploy.sh"
+    "build": "fractal build",
+    "start": "parallelshell 'npm run fractal:server' 'npm run watch:css'",
+    "fractal:server": "fractal start",
+    "scss": "node-sass --include-path 'node_modules' --output-style compressed -o public src/scss",
+    "autoprefixer": "postcss -u autoprefixer -r public/*.css",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "watch:css": "onchange 'src/scss/**/*.scss' -- npm run build:css",
+    "deploy": "./deploy.sh",
+    "test": "npm run scss"
   },
   "keywords": [
     "css",
     "sass",
-    "toolkit",
-    "styleguide",
     "framework",
-    "scaffold",
-    "patterns",
-    "library"
+    "toolkit",
+    "bem",
+    "oocss"
   ],
   "author": "Liip AG",
   "license": "MIT",
   "repository": "liip/kanbasu",
   "engines": {
-    "node": ">=0.10.0",
-    "npm": ">=2.0.0"
+    "node": ">=4"
   },
   "devDependencies": {
-    "awesomplete": "^1.0.0",
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "browser-sync": "^2.18.12",
-    "del": "^2.2.2",
-    "fabricator-assemble": "^1.1.10",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-csso": "^3.0.0",
-    "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^3.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-util": "^3.0.4",
-    "imports-loader": "^0.7.1",
-    "markdown-it": "^8.3.1",
-    "run-sequence": "^1.0.2",
-    "script-loader": "^0.7.0",
-    "webpack": "^2.6.1"
+    "@frctl/fractal": "^1.1.5",
+    "autoprefixer": "^7.1.2",
+    "mandelbrot-kanbasu": "github:LeBenLeBen/mandelbrot-kanbasu",
+    "node-sass": "^4.5.3",
+    "onchange": "^3.2.1",
+    "parallelshell": "^3.0.1",
+    "postcss-cli": "^4.1.0"
   },
   "dependencies": {
     "mkdirp": "^0.5.1"

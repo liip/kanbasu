@@ -1,0 +1,21 @@
+notes: |
+  Stack list items with (or without) gutters.
+variants:
+  - name: divided
+    context:
+      modifier: list-stacked--divided
+  - name: tiny
+    context:
+      modifier: list-stacked--tiny
+  - name: small
+    context:
+      modifier: list-stacked--small
+  - name: large
+    context:
+      modifier: list-stacked--large
+  - name: huge
+    context:
+      modifier: list-stacked--huge
+  - name: tight
+    context:
+      modifier: list-stacked--tight

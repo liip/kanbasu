@@ -1,0 +1,14 @@
+notes: |
+  By default two styling modifiers are provided: `default` and `primary`. Remove the default padding with `tight`, adjust it according to the spacing settings with `tiny`, `small`, `large` or `huge`.
+context:
+  modifier:
+  btn-modifier: btn--primary
+variants:
+  - name: bare
+  - name: default
+    context:
+      modifier: box--default
+  - name: primary
+    context:
+      modifier: box--primary
+      btn-modifier: btn--default

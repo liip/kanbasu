@@ -1,0 +1,2 @@
+notes: |
+  Set the element `position` to `relative`, useful to align absolute children.

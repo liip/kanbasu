@@ -1,0 +1,60 @@
+notes: |
+  Alter spacings (padding or margin) on elements according to the spacing units defined in the settings.
+
+  <table>
+    <thead>
+      <tr>
+        <th width="33%">Type</th>
+        <th width="33%">Side(s)</th>
+        <th width="33%">Size</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td valign="top">
+          <dl class="dl--inline text-small">
+            <dt><strong>mrg</strong></dt>
+            <dd>Margin</dd>
+            <dt><strong>pdg</strong></dt>
+            <dd>Padding</dd>
+          </dl>
+        </td>
+        <td valign="top">
+          <dl class="dl--inline text-small">
+            <dt><strong>{empty}</strong></dt>
+            <dd>All sides</dd>
+            <dt><strong>t</strong></dt>
+            <dd>Top</dd>
+            <dt><strong>r</strong></dt>
+            <dd>Right</dd>
+            <dt><strong>b</strong></dt>
+            <dd>Bottom</dd>
+            <dt><strong>l</strong></dt>
+            <dd>Left</dd>
+            <dt><strong>v</strong></dt>
+            <dd>Vertical (top &amp; bottom)</dd>
+            <dt><strong>h</strong></dt>
+            <dd>Horizontal (left &amp; right)</dd>
+          </dl>
+        </div>
+        <td valign="top">
+          <dl class="dl--inline text-small">
+            <dt><strong>0</strong></dt>
+            <dd>Zero</dd>
+            <dt><strong>--</strong></dt>
+            <dd>Tiny</dd>
+            <dt><strong>-</strong></dt>
+            <dd>Small</dd>
+            <dt><strong>{empty}</strong></dt>
+            <dd>Default</dd>
+            <dt><strong>+</strong></dt>
+            <dd>Large</dd>
+            <dt><strong>++</strong></dt>
+            <dd>Huge</dd>
+          </dl>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  You can also restrict style to specific breakpoints by prefixing them with the media query name, for example `.lg-pdg+` to match only <em>large</em> screens. Those breakpoints are mobile-first and apply to the targeted breakpoint and above.

@@ -1,0 +1,30 @@
+notes: |
+  Put list items inline with or without gutters.
+variants:
+  - name: divided
+    context:
+      modifier: list-inline--divided
+  - name: tiny
+    context:
+      modifier: list-inline--tiny
+  - name: small
+    context:
+      modifier: list-inline--small
+  - name: large
+    context:
+      modifier: list-inline--large
+  - name: huge
+    context:
+      modifier: list-inline--huge
+  - name: tight
+    context:
+      modifier: list-inline--tight
+  - name: justified
+    context:
+      modifier: list-inline--justified
+  - name: center
+    context:
+      modifier: list-inline--center
+  - name: right
+    context:
+      modifier: list-inline--right

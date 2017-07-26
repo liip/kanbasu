@@ -1,0 +1,2 @@
+notes: |
+  By default, we normalize button style to the minimum. Use the sizes, styles and variants classes to make them shinier. You can also use this as a base for any custom button.
