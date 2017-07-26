@@ -4,7 +4,7 @@
   "description": "A customizable CSS framework focused on layouting to easily scaffold responsive web interfaces.",
   "homepage": "http://kanbasu.liip.ch",
   "scripts": {
-    "build": "fractal build",
+    "build": "npm run build:css && fractal build",
     "start": "parallelshell 'npm run fractal:server' 'npm run watch:css'",
     "fractal:server": "fractal start",
     "scss": "node-sass --include-path 'node_modules' --output-style compressed -o public src/scss",
