@@ -20,6 +20,7 @@
 * `text-nowrap` helper was added
 * Introduce alignment helper to align block elements (including images) easily
 * More flexibility on default values with `$btn-font-family`, `$btn-small-border`, `$btn-large-border`, `$field-small-border` and `$field-large-border`.
+* New components: container & pusher
 
 ### Removed
 
