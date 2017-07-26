@@ -4,13 +4,15 @@
 
 ### Changed
 
-* The flex grid becomes the default, the legacy inline-block version has been removed as well as the $grid-flex option
-* %clearfix placeholder selector gets replaced by a clearfix() mixin
+* The flex grid becomes the default, the legacy inline-block version has been removed as well as the `$grid-flex` option
+* `%clearfix` placeholder selector gets replaced by a `clearfix()` mixin
 * Media component is now made with Flex, with alternate gutter sizes and customizable vertical alignment
 * Move `list-inline` to flex & introduce `center`, `right` and `justified` alignments
 * No more auto-styling of form elements, a class is always required (`.field`, `.label`, `.checkbox`, …)
-* `field--large` and `select--large` have been replaced by `field--large`
-* `field--small` and `select--small` have been replaced by `field--small`
+* `field--large` and `select--large` have been merged into `field--large`
+* `field--small` and `select--small` have been merged into `field--small`
+* Use default operating system font for default font-family
+* The documentation has been completely reviewed and is now powered by [Fractal](http://fractal.build/)
 
 ### Added
 
