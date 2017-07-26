@@ -26,7 +26,7 @@
 /**
  * Return a unitless value
  */
-@function parseInt($value) {
+@function parse-int($value) {
   @return $value / ($value * 0 + 1);
 }
 
@@ -47,5 +47,5 @@
     @return nth($padding, 1) + nth($padding, 3);
   }
 
-  @error "Padding is invalid, must be 1 to 4 values with unit."
+  @error 'Padding is invalid, must be 1 to 4 values with unit';
 }

@@ -34,9 +34,19 @@ a {
  * Headings
  */
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin: 1.414em 0 0.5em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 1.414em 0 .5em;
   font-weight: inherit;
   line-height: 1.2;
 }
@@ -69,7 +79,7 @@ h5,
 
 h6,
 .h6 {
-  font-size: 0.8em;
+  font-size: .8em;
 }
 
 
@@ -89,7 +99,7 @@ p {
 
 pre,
 code {
-  font-family: 'Monaco', monospace;
+  font-family: Monaco, monospace;
   font-weight: normal;
   tab-size: 4;
 
@@ -135,12 +145,14 @@ ol {
 dl {
   @include clearfix();
 }
+
   dt {
     font-weight: bold;
   }
+
   dd {
     margin-left: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: .5em;
   }
 
   .dl--inline {

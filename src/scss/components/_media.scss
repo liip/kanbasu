@@ -1,9 +1,8 @@
 /*----------------------------------------*\
   THE MEDIA OBJECT
+  Inspired by the famous Media object
+  created by Nicole Sullivan
 \*----------------------------------------*/
-
-// Inspired by the famous Media object created by Nicole Sullivan
-// http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
 
 .#{$namespace}media,
 %media {
@@ -15,6 +14,7 @@
     flex: 0 0 auto;
     margin-right: $spacing-unit-default;
   }
+
   .#{$namespace}media__right,
   %media__right {
     flex: 0 0 auto;
@@ -48,6 +48,7 @@
     .media__left {
       margin-right: $spacing-value;
     }
+
     .media__right {
       margin-left: $spacing-value;
     }

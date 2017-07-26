@@ -20,10 +20,10 @@ mathematically equal spacings never "visually" look equal around text.
 padding: ratio(24px) 24px; //-> padding: 14px 24px;
 ```
 
-## parseInt($value)
+## parse-int($value)
 
 Return the value without unit.
 
 ```scss
-parseInt(10px) //-> 10
+parse-int(10px) //-> 10
 ```

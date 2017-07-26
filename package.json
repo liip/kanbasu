@@ -12,7 +12,8 @@
     "build:css": "npm run scss && npm run autoprefixer",
     "watch:css": "onchange 'src/scss/**/*.scss' -- npm run build:css",
     "deploy": "./deploy.sh",
-    "test": "npm run scss"
+    "lint": "stylelint 'src/scss/**/*.scss' --syntax scss",
+    "test": "npm run scss && npm run lint"
   },
   "keywords": [
     "css",
@@ -35,7 +36,9 @@
     "node-sass": "^4.5.3",
     "onchange": "^3.2.1",
     "parallelshell": "^3.0.1",
-    "postcss-cli": "^4.1.0"
+    "postcss-cli": "^4.1.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-rawbot": "^0.1.0"
   },
   "dependencies": {
     "mkdirp": "^0.5.1"

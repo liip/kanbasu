@@ -4,9 +4,9 @@
 
 // Prepare some required values
 // Find the field border "width" from $field-border parameter
-$field-border-width: 0px;
-$field-border-width-small: 0px;
-$field-border-width-large: 0px;
+$field-border-width: 0;
+$field-border-width-small: 0;
+$field-border-width-large: 0;
 
 @each $value in $field-border {
   @if type-of($value) == 'number' {
@@ -27,9 +27,9 @@ $field-border-width-large: 0px;
 }
 
 // Determine the amount of vertical padding for further calculation
-$padding-vertical: 0px;
-$padding-vertical-small: 0px;
-$padding-vertical-large: 0px;
+$padding-vertical: 0;
+$padding-vertical-small: 0;
+$padding-vertical-large: 0;
 
 $padding-vertical: total-vertical-padding($field-padding);
 $padding-vertical-small: total-vertical-padding($field-small-padding);
@@ -166,7 +166,7 @@ label {
 }
 
 select.#{$namespace}field--small {
-  height: floor($font-size-default*parseInt($field-small-font-size)*$field-line-height + $padding-vertical-small + $field-border-width-small*2);
+  height: floor($font-size-default * parse-int($field-small-font-size) * $field-line-height + $padding-vertical-small + $field-border-width-small * 2);
   padding-left: $field-small-padding;
   padding-right: $field-small-padding;
 }
@@ -182,5 +182,5 @@ select.#{$namespace}field--small {
 }
 
 select.#{$namespace}field--large {
-  height: floor($font-size-default*parseInt($field-large-font-size)*$field-line-height + $padding-vertical-large + $field-border-width-large*2);
+  height: floor($font-size-default * parse-int($field-large-font-size) * $field-line-height + $padding-vertical-large + $field-border-width-large * 2);
 }

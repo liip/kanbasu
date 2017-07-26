@@ -27,7 +27,7 @@
   // Cleaner font rendering
   // <button> doesn’t inherit
   -moz-osx-font-smoothing: grayscale;
-   -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 
   &:hover,
   &:focus,
@@ -104,7 +104,7 @@
 .#{$namespace}btn--disabled,
 .#{$namespace}btn[disabled],
 %btn--disabled {
-  opacity: 0.5;
+  opacity: .5;
 
   cursor: not-allowed;
 }

@@ -2,7 +2,9 @@
   DISPLAY
 \*----------------------------------------*/
 
-// HIDE
+/**
+ * HIDE
+ */
 
 .hidden {
   display: none !important;
@@ -18,6 +20,7 @@
     display: none !important;
   }
 }
+
 @include foreach-breakpoint($breakpoints-desc) {
   .hidden-#{$breakpoint-name}-down {
     display: none !important;
@@ -36,7 +39,9 @@
 }
 
 
-// SHOW
+/**
+ * SHOW
+ */
 
 // Display a block only when printed
 @media not print {

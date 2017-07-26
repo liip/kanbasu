@@ -77,7 +77,7 @@ The complete list of Kanbasu overridable settings.
     </tr>
     <tr>
       <th>$font-size-small</th>
-      <td><code class="lang-scss">0.75rem</code></td>
+      <td><code class="lang-scss">.75rem</code></td>
       <td></td>
     </tr>
     <tr>
