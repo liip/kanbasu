@@ -36,6 +36,42 @@ Will generate:
 }
 ```
 
+## foreach-alternative-spacing(<span class="text-muted">$spacings: $spacings</span>)
+
+Loop through the given spacings list, defaults to `$spacings`. `$spacing-name` and `$spacing-value` are available inside the loop.
+
+```scss
+@include foreach-alternative-spacing() {
+  .box--#{$spacing-name} {
+    padding: #{$spacing-value};
+  }
+}
+```
+
+Will generate:
+
+```scss
+.box--tight {
+  padding: 0;
+}
+
+.box--tiny {
+  padding: 7px;
+}
+
+.box--small {
+  padding: 14px;
+}
+
+.box--large {
+  padding: 38px;
+}
+
+.box--huge {
+  padding: 77px;
+}
+```
+
 ## media($mq<span class="text-muted">, $breakpoints: $breakpoints-default</span>)
 
 Shortcut to scope content into a media query by using the breakpoint name as a parameter.
