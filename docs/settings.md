@@ -547,3 +547,24 @@ The complete list of Kanbasu overridable settings.
     </tr>
   </tbody>
 </table>
+
+<h3>Container</h3>
+<table>
+  <tbody>
+    <tr>
+      <th width="20%">Variable</th>
+      <th width="30%">Default value</th>
+      <th width="30%">Notice</th>
+    </tr>
+    <tr>
+      <th>$container-gutter-width</th>
+      <td><code class="lang-scss">$spacing-unit-small</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>$container-max-width</th>
+      <td><code class="lang-scss">1200px</code></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

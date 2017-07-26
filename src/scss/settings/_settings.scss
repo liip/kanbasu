@@ -196,3 +196,11 @@ $widths-breakpoints:                $breakpoints-default !default;
  */
 
 $media-collapse:                    $screen-sm-max !default;
+
+
+/**
+ * Container
+ */
+
+$container-gutter-width:            $spacing-unit-small !default;
+$container-max-width:               1200px !default;
