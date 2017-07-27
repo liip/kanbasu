@@ -103,12 +103,12 @@ textarea.#{$namespace}field {
 }
 
 label {
-  display: block;
   cursor: pointer;
 }
 
 .#{$namespace}label,
 %label {
+  display: block;
   padding-bottom: $spacing-unit-small;
 }
 
@@ -138,6 +138,7 @@ label {
 
 .#{$namespace}field-label,
 %field-label {
+  display: block;
   font-weight: bold;
   padding: ratio($spacing-unit-small) 0;
 }
