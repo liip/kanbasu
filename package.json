@@ -31,7 +31,7 @@
   "devDependencies": {
     "@frctl/fractal": "^1.1.5",
     "autoprefixer": "^7.1.2",
-    "mandelbrot-kanbasu": "github:LeBenLeBen/mandelbrot-kanbasu#1.0.2",
+    "mandelbrot-kanbasu": "github:LeBenLeBen/mandelbrot-kanbasu#1.0.3",
     "node-sass": "^4.5.3",
     "onchange": "^3.2.1",
     "parallelshell": "^3.0.1",
