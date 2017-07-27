@@ -11,7 +11,6 @@
     "autoprefixer": "postcss -u autoprefixer -r public/*.css",
     "build:css": "npm run scss && npm run autoprefixer",
     "watch:css": "onchange 'src/scss/**/*.scss' -- npm run build:css",
-    "deploy": "./deploy.sh",
     "lint": "stylelint 'src/scss/**/*.scss' --syntax scss",
     "test": "npm run scss && npm run lint"
   },
