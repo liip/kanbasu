@@ -8,3 +8,5 @@
 /scripts/deploy.sh
 /kanbasu.sublime-project
 /kanbasu.sublime-workspace
+/fractal.js
+/stylelint.config.js
