@@ -13,6 +13,7 @@
 * `field--small` and `select--small` have been merged into `field--small`
 * Use default operating system font for default font-family
 * The documentation has been completely reviewed and is now powered by [Fractal](http://fractal.build/)
+* Function `parseInt` is now named `parse-int` for consistency.
 
 ### Added
 
@@ -27,6 +28,7 @@
 * Mosaic component has been removed, use grid or media instead
 * Drop positionning classes `h-align`, `v-align` and `vh-align`
 * `$btn-use-padding-ratio` and `$field-use-padding-ratio` have been removed, buttons and fields default padding changed accordingly
+* Legacy media query variables `$mq-xs`, `$mq-sm`, `$mq-md` & `$mq-lg`.
 
 ## Unreleased
 
