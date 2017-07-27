@@ -1,7 +1,7 @@
 ### With NPM
 
 ```bash
-npm install --save-dev kanbasu
+npm install --save-dev kanbasu@2
 ```
 
 ### As a Git submodule
