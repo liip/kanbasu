@@ -1,7 +1,3 @@
----
-header: false
----
-
 ![Kanbasu logo]({{ path 'logo.svg' }})
 
 Kanbasu is a toolbox to create responsive web interfaces quickly. It’s focused on the layout and voluntarily avoid defining much “styling” properties which can be completely different from project to project.
