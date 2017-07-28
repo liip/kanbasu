@@ -13,26 +13,26 @@
 * `field--small` and `select--small` have been merged into `field--small`
 * Use default operating system font for default font-family
 * The documentation has been completely reviewed and is now powered by [Fractal](http://fractal.build/)
-* Function `parseInt` is now named `parse-int` for consistency.
+* Function `parseInt` is now named `parse-int` for consistency
 
 ### Added
 
 * Introduce `grid--even` for equal grid items height per row
 * `text-nowrap` helper was added
 * Introduce alignment helper to align block elements (including images) easily
-* More flexibility on default values with `$btn-font-family`, `$btn-small-border`, `$btn-large-border`, `$field-small-border` and `$field-large-border`.
-* New components: container & pusher
+* More flexibility on default values with `$btn-font-family`, `$btn-small-border`, `$btn-large-border`, `$field-small-border` and `$field-large-border`
+* New components: container, pusher & table-responsive
 
 ### Removed
 
 * Mosaic component has been removed, use grid or media instead
 * Drop positionning classes `h-align`, `v-align` and `vh-align`
 * `$btn-use-padding-ratio` and `$field-use-padding-ratio` have been removed, buttons and fields default padding changed accordingly
-* Legacy media query variables `$mq-xs`, `$mq-sm`, `$mq-md` & `$mq-lg`.
+* Legacy media query variables `$mq-xs`, `$mq-sm`, `$mq-md` & `$mq-lg` are gone
 
 ## Unreleased
 
-* Do not remove margins on first/last children of `.box` element (prevent `.grid--multiline` to work properly).
+* Do not remove margins on first/last children of `.box` element (prevent `.grid--multiline` to work properly)
 
 ## 1.6.1
 
