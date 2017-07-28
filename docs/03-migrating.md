@@ -19,7 +19,7 @@ This page describes the various changes required while migrating from Kanbasu 1 
 
 ## Recommended
 
-* Remove all the abandonned variables from your settings file:
+* Remove all abandonned variables from your settings file:
   * `$mq-xs`
   * `$mq-sm`
   * `$mq-md`
@@ -37,9 +37,14 @@ This page describes the various changes required while migrating from Kanbasu 1 
   * `$field-large-border:                $field-border;`
   * `$container-gutter-width:            $spacing-unit-small;`
   * `$container-max-width:               1200px;`
-* Import the new components in your main Sass file:
+  * `$table-responsive-collapse:         $screen-sm-max;`
+
+## Depending on your project
+
+* Import new components in your main Sass file:
   * `@import 'helpers/align';`
   * `@import 'components/container';`
   * `@import 'components/pusher';`
+  * `@import 'components/table-responsive';`
 * Check all your `list-inline` elements, since it now use flex it will no more follow text alignement. You should use `list-inline--center` or `list-inline--right` to position it horizontally.
 * Check all your `media` elements, display flex can have a slightly different rendering in some cases.

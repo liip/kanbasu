@@ -568,3 +568,19 @@ The complete list of Kanbasu overridable settings.
     </tr>
   </tbody>
 </table>
+
+<h3>Table responsive</h3>
+<table>
+  <tbody>
+    <tr>
+      <th width="20%">Variable</th>
+      <th width="30%">Default value</th>
+      <th width="30%">Notice</th>
+    </tr>
+    <tr>
+      <th>$table-responsive-collapse</th>
+      <td><code class="lang-scss">$screen-sm-max</code></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

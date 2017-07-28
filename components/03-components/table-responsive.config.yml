@@ -1,0 +1,3 @@
+notes: |
+  Prevent tables from being too tight on small screens by allowing them to scroll horizontally.
+status: prototype
