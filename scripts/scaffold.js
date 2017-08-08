@@ -17,13 +17,13 @@ mkdirp(path.join(dest, 'settings'), function(err) {
 	/**
 	 * Copy root file
 	 */
-	fs.readFile(__dirname + '/src/assets/scss/kanbasu.scss', 'utf8', function(err, data) {
+	fs.readFile(__dirname + '/../src/scss/kanbasu.scss', 'utf8', function(err, data) {
 		if (err) {
 			return console.error(err);
 		}
 
 		// Update path to partials
-		var pathToAssets = path.relative(dest, __dirname + '/src/assets/scss');
+		var pathToAssets = path.relative(dest, __dirname + '/../src/scss');
 		// Import project settings after Kanbasu default settings
 		var result = data
 			.replace(/@import '/g, "@import '"+pathToAssets+"/")
@@ -41,7 +41,7 @@ mkdirp(path.join(dest, 'settings'), function(err) {
 	/**
 	 * Copy settings file
 	 */
-	fs.readFile(__dirname + '/src/assets/scss/settings/_settings.scss', 'utf8', function(err, data) {
+	fs.readFile(__dirname + '/../src/scss/settings/_settings.scss', 'utf8', function(err, data) {
 		if (err) {
 			return console.error(err);
 		}
