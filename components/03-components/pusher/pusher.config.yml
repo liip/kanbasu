@@ -10,3 +10,7 @@ variants:
     notes: Vertically align content to the bottom.
     context:
       modifier: pusher--bottom
+  - name: vertical
+    notes: >
+      Push an element to the bottom of its container. This requires the later height to be bigger than its content.
+      In this example, you can see a good combination with the `grid grid--even` component.

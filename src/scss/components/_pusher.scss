@@ -21,3 +21,12 @@
 .pusher--bottom {
   align-items: flex-end;
 }
+
+.pusher--vertical {
+  flex-direction: column;
+
+  .pusher__body {
+    width: 100%;
+    margin-right: 0;
+  }
+}
