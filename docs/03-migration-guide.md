@@ -7,9 +7,9 @@ This page describes the various changes required while migrating from Kanbasu 1 
 ## Mandatory
 
 * Remove all imports of `components/mosaic` and `components/mosaic-responsive`, these components have been removed.
-* Replace any usage of the `%clearfix` placeholder selector (most probably in @extend rules) to use `clearfix` mixin instead.
-* Rename function `parseInt` to `parse-int`.
-* Remove any usage of positionning classes `h-align`, `v-align` and `vh-align`.
+* Replace any usage of the `%clearfix` placeholder selector (most probably in @extend rules) to use the `clearfix` mixin instead.
+* Rename any usage of the function `parseInt` to `parse-int`.
+* Remove/replace any usage of positionning classes `h-align`, `v-align` and `vh-align`, these classes have been removed.
 * Add `field` class to all your form elements (inputs except radios & checkboxes, select, textarea), those are no more styled by default.
 * Add `checkbox` class to all checkbox inputs.
 * Add `radio` class to all radio inputs.
