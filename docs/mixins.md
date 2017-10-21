@@ -94,13 +94,13 @@ Will generate:
 }
 ```
 
-## clearfix()
+## clearfix
 
 The famous self-clear technique.
 
 ```scss
 .foo {
-  @include clearfix();
+  @include clearfix;
 }
 ```
 
@@ -111,5 +111,46 @@ Will generate:
   content: '';
   display: table;
   clear: both;
+}
+```
+
+## wrap-words
+
+Wrap words with hyphenation when they can’t fit their container. Also available as `.text-wrap` helper class.
+
+```scss
+.foo {
+  @include wrap-words;
+}
+```
+
+Will generate:
+
+```scss
+.foo {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
+}
+```
+
+## headings
+
+Shortcut to match all heading levels.
+
+```scss
+@include headings {
+  color: inherit;
+}
+```
+
+Will generate:
+
+```scss
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: inherit;
 }
 ```

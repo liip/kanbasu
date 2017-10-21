@@ -18,10 +18,11 @@
 ### Added
 
 * Introduce `grid--even` for equal grid items height per row
-* `text-nowrap` helper was added
+* New `text-nowrap` and `text-wrap` helpers
 * Introduce alignment helper to align block elements (including images) easily
 * More flexibility on default values with `$btn-font-family`, `$btn-small-border`, `$btn-large-border`, `$field-small-border` and `$field-large-border`
 * New components: container, pusher & table-responsive
+* New mixins: headings, clearfix, text-wrap
 
 ### Removed
 

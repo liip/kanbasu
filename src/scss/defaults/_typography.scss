@@ -34,18 +34,7 @@ a {
  * Headings
  */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+@include headings {
   margin: 1.414em 0 .5em;
   font-weight: inherit;
   line-height: 1.2;
@@ -143,7 +132,7 @@ ol {
 }
 
 dl {
-  @include clearfix();
+  @include clearfix;
 }
 
   dt {
@@ -162,7 +151,7 @@ dl {
     }
 
     dd {
-      @include clearfix();
+      @include clearfix;
       margin-left: calc(100px + #{$spacing-unit-small});
     }
   }
