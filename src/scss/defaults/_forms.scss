@@ -44,7 +44,7 @@ $field-calc-font-size: $font-size-default;
 
 
 /**
- * Basic form elements
+ * Fields
  */
 
 .#{$namespace}field,
@@ -102,6 +102,46 @@ textarea.#{$namespace}field {
   }
 }
 
+
+/**
+ * Alternate sizes
+ */
+
+.#{$namespace}field--small,
+%field--small {
+  padding: $field-small-padding;
+
+  font-size: $field-small-font-size;
+
+  border: $field-small-border;
+  border-radius: $field-small-border-radius;
+}
+
+select.#{$namespace}field--small {
+  height: floor($font-size-default * parse-int($field-small-font-size) * $field-line-height + $padding-vertical-small + $field-border-width-small * 2);
+  padding-left: $field-small-padding;
+  padding-right: $field-small-padding;
+}
+
+.#{$namespace}field--large,
+%field--large {
+  padding: $field-large-padding;
+
+  font-size: $field-large-font-size;
+
+  border: $field-large-border;
+  border-radius: $field-large-border-radius;
+}
+
+select.#{$namespace}field--large {
+  height: floor($font-size-default * parse-int($field-large-font-size) * $field-line-height + $padding-vertical-large + $field-border-width-large * 2);
+}
+
+
+/**
+ * Labels
+ */
+
 label {
   cursor: pointer;
 }
@@ -149,39 +189,4 @@ label {
   margin-bottom: 0;
 
   color: $field-help-color;
-}
-
-
-/**
- * Sizes
- */
-
-.#{$namespace}field--small,
-%field--small {
-  padding: $field-small-padding;
-
-  font-size: $field-small-font-size;
-
-  border: $field-small-border;
-  border-radius: $field-small-border-radius;
-}
-
-select.#{$namespace}field--small {
-  height: floor($font-size-default * parse-int($field-small-font-size) * $field-line-height + $padding-vertical-small + $field-border-width-small * 2);
-  padding-left: $field-small-padding;
-  padding-right: $field-small-padding;
-}
-
-.#{$namespace}field--large,
-%field--large {
-  padding: $field-large-padding;
-
-  font-size: $field-large-font-size;
-
-  border: $field-large-border;
-  border-radius: $field-large-border-radius;
-}
-
-select.#{$namespace}field--large {
-  height: floor($font-size-default * parse-int($field-large-font-size) * $field-line-height + $padding-vertical-large + $field-border-width-large * 2);
 }

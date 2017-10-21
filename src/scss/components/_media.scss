@@ -45,11 +45,11 @@
 @include foreach-alternative-spacing() {
   .#{$namespace}media--#{$spacing-name},
   %media--#{$spacing-name} {
-    .media__left {
+    .#{$namespace}media__left {
       margin-right: $spacing-value;
     }
 
-    .media__right {
+    .#{$namespace}media__right {
       margin-left: $spacing-value;
     }
   }

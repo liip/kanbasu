@@ -2,30 +2,37 @@
   PUSHER
 \*----------------------------------------*/
 
-.pusher {
+.#{$namespace}pusher,
+%pusher {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-  .pusher__body {
+  .#{$namespace}pusher__body,
+  %pusher__body {
     max-width: 100%;
     flex: 1 0 auto;
     margin-right: $spacing-unit-small;
   }
 
-.pusher--middle {
+.#{$namespace}pusher--middle,
+%pusher--middle {
   align-items: center;
 }
 
-.pusher--bottom {
+.#{$namespace}pusher--bottom,
+%pusher--bottom {
   align-items: flex-end;
 }
 
-.pusher--vertical {
+.#{$namespace}pusher--vertical,
+%pusher--vertical {
+  height: 100%;
   flex-direction: column;
 
-  .pusher__body {
+  .#{$namespace}pusher__body,
+  %pusher__body {
     width: 100%;
     margin-right: 0;
   }

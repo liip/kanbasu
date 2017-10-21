@@ -2,8 +2,9 @@
   TABLE RESPONSIVE
 \*----------------------------------------*/
 
-@media (max-width: $table-responsive-collapse) {
-  .table-responsive {
+.#{$namespace}table-responsive,
+%table-responsive {
+  @media (max-width: $table-responsive-collapse) {
     display: block;
     width: 100%;
     overflow-x: auto;
