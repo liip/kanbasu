@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.7.0
+
+* Do not remove margins on first/last children of `.box` element (prevent `.grid--multiline` to work properly).
+
 ## 1.6.1
 
 * Exclude more useless files from NPM module archive
