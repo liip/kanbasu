@@ -4,6 +4,10 @@
 
 * Do not remove margins on first/last children of `.box` element (prevent `.grid--multiline` to work properly).
 
+## 1.6.1
+
+* Exclude more useless files from NPM module archive
+
 ## 1.6.0
 
 * Remove optional/documentation-related files from the NPM package (see .npmignore)

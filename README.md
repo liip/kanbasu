@@ -1,6 +1,10 @@
 [![npm version](https://badge.fury.io/js/kanbasu.svg)](https://badge.fury.io/js/kanbasu)
 [![Build Status](https://travis-ci.org/liip/kanbasu.svg)](https://travis-ci.org/liip/kanbasu)
 
+### Kanbasu 2 is on its way, try it now! [See changes](https://github.com/liip/kanbasu/blob/2.0.0/CHANGELOG.md#200), [read the doc](http://kanbasu.liip.ch/2/), [browse the code](https://github.com/liip/kanbasu/tree/2.0.0), [report bugs](https://github.com/liip/kanbasu/issues).
+
+---
+
 # カンバス Kanbasu
 
 Kanbasu is a CSS framework with very basic styling. It can be used as a base for any web project or for prototyping. It will provide you all the basics and common patterns used to display content on the web today.
