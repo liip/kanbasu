@@ -37,3 +37,12 @@ fractal.components.set('statuses', {
 
 const kanbasuTheme = require('mandelbrot-kanbasu');
 fractal.web.theme(kanbasuTheme);
+
+/**
+ * Prevent Bluebird warnings like "a promise was created in a handler but was not returned from it"
+ * caused by Nunjucks from polluting the console
+ */
+const bluebird = require('bluebird');
+bluebird.config({
+  warnings: false
+});
