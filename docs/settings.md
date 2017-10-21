@@ -474,7 +474,7 @@ The complete list of Kanbasu overridable settings.
     </tr>
     <tr>
       <th>$list-separator-style</th>
-      <td><code class="lang-scss">1px solid $alt-color-lighter</code></td>
+      <td><code class="lang-scss">1px solid rgba(0, 0, 0, .15)</code></td>
       <td></td>
     </tr>
   </tbody>
