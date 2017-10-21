@@ -1,6 +1,5 @@
 notes: |
   Push an element to the right if the space allows it, otherwise display it below.
-status: wip
 variants:
   - name: middle
     notes: Vertically align content in the middle.
