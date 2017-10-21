@@ -1,3 +1,6 @@
 notes: |
   Prevent tables from being too tight on small screens by allowing them to scroll horizontally.
-status: prototype
+
+  You can apply this behavior only below a given breakpoint by prefixing the class with the breakpoint name.
+  Classes are generated according to the `$breakpoints-desc` setting. By default `md-table-responsive`, `sm-table-responsive` and `xs-table-responsive` are generated.
+status: ready
