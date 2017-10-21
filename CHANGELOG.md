@@ -30,10 +30,6 @@
 * `$btn-use-padding-ratio` and `$field-use-padding-ratio` have been removed, buttons and fields default padding changed accordingly
 * Legacy media query variables `$mq-xs`, `$mq-sm`, `$mq-md` & `$mq-lg` are gone
 
-## Unreleased
-
-* Do not remove margins on first/last children of `.box` element (prevent `.grid--multiline` to work properly)
-
 ## 1.6.1
 
 * Exclude more useless files from NPM module archive
