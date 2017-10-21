@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## 1.7.0
 
 * Do not remove margins on first/last children of `.box` element (prevent `.grid--multiline` to work properly).
 
