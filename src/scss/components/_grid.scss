@@ -19,8 +19,8 @@
 
 
 /**
-  * Alignment
-  */
+ * Alignment
+ */
 
 .#{$namespace}grid--center,
 %grid--center {
@@ -44,7 +44,7 @@
 
 .#{$namespace}grid--even,
 %grid--even {
-  .grid__item {
+  > .grid__item {
     display: flex;
     flex-direction: column;
 
@@ -56,8 +56,8 @@
 
 
 /**
-  * Order
-  */
+ * Order
+ */
 
 .#{$namespace}grid--rev,
 %grid--rev {
