@@ -2,10 +2,6 @@
   TEXT RESPONSIVE
 \*----------------------------------------*/
 
-/**
- * Alignment
- */
-
 @include foreach-breakpoint() {
   .#{$breakpoint-name}-text-left {
     text-align: left;
