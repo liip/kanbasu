@@ -7,7 +7,7 @@
  */
 
 .text-left {
-  text-align: left;
+  text-align: flip(left, right);
 }
 
 .text-center {
@@ -15,7 +15,7 @@
 }
 
 .text-right {
-  text-align: right;
+  text-align: flip(right, left);
 }
 
 

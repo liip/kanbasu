@@ -13,6 +13,11 @@ The complete list of Kanbasu overridable settings.
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>$rtl</th>
+      <td>false</td>
+      <td>Flip all left/right properties for right-to-left languages.</td>
+    </tr>
   </tbody>
 </table>
 

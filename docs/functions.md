@@ -27,3 +27,11 @@ Return the value without unit.
 ```scss
 parse-int(10px) //-> 10
 ```
+
+## flip($ltr-value, $rtl-value)
+
+Switch the two parameters depending on the `$ltr` setting.
+
+```scss
+flip(left, right) //-> "right" if $ltr is true, otherwise "left"
+```

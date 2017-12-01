@@ -5,6 +5,9 @@
 // Use this setting to prefix all the components classes
 $namespace:                         '' !default;
 
+// Flip all left/right properties for right-to-left languages
+$rtl:                               false !default;
+
 
 /**
  * Colors

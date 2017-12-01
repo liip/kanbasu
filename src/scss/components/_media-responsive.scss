@@ -14,12 +14,12 @@
     }
 
     .#{$namespace}media__left {
-      margin-right: 0;
+      #{$margin-right}: 0;
       margin-bottom: $spacing-unit-default;
     }
 
     .#{$namespace}media__right {
-      margin-left: 0;
+      #{$margin-left}: 0;
       margin-top: $spacing-unit-default;
     }
 

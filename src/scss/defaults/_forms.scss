@@ -98,7 +98,7 @@ textarea.#{$namespace}field {
   display: inline-block;
 
   .#{$namespace}label & {
-    margin-right: $spacing-unit-tiny;
+    #{$margin-right}: $spacing-unit-tiny;
   }
 }
 
@@ -159,7 +159,7 @@ label {
     padding-bottom: ratio($spacing-unit-small);
 
     &:not(:last-child) {
-      margin-right: $spacing-unit-default;
+      #{$margin-right}: $spacing-unit-default;
     }
   }
 

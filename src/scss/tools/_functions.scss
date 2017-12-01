@@ -48,3 +48,15 @@
 
   @error 'Padding is invalid, must be 1 to 4 values with unit';
 }
+
+
+/**
+ * Switch the two parameters depending on the $ltr setting
+ */
+@function flip($ltr-value, $rtl-value) {
+  @if $rtl {
+    @return $rtl-value;
+  }
+
+  @return $ltr-value;
+}
