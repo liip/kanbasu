@@ -71,18 +71,18 @@ Taking the following CSS as an example:
 ```sass
 // Original Sass
 .my-component {
-  padding-left: $gel-spacing-unit; // 8px
+  padding-left: $default-spacing-unit;
 }
 ```
 
-For a RTL layout, `padding-left: 8px;` should be flipped to `padding-right: 8px;`.
+For a RTL layout, `padding-left` should be flipped to `padding-right`.
 
 In order to flip this, we have to interpolate the style property:
 
 ```sass
 // Flipped Sass
 .my-component {
-  #{$padding-left}: $gel-spacing-unit; // 8px
+  #{$padding-left}: $default-spacing-unit;
 }
 ```
 
@@ -91,12 +91,12 @@ This will compile out to:
 ```sass
 // Compiled LTR style
 .my-component {
-  padding-left: 8px;
+  padding-left: 24px;
 }
 
 // Compiled RTL style
 .my-component {
-  padding-right: 8px;
+  padding-right: 24px;
 }
 ```
 
