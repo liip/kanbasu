@@ -1,0 +1,61 @@
+/*----------------------------------------*\
+  LIST STACKED
+\*----------------------------------------*/
+
+.#{$namespace}list-inline,
+%list-inline {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  > li {
+    padding: 0 $spacing-unit-default/2;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+  // Add separators
+  .#{$namespace}list-inline--divided,
+  %list-inline--divided {
+    > li + li {
+      border-left: $list-separator-style;
+    }
+  }
+
+  .#{$namespace}list-inline--justified,
+  %list-inline--justified {
+    justify-content: space-between;
+  }
+
+  .#{$namespace}list-inline--center,
+  %list-inline--center {
+    justify-content: center;
+  }
+
+  .#{$namespace}list-inline--right,
+  %list-inline--right {
+    justify-content: flex-end;
+  }
+
+
+  /**
+   * Sizes
+   */
+
+  @include foreach-alternative-spacing() {
+    .#{$namespace}list-inline--#{$spacing-name},
+    %list-inline--#{$spacing-name} {
+      > li {
+        padding-left: $spacing-value / 2;
+        padding-right: $spacing-value / 2;
+      }
+    }
+  }

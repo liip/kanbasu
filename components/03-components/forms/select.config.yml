@@ -1,0 +1,2 @@
+notes: |
+  Some browsers don’t care about `border-radius` property applied to select.

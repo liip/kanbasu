@@ -1,0 +1,132 @@
+/*----------------------------------------*\
+  MIXINS
+\*----------------------------------------*/
+
+/**
+ * Output something for each spacings
+ * $spacing-name and $spacing-value are available inside @content
+ */
+@mixin foreach-alternative-spacing($spacings: $spacings) {
+  @each $spacing in $spacings {
+    // Set them as global so it can be used inside the @content
+    $spacing-name: nth($spacing, 1) !global;
+    $spacing-value: nth($spacing, 2) !global;
+
+    @content;
+
+    // Reset global variables
+    $spacing-name: null !global;
+    $spacing-value: null !global;
+  }
+}
+
+
+/**
+ * Output something for each breakpoint
+ * $breakpoint-name is available inside @content
+ */
+@mixin foreach-breakpoint($breakpoints: $breakpoints-default, $prefix: null) {
+  @each $breakpoint in $breakpoints {
+    $breakpoint-name: nth($breakpoint, 1) !global; // Set it as global so it can be used inside the @content
+    $breakpoint-mq: nth($breakpoint, 2);
+
+    @media #{$prefix} #{$breakpoint-mq} {
+      @content;
+    }
+
+    $breakpoint-name: null !global; // Reset global variable
+  }
+}
+
+
+/**
+ * Scope the content given into the defined media query
+ * $mq    {String}  The ID of the media query your list of breakpoints ($breakpoints-default by default)
+ */
+@mixin media($mq, $breakpoints: $breakpoints-default) {
+  @each $breakpoint in $breakpoints {
+    $breakpoint-name: nth($breakpoint, 1);
+    $breakpoint-mq: nth($breakpoint, 2);
+
+    @if ($breakpoint-name == $mq) {
+      @media #{$breakpoint-mq} {
+        @content;
+      }
+    }
+  }
+}
+
+
+/**
+ * Generate fractions classes to be used as fluid widths
+ * $columns   {List}    A list of numbers in reverse order for which you want to create fractions
+ *                      "3,2,1" will create 1/2 1/3 2/3
+ *                      Reverse order is required to keep only 1/2 instead of 2/4 for example
+ * $prefix    {String}  A prefix for the generated classes
+ */
+@mixin widths($columns, $prefix: null) {
+  $fractions: ();
+
+  // Loop inside entries and push them into a map
+  // So entries are unique by width
+  @each $column in $columns {
+    @for $i from 1 through $column {
+      $width: percentage($i/$column);
+      $fractions: map-merge($fractions, ($width: #{$i}\/#{$column}));
+    }
+  }
+
+  // Now generate all the classes
+  @each $width, $fraction in $fractions {
+    .#{$namespace}#{$prefix}w-#{$fraction},
+    %#{$prefix}w-#{$fraction} {
+      width: $width !important;
+    }
+  }
+}
+
+
+/**
+ * The famous self-clear technique as a mixin for quick reuse
+ */
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+/**
+ * Break words that are too long to fit in the container
+ * https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+ */
+@mixin wrap-words {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+
+/**
+ * Shortcut to apply style to all headings
+ */
+@mixin headings {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    @content;
+  }
+}

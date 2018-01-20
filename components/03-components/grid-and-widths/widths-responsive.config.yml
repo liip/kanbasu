@@ -1,0 +1,4 @@
+notes: |
+  Change an element width depending on predefined breakpoints. This use a mobile-first approach — it use breakpoints defined as `min-width` only — and therefor cover all upper resolutions.
+
+  Classes are generated based on the `$widths-breakpoints` setting.

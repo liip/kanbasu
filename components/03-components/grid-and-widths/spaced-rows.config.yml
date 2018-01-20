@@ -1,0 +1,2 @@
+notes: |
+  By default no space is added between rows, resulting in grid items being stuck together. To space them out, add the class `.grid--multiline`. The distance is proportionnal to the gutters, meaning it changes along with grid size classes (`.grid--tiny`, `.grid--small`, …).

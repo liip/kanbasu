@@ -1,0 +1,2 @@
+notes: |
+  Reverse the columns order when they aren’t stacked. Useful to display something at the top on small screens but on the right on large screens.

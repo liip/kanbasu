@@ -1,0 +1,9 @@
+notes: |
+  By default images display is set to block.
+variants:
+  - name: block
+    notes: |
+      Ensure the image always fits its container width.
+  - name: responsive
+    notes: |
+      Prevents the image from overflowing its container.

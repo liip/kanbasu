@@ -1,8 +1,39 @@
 # CHANGELOG
 
+## 2.0.0
+
+### Changed
+
+* The flex grid becomes the default, the legacy inline-block version has been removed as well as the `$grid-flex` option
+* `%clearfix` placeholder selector gets replaced by a `clearfix()` mixin
+* Media component is now made with Flex, with alternate gutter sizes and customizable vertical alignment
+* Move `list-inline` to flex & introduce `center`, `right` and `justified` alignments
+* No more auto-styling of form elements, a class is always required (`.field`, `.label`, `.checkbox`, …)
+* `field--large` and `select--large` have been merged into `field--large`
+* `field--small` and `select--small` have been merged into `field--small`
+* Use default operating system font for default font-family
+* The documentation has been completely reviewed and is now powered by [Fractal](http://fractal.build/)
+* Function `parseInt` is now named `parse-int` for consistency
+
+### Added
+
+* Introduce `grid--even` for equal grid items height per row
+* New `text-nowrap` and `text-wrap` helpers
+* Introduce alignment helper to align block elements (including images) easily
+* More flexibility on default values with `$btn-font-family`, `$btn-small-border`, `$btn-large-border`, `$field-small-border` and `$field-large-border`
+* New components: container, pusher & table-responsive
+* New mixins: headings, clearfix, text-wrap
+
+### Removed
+
+* Mosaic component has been removed, use grid or media instead
+* Drop positionning classes `h-align`, `v-align` and `vh-align`
+* `$btn-use-padding-ratio` and `$field-use-padding-ratio` have been removed, buttons and fields default padding changed accordingly
+* Legacy media query variables `$mq-xs`, `$mq-sm`, `$mq-md` & `$mq-lg` are gone
+
 ## 1.7.0
 
-* Do not remove margins on first/last children of `.box` element (prevent `.grid--multiline` to work properly).
+* Do not remove margins on first/last children of `.box` element (prevent `.grid--multiline` to work properly)
 
 ## 1.6.1
 
@@ -11,17 +42,17 @@
 ## 1.6.0
 
 * Remove optional/documentation-related files from the NPM package (see .npmignore)
-* Generate all alternative spacings classes using a mixin based on new $spacings variable.
-* Introduce `.grid--multiline` to add space between grid rows.
-* Add `$btn-font-size` settings to allow changing default button font-size.
-* Do not remove margins on first/last children of `.media__body` element (prevent `.grid--multiline` to work properly).
+* Generate all alternative spacings classes using a mixin based on new $spacings variable
+* Introduce `.grid--multiline` to add space between grid rows
+* Add `$btn-font-size` settings to allow changing default button font-size
+* Do not remove margins on first/last children of `.media__body` element (prevent `.grid--multiline` to work properly)
 * Apply disabled form fields styling also to read-only fields
 
 ## 1.5.0
 
 * Remove the declaration about links inside boxes which cause more headhache than solve problems
 * Add per-breakpoint text alignment classes
-* Allow more flexibility on fields’ padding with optional ratio ($field-use-padding-ratio) 
+* Allow more flexibility on fields’ padding with optional ratio ($field-use-padding-ratio)
 
 ## 1.4.0
 

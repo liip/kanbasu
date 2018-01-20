@@ -1,6 +1,5 @@
-script:
- - "ruby test/travis.rb"
-
-language: sass
-before_install:
- - gem install sass
+language: node_js
+node_js: "node"
+cache:
+  directories:
+    - "node_modules"

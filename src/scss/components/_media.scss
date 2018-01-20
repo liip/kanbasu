@@ -1,0 +1,56 @@
+/*----------------------------------------*\
+  THE MEDIA OBJECT
+  Inspired by the famous Media object
+  created by Nicole Sullivan
+\*----------------------------------------*/
+
+.#{$namespace}media,
+%media {
+  display: flex;
+}
+
+  .#{$namespace}media__left,
+  %media__left {
+    flex: 0 0 auto;
+    margin-right: $spacing-unit-default;
+  }
+
+  .#{$namespace}media__right,
+  %media__right {
+    flex: 0 0 auto;
+    order: 2;
+    margin-left: $spacing-unit-default;
+  }
+
+  .#{$namespace}media__body,
+  %media__body {
+    flex: 1 1 auto;
+  }
+
+.#{$namespace}media--middle,
+%media--middle {
+  align-items: center;
+}
+
+.#{$namespace}media--bottom,
+%media--bottom {
+  align-items: flex-end;
+}
+
+
+/**
+ * Spacings
+ */
+
+@include foreach-alternative-spacing() {
+  .#{$namespace}media--#{$spacing-name},
+  %media--#{$spacing-name} {
+    .#{$namespace}media__left {
+      margin-right: $spacing-value;
+    }
+
+    .#{$namespace}media__right {
+      margin-left: $spacing-value;
+    }
+  }
+}

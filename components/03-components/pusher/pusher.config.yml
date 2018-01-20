@@ -1,0 +1,15 @@
+notes: |
+  Push an element to the right if the space allows it, otherwise display it below.
+variants:
+  - name: middle
+    notes: Vertically align content in the middle.
+    context:
+      modifier: pusher--middle
+  - name: bottom
+    notes: Vertically align content to the bottom.
+    context:
+      modifier: pusher--bottom
+  - name: vertical
+    notes: >
+      Push an element to the bottom of its container. This requires the later height to be bigger than its content.
+      In this example, you can see a good combination with the `grid grid--even` component.

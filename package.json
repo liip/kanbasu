@@ -1,52 +1,49 @@
 {
   "name": "kanbasu",
-  "version": "1.7.0",
-  "description": "Bare OOCSS Framework written in Sass",
+  "version": "2.0.0-rc.2",
+  "description": "A customizable CSS framework focused on layouting to easily scaffold responsive web interfaces.",
   "homepage": "http://kanbasu.liip.ch",
   "scripts": {
-    "build": "gulp",
-    "start": "gulp --dev",
-    "deploy": "./deploy.sh"
+    "build": "npm run build:css && fractal build",
+    "start": "parallelshell 'npm run fractal:server' 'npm run watch:css'",
+    "fractal:server": "fractal start",
+    "scss": "node-sass --include-path 'node_modules' --output-style compressed -o public src/scss",
+    "autoprefixer": "postcss -u autoprefixer -r public/*.css",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "watch:css": "onchange 'src/scss/**/*.scss' -- npm run build:css",
+    "lint": "stylelint 'src/scss/**/*.scss' --syntax scss",
+    "test": "npm run scss && npm run lint"
   },
   "keywords": [
     "css",
     "sass",
-    "toolkit",
-    "styleguide",
     "framework",
-    "scaffold",
-    "patterns",
-    "library"
+    "toolkit",
+    "bem",
+    "oocss"
   ],
   "author": "Liip AG",
   "license": "MIT",
   "repository": "liip/kanbasu",
   "engines": {
-    "node": ">=0.10.0",
-    "npm": ">=2.0.0"
+    "node": ">=4"
   },
   "devDependencies": {
-    "awesomplete": "^1.0.0",
-    "babel-core": "^5.2.17",
-    "babel-loader": "5.0.0",
-    "browser-sync": "^2.7.1",
-    "del": "^1.1.1",
-    "fabricator-assemble": "^1.1.10",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.2.0",
-    "gulp-csso": "^1.0.0",
-    "gulp-if": "^1.2.5",
-    "gulp-imagemin": "^2.2.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.0",
-    "gulp-util": "^3.0.4",
-    "imports-loader": "^0.6.3",
-    "markdown-it": "^6.0.0",
-    "run-sequence": "^1.0.2",
-    "script-loader": "^0.6.1",
-    "webpack": "^1.8.11"
+    "@frctl/fractal": "^1.1.5",
+    "autoprefixer": "^7.1.2",
+    "mandelbrot-kanbasu": "github:LeBenLeBen/mandelbrot-kanbasu#1.0.3",
+    "node-sass": "^4.5.3",
+    "onchange": "^3.2.1",
+    "parallelshell": "^3.0.1",
+    "postcss-cli": "^4.1.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-rawbot": "^0.1.1"
   },
   "dependencies": {
     "mkdirp": "^0.5.1"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE >= 11"
+  ]
 }

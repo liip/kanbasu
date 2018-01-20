@@ -1,0 +1,192 @@
+/*----------------------------------------*\
+  FORMS
+\*----------------------------------------*/
+
+// Prepare some required values
+// Find the field border "width" from $field-border parameter
+$field-border-width: 0;
+$field-border-width-small: 0;
+$field-border-width-large: 0;
+
+@each $value in $field-border {
+  @if type-of($value) == 'number' {
+    $field-border-width: $value;
+    $field-border-width-small: $value;
+    $field-border-width-large: $value;
+  }
+}
+@each $value in $field-small-border {
+  @if type-of($value) == 'number' {
+    $field-border-width-small: $value;
+  }
+}
+@each $value in $field-large-border {
+  @if type-of($value) == 'number' {
+    $field-border-width-large: $value;
+  }
+}
+
+// Determine the amount of vertical padding for further calculation
+$padding-vertical: 0;
+$padding-vertical-small: 0;
+$padding-vertical-large: 0;
+
+$padding-vertical: total-vertical-padding($field-padding);
+$padding-vertical-small: total-vertical-padding($field-small-padding);
+$padding-vertical-large: total-vertical-padding($field-large-padding);
+
+// In case the fields font-size is a number (ie. not 'inherit'), use it instead of default font-size for calculation
+$field-calc-font-size: $font-size-default;
+
+@if (type-of($field-font-size) == 'number') {
+  $field-calc-font-size: $field-font-size;
+}
+
+
+/**
+ * Fields
+ */
+
+.#{$namespace}field,
+%field {
+  display: block;
+  width: 100%;
+  padding: $field-padding;
+
+  color: $field-color;
+  font-size: $field-font-size;
+  font-family: $field-font-family;
+  line-height: $field-line-height;
+
+  border: $field-border;
+  background-color: $field-bkg-color;
+  border-radius: $field-border-radius;
+
+  // Cleaner font rendering
+  // <input> doesn’t inherit from body
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+
+  &:focus {
+    border-color: $field-focus-border-color;
+    outline: none;
+  }
+
+  &[disabled],
+  &[readonly] {
+    color: $field-disabled-color;
+    background-color: $field-disabled-bkg-color;
+    cursor: not-allowed;
+  }
+}
+
+select.#{$namespace}field {
+  // Select doesn’t care about vertical padding, we have to set the height instead
+  // Calculate the height according to fields configuration
+  // Font size * line height + padding + border
+  height: floor($field-calc-font-size*$field-line-height + $padding-vertical + $field-border-width*2);
+}
+
+textarea.#{$namespace}field {
+  resize: vertical;
+}
+
+.#{$namespace}checkbox,
+%checkbox,
+.#{$namespace}radio,
+%radio {
+  display: inline-block;
+
+  .#{$namespace}label & {
+    margin-right: $spacing-unit-tiny;
+  }
+}
+
+
+/**
+ * Alternate sizes
+ */
+
+.#{$namespace}field--small,
+%field--small {
+  padding: $field-small-padding;
+
+  font-size: $field-small-font-size;
+
+  border: $field-small-border;
+  border-radius: $field-small-border-radius;
+}
+
+select.#{$namespace}field--small {
+  height: floor($font-size-default * parse-int($field-small-font-size) * $field-line-height + $padding-vertical-small + $field-border-width-small * 2);
+  padding-left: $field-small-padding;
+  padding-right: $field-small-padding;
+}
+
+.#{$namespace}field--large,
+%field--large {
+  padding: $field-large-padding;
+
+  font-size: $field-large-font-size;
+
+  border: $field-large-border;
+  border-radius: $field-large-border-radius;
+}
+
+select.#{$namespace}field--large {
+  height: floor($font-size-default * parse-int($field-large-font-size) * $field-line-height + $padding-vertical-large + $field-border-width-large * 2);
+}
+
+
+/**
+ * Labels
+ */
+
+label {
+  cursor: pointer;
+}
+
+.#{$namespace}label,
+%label {
+  display: block;
+  padding-bottom: $spacing-unit-small;
+}
+
+  .#{$namespace}label--inline,
+  %label--inline {
+    display: inline-block;
+    padding-top: ratio($spacing-unit-small);
+    padding-bottom: ratio($spacing-unit-small);
+
+    &:not(:last-child) {
+      margin-right: $spacing-unit-default;
+    }
+  }
+
+
+/**
+ * Forms layout
+ */
+
+.#{$namespace}form-group,
+%form-group {
+  ~ .#{$namespace}form-group,
+  ~ %form-group {
+    margin-top: $spacing-unit-small;
+  }
+}
+
+.#{$namespace}field-label,
+%field-label {
+  display: block;
+  font-weight: bold;
+  padding: ratio($spacing-unit-small) 0;
+}
+
+.#{$namespace}field-help,
+%field-help {
+  margin-top: $spacing-unit-tiny;
+  margin-bottom: 0;
+
+  color: $field-help-color;
+}

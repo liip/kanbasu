@@ -1,0 +1,135 @@
+/*----------------------------------------*\
+  BUTTON
+\*----------------------------------------*/
+
+.#{$namespace}btn,
+%btn {
+  display: inline-block;
+  overflow: hidden;
+  padding: $btn-padding;
+
+  font-family: $btn-font-family;
+  font-size: $btn-font-size;
+  color: $btn-color;
+
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  line-height: inherit;
+
+  border: $btn-border;
+  border-radius: $btn-border-radius;
+  background: $btn-bkg;
+  cursor: pointer;
+
+  // Cleaner font rendering
+  // <button> doesn’t inherit
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+/**
+ * Variants
+ */
+
+// Use all the width available
+.#{$namespace}btn--block,
+%btn--block {
+  display: block;
+  width: 100%;
+}
+
+// Remove default styling for special buttons
+.#{$namespace}btn--bare,
+%btn--bare {
+  padding: 0;
+  border-radius: 0;
+}
+
+
+/**
+ * Styles
+ */
+
+.#{$namespace}btn--default,
+%btn--default {
+  color: $btn-default-color;
+
+  background-color: $btn-default-bkg-color;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-default-hover-bkg-color;
+  }
+
+  &:active {
+    background-color: $btn-default-active-bkg-color;
+  }
+}
+
+.#{$namespace}btn--primary,
+%btn--primary {
+  color: $btn-primary-color;
+
+  background-color: $btn-primary-bkg-color;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-primary-hover-bkg-color;
+  }
+
+  &:active {
+    background-color: $btn-primary-active-bkg-color;
+  }
+}
+
+
+/**
+ * States
+ */
+
+.#{$namespace}btn--disabled,
+.#{$namespace}btn[disabled],
+%btn--disabled {
+  opacity: .5;
+
+  cursor: not-allowed;
+}
+
+
+/**
+ * Sizes
+ */
+
+.#{$namespace}btn--small,
+%btn--small {
+  padding: $btn-small-padding;
+
+  font-size: $btn-small-font-size;
+
+  border: $btn-small-border;
+  border-radius: $btn-small-border-radius;
+}
+
+.#{$namespace}btn--large,
+%btn--large {
+  padding: $btn-large-padding;
+
+  font-size: $btn-large-font-size;
+
+  border: $btn-large-border;
+  border-radius: $btn-large-border-radius;
+}

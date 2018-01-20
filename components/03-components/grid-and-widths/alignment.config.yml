@@ -1,0 +1,2 @@
+notes: |
+  Change columns alignment with `.grid` modifiers; combining horizontal (center, right) and vertical (middle, bottom) alignment are possible. Top and left are the default values.

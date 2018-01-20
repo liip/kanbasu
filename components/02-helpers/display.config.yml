@@ -1,0 +1,88 @@
+notes: |
+  Show or hide content depending on the media type.
+
+  <table>
+    <tbody>
+      <tr>
+      </tr>
+        <td><code>.hidden</code></td>
+        <td>Completely hidden, in any case.</td>
+      <tr>
+        <td><code>.hidden-print</code></td>
+        <td>Hidden when printed.</td>
+      </tr>
+      <tr>
+        <td><code>.invisible</code></td>
+        <td>Invisible but takes place in the flow.</td>
+      </tr>
+      <tr>
+        <td><code>.invisible-print</code></td>
+        <td>Invisible when printed.</td>
+      </tr>
+      <tr>
+        <td><code>.visible-print</code></td>
+        <td>Visible only when printed.</td>
+      </tr>
+      <tr>
+        <td><code>.visible-sr</code></td>
+        <td>Visible only to screen readers.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <caption>The following classes depends on the breakpoints defined in the settings, here are the defaults.</caption>
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Extra-small</th>
+        <th>Small</th>
+        <th>Medium</th>
+        <th>Large</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>.hidden-sm-up</code></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+      </tr>
+      <tr>
+        <td><code>.hidden-md-up</code></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+      </tr>
+      <tr>
+        <td><code>.hidden-lg-up</code></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+      </tr>
+      <tr>
+        <td><code>.hidden-xs-down</code></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+      </tr>
+      <tr>
+        <td><code>.hidden-sm-down</code></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+      </tr>
+      <tr>
+        <td><code>.hidden-md-down</code></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#ccc">Hidden</span></div></td>
+        <td><div class="Status Status--tag"><span class="Status-label" style="background-color:#2AAF74">Visible</span></div></td>
+      </tr>
+    </tbody>
+  </table>

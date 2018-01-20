@@ -1,0 +1,80 @@
+/*----------------------------------------*\
+  TEXT
+\*----------------------------------------*/
+
+/**
+ * Alignment
+ */
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/**
+ * Case
+ */
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+
+/**
+ * Styling
+ */
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+
+/**
+ * Size
+ */
+
+.text-small {
+  font-size: $font-size-small;
+}
+
+.text-large {
+  font-size: $font-size-large;
+}
+
+
+/**
+ * Colors
+ */
+
+.text-muted {
+  color: $muted-color;
+}
+
+
+/**
+ * Behavior
+ */
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-wrap {
+  @include wrap-words();
+}

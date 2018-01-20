@@ -1,0 +1,50 @@
+/*----------------------------------------*\
+  FUNCTIONS
+\*----------------------------------------*/
+
+/**
+ * Calculate REM value based on the default font-size
+ */
+@function rem($value, $base: $font-size-default) {
+  @return ($value / $base) * 1rem;
+}
+
+
+/**
+ * Return a value divided by a ratio
+ * It uses the golden ratio by default
+ *
+ * Useful to create "visually equal" spacings
+ * As mathematically equal spacings never "visually" look equal around text
+ */
+@function ratio($value, $ratio: $ratio) {
+  @return floor($value/$ratio);
+}
+
+
+/**
+ * Return a unitless value
+ */
+@function parse-int($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+
+/**
+ * Addition top and bottom padding
+ */
+@function total-vertical-padding($padding) {
+  $length: length($padding);
+
+  @if ($length == 1) {
+    @return $padding * 2;
+  }
+  @if ($length == 2) {
+    @return nth($padding, 1) * 2;
+  }
+  @if ($length == 3 or $length == 4) {
+    @return nth($padding, 1) + nth($padding, 3);
+  }
+
+  @error 'Padding is invalid, must be 1 to 4 values with unit';
+}

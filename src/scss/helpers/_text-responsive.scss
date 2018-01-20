@@ -1,0 +1,17 @@
+/*----------------------------------------*\
+  TEXT RESPONSIVE
+\*----------------------------------------*/
+
+@include foreach-breakpoint() {
+  .#{$breakpoint-name}-text-left {
+    text-align: left;
+  }
+
+  .#{$breakpoint-name}-text-center {
+    text-align: center;
+  }
+
+  .#{$breakpoint-name}-text-right {
+    text-align: right;
+  }
+}
