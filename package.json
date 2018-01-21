@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "A customizable CSS framework focused on layouting to easily scaffold responsive web interfaces.",
   "homepage": "http://kanbasu.liip.ch",
+  "bin": {
+    "kanbasu": "scripts/scaffold.js"
+  },
   "scripts": {
     "build": "npm run build:css && fractal build",
     "start": "parallelshell 'npm run fractal:server' 'npm run watch:css'",

@@ -39,9 +39,10 @@ Easily scaffold a new project by running the script below in your project direct
 4. import `settings/_settings.scss` into `main.scss`
 
 ```bash
-node node_modules/kanbasu/scripts/scaffold.js path/to/your/project/sass/directory
+npx kanbasu path/to/your/project/sass/directory
 ```
-Note: the script might be in a different location if you didn’t use NPM to install Kanbasu.
+
+Note: `yarn` users may use `yarn run kanbasu`
 
 ### Disclaimer
 
