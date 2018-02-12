@@ -16,7 +16,7 @@ Read more and browse the documentation on [kanbasu.liip.ch](http://kanbasu.liip.
 **With NPM** (recommended)
 
 ```bash
-npm install --save-dev kanbasu@next
+npm install --save-dev kanbasu
 ```
 
 **As a Git submodule**
