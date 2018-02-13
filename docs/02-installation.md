@@ -1,7 +1,13 @@
-### With NPM
+### With npm
 
 ```bash
 npm install --save-dev kanbasu
+```
+
+### With Yarn
+
+```bash
+yarn add --dev kanbasu
 ```
 
 ### As a Git submodule
@@ -23,8 +29,22 @@ Easily scaffold a new project by running the script below in your project direct
 3. remove Sass `!default` flags from `settings/_settings.scss`
 4. import `settings/_settings.scss` into `main.scss`
 
+With npx:
+
 ```bash
-node node_modules/kanbasu/scripts/scaffold.js path/to/your/project/sass/directory
+npx kanbasu path/to/your/sass/directory
 ```
 
-_Note: the script might be in a different location if you didn’t use NPM to install Kanbasu._
+With yarn:
+
+```bash
+yarn run kanbasu path/to/your/sass/directory
+```
+
+With Node only:
+
+```bash
+node node_modules/kanbasu/scripts/scaffold.js path/to/your/sass/directory
+```
+
+Note: the script might be in a different location if you didn’t use npm to install Kanbasu.
