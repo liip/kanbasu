@@ -1,10 +1,10 @@
 # CHANGELOG
 
-## Unreleased
+## 2.1.0
 
 ### Added
 
-* `$rtl` setting to flip all the left/right properties for right-to-left languages
+* Full right-to-left languages support! [Read more](http://kanbasu.liip.ch/2/docs/text-direction.html)
 * Binary to simplify scaffolding command, thanks @greut
 
 ## 2.0.0
