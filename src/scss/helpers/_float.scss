@@ -3,11 +3,11 @@
 \*----------------------------------------*/
 
 .pull-left {
-  float: left;
+  float: flip(left, right);
 }
 
 .pull-right {
-  float: right;
+  float: flip(right, left);
 }
 
 .clearfix {

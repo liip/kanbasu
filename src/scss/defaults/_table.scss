@@ -10,12 +10,12 @@ table {
 }
 
 caption {
-  text-align: left;
+  text-align: flip(left, right);
   font-style: italic;
 }
 
 th {
-  text-align: left;
+  text-align: flip(left, right);
   font-weight: bold;
 }
 

@@ -13,11 +13,11 @@
     padding: 0 $spacing-unit-default/2;
 
     &:first-child {
-      padding-left: 0;
+      #{$padding-left}: 0;
     }
 
     &:last-child {
-      padding-right: 0;
+      #{$padding-right}: 0;
     }
   }
 }
@@ -26,7 +26,7 @@
   .#{$namespace}list-inline--divided,
   %list-inline--divided {
     > li + li {
-      border-left: $list-separator-style;
+      #{$border-left}: $list-separator-style;
     }
   }
 
@@ -54,8 +54,8 @@
     .#{$namespace}list-inline--#{$spacing-name},
     %list-inline--#{$spacing-name} {
       > li {
-        padding-left: $spacing-value / 2;
-        padding-right: $spacing-value / 2;
+        #{$padding-left}: $spacing-value / 2;
+        #{$padding-right}: $spacing-value / 2;
       }
     }
   }

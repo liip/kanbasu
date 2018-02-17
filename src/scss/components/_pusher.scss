@@ -13,7 +13,7 @@
   %pusher__body {
     max-width: 100%;
     flex: 1 0 auto;
-    margin-right: $spacing-unit-small;
+    #{$margin-right}: $spacing-unit-small;
   }
 
 .#{$namespace}pusher--middle,
@@ -34,6 +34,6 @@
   .#{$namespace}pusher__body,
   %pusher__body {
     width: 100%;
-    margin-right: 0;
+    #{$margin-right}: 0;
   }
 }

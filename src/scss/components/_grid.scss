@@ -7,14 +7,14 @@
 %grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -$spacing-unit-default;
+  #{$margin-left}: -$spacing-unit-default;
 }
 
   .#{$namespace}grid__item,
   %grid__item {
     width: 100%;
     flex: 0 0 auto;
-    padding-left: $spacing-unit-default;
+    #{$padding-left}: $spacing-unit-default;
   }
 
 
@@ -72,10 +72,10 @@
 @include foreach-alternative-spacing() {
   .#{$namespace}grid--#{$spacing-name},
   %grid--#{$spacing-name} {
-    margin-left: -#{$spacing-value};
+    #{$margin-left}: -#{$spacing-value};
 
     > .#{$namespace}grid__item {
-      padding-left: $spacing-value;
+      #{$padding-left}: $spacing-value;
     }
   }
 }

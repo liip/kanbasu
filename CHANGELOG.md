@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Unreleased
+
+### Added
+
+* `$rtl` setting to flip all the left/right properties for right-to-left languages
+* Binary to simplify scaffolding command, thanks @greut
+
 ## 2.0.0
 
 ### Changed

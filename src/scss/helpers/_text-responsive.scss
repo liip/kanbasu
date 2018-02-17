@@ -4,7 +4,7 @@
 
 @include foreach-breakpoint() {
   .#{$breakpoint-name}-text-left {
-    text-align: left;
+    text-align: flip(left, right);
   }
 
   .#{$breakpoint-name}-text-center {
@@ -12,6 +12,6 @@
   }
 
   .#{$breakpoint-name}-text-right {
-    text-align: right;
+    text-align: flip(right, left);
   }
 }
