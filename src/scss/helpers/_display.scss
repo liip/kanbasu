@@ -6,7 +6,8 @@
  * HIDE
  */
 
-.hidden {
+.hidden,
+[hidden] {
   display: none !important;
 }
 
