@@ -4,6 +4,7 @@
 
 .#{$namespace}container,
 %container {
+  width: 100%;
   max-width: $container-max-width;
   margin-left: auto;
   margin-right: auto;
