@@ -1,6 +1,6 @@
 {
   "name": "kanbasu",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "A customizable CSS framework focused on layouting to easily scaffold responsive web interfaces.",
   "homepage": "http://kanbasu.liip.ch",
   "bin": {
