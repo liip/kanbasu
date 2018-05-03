@@ -15,7 +15,8 @@
     "build:css": "npm run scss && npm run autoprefixer",
     "watch:css": "onchange 'src/scss/**/*.scss' -- npm run build:css",
     "lint": "stylelint 'src/scss/**/*.scss' --syntax scss",
-    "test": "npm run scss && npm run lint"
+    "test": "npm run scss && npm run lint",
+    "release": "release-it"
   },
   "keywords": [
     "css",
