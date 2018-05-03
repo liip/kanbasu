@@ -172,7 +172,7 @@ label {
 %form-group {
   ~ .#{$namespace}form-group,
   ~ %form-group {
-    margin-top: $spacing-unit-small;
+    margin-top: $form-group-spacing;
   }
 }
 
