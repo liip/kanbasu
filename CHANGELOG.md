@@ -1,3 +1,13 @@
+<a name="2.2.1"></a>
+## [2.2.1](https://github.com/liip/kanbasu/compare/2.2.0...2.2.1) (2018-06-14)
+
+
+### Features
+
+* **Display:** add placeholder selector for visible-sr ([c496bfe](https://github.com/liip/kanbasu/commit/c496bfe))
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/liip/kanbasu/compare/2.1.0...2.2.0) (2018-05-03)
 
