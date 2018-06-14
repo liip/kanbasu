@@ -54,7 +54,8 @@
 
 // Provide content to screen readers only
 // https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
-.visible-sr {
+.visible-sr,
+%visible-sr {
   width: 1px !important;
   height: 1px !important;
   padding: 0 !important;
