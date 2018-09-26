@@ -3,6 +3,7 @@
 var fs = require('fs');
 var path = require('path');
 var mkdirp = require('mkdirp');
+var os = require('os');
 
 var dest = process.argv[2];
 
@@ -29,7 +30,7 @@ mkdirp(path.join(dest, 'settings'), function(err) {
 		// Import project settings after Kanbasu default settings
 		var result = data
 			.replace(/@import '/g, "@import '"+pathToAssets+"/")
-			.replace(/(settings\/settings';[\r\n])/g, "$1@import 'settings/settings';\r\n");
+			.replace(/(settings\/settings';[\r\n])/g, "$1@import 'settings/settings';" + os.EOL);
 
 		var destFile = path.join(dest, 'main.scss');
 		fs.writeFile(destFile, result, 'utf8', function(err) {
