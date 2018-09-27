@@ -154,3 +154,29 @@ h1, h2, h3, h4, h5, h6,
   color: inherit;
 }
 ```
+
+## screen-readers-only
+
+Magic conbination of properties to make an element accessible/visible to screen readers only.
+
+```scss
+.my-element {
+  @include screen-readers-only;
+}
+```
+
+Will generate:
+
+```scss
+.my-element {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+
+  position: absolute !important;
+
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+```
