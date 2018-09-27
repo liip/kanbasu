@@ -1,0 +1,27 @@
+.Header-button {
+  width: 4rem;
+  height: 4rem;
+}
+
+.Header-title {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.Header-logo {
+  display: block;
+  height: 40px;
+}
+
+.Header-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1rem;
+
+  list-style: none;
+
+  li + li {
+    margin-left: 1rem;
+  }
+}

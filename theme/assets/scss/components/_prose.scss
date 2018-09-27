@@ -1,0 +1,7 @@
+.Prose {
+  width: 100%;
+
+  .Document-content & {
+    max-width: 55em;
+  }
+}

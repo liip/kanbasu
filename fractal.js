@@ -35,7 +35,7 @@ fractal.components.set('statuses', {
   }
 })
 
-const kanbasuTheme = require('mandelbrot-kanbasu');
+const kanbasuTheme = require('./theme');
 fractal.web.theme(kanbasuTheme);
 
 /**
