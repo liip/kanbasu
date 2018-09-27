@@ -119,8 +119,6 @@ textarea.#{$namespace}field {
 
 select.#{$namespace}field--small {
   height: floor($font-size-default * parse-int($field-small-font-size) * $field-line-height + $padding-vertical-small + $field-border-width-small * 2);
-  padding-left: $field-small-padding;
-  padding-right: $field-small-padding;
 }
 
 .#{$namespace}field--large,
