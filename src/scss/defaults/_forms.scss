@@ -80,6 +80,11 @@ $field-calc-font-size: $font-size-default;
   }
 }
 
+.field--inline {
+  display: inline-block;
+  width: auto;
+}
+
 select.#{$namespace}field {
   // Select doesn’t care about vertical padding, we have to set the height instead
   // Calculate the height according to fields configuration
