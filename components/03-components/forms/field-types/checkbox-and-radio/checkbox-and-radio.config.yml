@@ -1,0 +1,5 @@
+order: 2
+variants:
+  - name: inline
+    context:
+      labelClass: label--inline

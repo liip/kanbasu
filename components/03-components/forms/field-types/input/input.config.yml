@@ -1,0 +1,29 @@
+order: 1
+context:
+  type: text
+  value: The quick brown fox jumps over the lazy dog
+variants:
+  - name: default
+    label: Text
+  - name: email
+    context:
+      type: email
+      value: john.doe@liip.ch
+  - name: number
+    context:
+      type: number
+      value: 10203
+  - name: password
+    context:
+      type: password
+  - name: file
+    context:
+      type: file
+      value: false
+  - name: date
+    context:
+      type: date
+      value: "1970-01-01"
+  - name: disabled
+    context:
+      disabled: true

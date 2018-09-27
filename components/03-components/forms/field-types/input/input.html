@@ -1,0 +1,8 @@
+<div class="form-group">
+  <input type="{{ type }}" class="field"{{#if disabled}} disabled{{/if}}>
+</div>
+{{#if value}}
+  <div class="form-group">
+    <input type="{{ type }}" class="field" value="{{ value }}" {{#if disabled}} disabled{{/if}}>
+  </div>
+{{/if}}

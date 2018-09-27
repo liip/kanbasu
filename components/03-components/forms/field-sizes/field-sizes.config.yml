@@ -1,0 +1,7 @@
+variants:
+  - name: small
+    context:
+      class: field--small
+  - name: large
+    context:
+      class: field--large
