@@ -1,3 +1,19 @@
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/liip/kanbasu/compare/2.2.1...2.3.0) (2018-10-23)
+
+
+### Bug Fixes
+
+* **Pusher:** disable wrapping for vertical variant ([2167c32](https://github.com/liip/kanbasu/commit/2167c32))
+
+
+### Features
+
+* Introduce field--inline variant, fix [#60](https://github.com/liip/kanbasu/issues/60) ([d8f8f26](https://github.com/liip/kanbasu/commit/d8f8f26))
+* Introduce screen-readers-only mixin ([998083b](https://github.com/liip/kanbasu/commit/998083b))
+
+
+
 <a name="2.2.1"></a>
 ## [2.2.1](https://github.com/liip/kanbasu/compare/2.2.0...2.2.1) (2018-06-14)
 
