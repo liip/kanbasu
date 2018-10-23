@@ -29,7 +29,7 @@
 .#{$namespace}pusher--vertical,
 %pusher--vertical {
   height: 100%;
-  flex-direction: column;
+  flex-flow: column nowrap;
 
   .#{$namespace}pusher__body,
   %pusher__body {
