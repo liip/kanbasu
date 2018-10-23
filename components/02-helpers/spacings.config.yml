@@ -36,7 +36,7 @@ notes: |
             <dt><strong>h</strong></dt>
             <dd>Horizontal (left &amp; right)</dd>
           </dl>
-        </div>
+        </td>
         <td valign="top">
           <dl class="dl--inline text-small">
             <dt><strong>0</strong></dt>
