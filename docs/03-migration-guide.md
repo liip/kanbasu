@@ -1,6 +1,16 @@
 ---
-title: Migrating from version 1 to 2
+title: Migration guide
 ---
+
+# From 2.1 to 2.2
+
+* New setting available: `$form-group-spacing`
+
+# From 2 to 2.1
+
+* New tool to add to your main Sass file: `@import '~kanbasu/src/scss/tools/rtl';`
+
+# From 1 to 2
 
 This page describes the various changes required while migrating from Kanbasu 1 to 2. You may also want to have a look to the [Changelog](https://github.com/liip/kanbasu/blob/master/CHANGELOG.md).
 
