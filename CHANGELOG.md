@@ -1,3 +1,14 @@
+<a name="2.4.0-beta.0"></a>
+# [2.4.0-beta.0](https://github.com/liip/kanbasu/compare/2.3.0...2.4.0-beta.0) (2018-11-20)
+
+
+### Features
+
+* **align:** ensure helper takes precedence over other styles ([b6d75e2](https://github.com/liip/kanbasu/commit/b6d75e2))
+* **btn:** do not style button with « disabled » attribute ([c4c036c](https://github.com/liip/kanbasu/commit/c4c036c))
+
+
+
 <a name="2.3.0"></a>
 # [2.3.0](https://github.com/liip/kanbasu/compare/2.2.1...2.3.0) (2018-10-23)
 
