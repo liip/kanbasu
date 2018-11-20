@@ -3,14 +3,14 @@
 \*----------------------------------------*/
 
 .align-left {
-  #{$margin-right}: auto;
+  #{$margin-right}: auto !important;
 }
 
 .align-center {
-  #{$margin-left}: auto;
-  #{$margin-right}: auto;
+  #{$margin-left}: auto !important;
+  #{$margin-right}: auto !important;
 }
 
 .align-right {
-  #{$margin-left}: auto;
+  #{$margin-left}: auto !important;
 }
