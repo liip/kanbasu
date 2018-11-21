@@ -1,3 +1,13 @@
+<a name="2.4.0-beta.1"></a>
+# [2.4.0-beta.1](https://github.com/liip/kanbasu/compare/2.4.0-beta.0...2.4.0-beta.1) (2018-11-21)
+
+
+### Bug Fixes
+
+* **media:** target only direct children to prevent unintentional inheritance while nested ([45f2429](https://github.com/liip/kanbasu/commit/45f2429))
+
+
+
 <a name="2.4.0-beta.0"></a>
 # [2.4.0-beta.0](https://github.com/liip/kanbasu/compare/2.3.0...2.4.0-beta.0) (2018-11-20)
 
