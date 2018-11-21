@@ -8,22 +8,22 @@
     flex-direction: column;
     align-items: flex-start;
 
-    .#{$namespace}media__left,
-    .#{$namespace}media__right {
+    > .#{$namespace}media__left,
+    > .#{$namespace}media__right {
       flex: 1 1 auto;
     }
 
-    .#{$namespace}media__left {
+    > .#{$namespace}media__left {
       #{$margin-right}: 0;
       margin-bottom: $spacing-unit-default;
     }
 
-    .#{$namespace}media__right {
+    > .#{$namespace}media__right {
       #{$margin-left}: 0;
       margin-top: $spacing-unit-default;
     }
 
-    .#{$namespace}media__body {
+    > .#{$namespace}media__body {
       width: 100%;
     }
 
@@ -34,11 +34,11 @@
 
     @include foreach-alternative-spacing() {
       &.media--#{$spacing-name} {
-        .#{$namespace}media__left {
+        > .#{$namespace}media__left {
           margin-bottom: $spacing-value;
         }
 
-        .#{$namespace}media__right {
+        > .#{$namespace}media__right {
           margin-top: $spacing-value;
         }
       }
