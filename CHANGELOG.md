@@ -1,3 +1,8 @@
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/liip/kanbasu/compare/2.4.0-beta.1...2.4.0) (2019-01-14)
+
+
+
 <a name="2.4.0-beta.1"></a>
 # [2.4.0-beta.1](https://github.com/liip/kanbasu/compare/2.4.0-beta.0...2.4.0-beta.1) (2018-11-21)
 
