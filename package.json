@@ -28,7 +28,13 @@
   ],
   "author": "Liip AG",
   "license": "MIT",
-  "repository": "liip/kanbasu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liip/kanbasu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/liip/kanbasu/issues"
+  },
   "engines": {
     "node": ">=6"
   },
