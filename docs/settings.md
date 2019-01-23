@@ -31,32 +31,32 @@ The complete list of Kanbasu overridable settings.
     </tr>
     <tr>
       <th>$brand-color</th>
-      <td><code class="lang-scss">#6ea644</code></td>
+      <td><code class="lang-scss">#be3144</code></td>
       <td></td>
     </tr>
     <tr>
       <th>$alt-color-lighter</th>
-      <td><code class="lang-scss">#eee</code></td>
+      <td><code class="lang-scss">#e8ebee</code></td>
       <td></td>
     </tr>
     <tr>
       <th>$alt-color-light</th>
-      <td><code class="lang-scss">#999</code></td>
+      <td><code class="lang-scss">#adb7c3</code></td>
       <td></td>
     </tr>
     <tr>
       <th>$alt-color</th>
-      <td><code class="lang-scss">#777</code></td>
+      <td><code class="lang-scss">#738497</code></td>
       <td></td>
     </tr>
     <tr>
       <th>$alt-color-dark</th>
-      <td><code class="lang-scss">#555</code></td>
+      <td><code class="lang-scss">#46515e</code></td>
       <td></td>
     </tr>
     <tr>
       <th>$alt-color-darker</th>
-      <td><code class="lang-scss">#333</code></td>
+      <td><code class="lang-scss">#303841</code></td>
       <td></td>
     </tr>
   </tbody>
@@ -72,7 +72,7 @@ The complete list of Kanbasu overridable settings.
     </tr>
     <tr>
       <th>$font-family-default</th>
-      <td><code class="lang-scss">'Helvetica Neue', Helvetica, Arial, sans-serif</code></td>
+      <td><code class="lang-scss">-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif</code></td>
       <td></td>
     </tr>
     <tr>
