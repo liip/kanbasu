@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "npm run build:css && fractal build",
-    "start": "parallelshell 'npm run fractal:server' 'npm run watch:css'",
+    "start": "run-p fractal:server watch:css",
     "fractal:server": "fractal start",
     "scss": "node-sass --include-path 'node_modules' --output-style compressed -o public src/scss",
     "autoprefixer": "postcss -u autoprefixer -r public/*.css",
@@ -44,8 +44,8 @@
     "conventional-changelog-cli": "^2.0.5",
     "marked": "^0.5.1",
     "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.5",
     "onchange": "^4.1.0",
-    "parallelshell": "^3.0.2",
     "postcss-cli": "^6.0.0",
     "release-it": "^7.6.1",
     "stylelint": "^9.6.0",
