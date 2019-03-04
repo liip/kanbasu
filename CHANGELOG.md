@@ -1,3 +1,13 @@
+<a name="2.5.0-beta.0"></a>
+# [2.5.0-beta.0](https://github.com/liip/kanbasu/compare/2.4.0...2.5.0-beta.0) (2019-03-04)
+
+
+### Features
+
+* Introduce flex helpers (resolve [#62](https://github.com/liip/kanbasu/issues/62)) ([7ff1d3a](https://github.com/liip/kanbasu/commit/7ff1d3a))
+
+
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/liip/kanbasu/compare/2.4.0-beta.1...2.4.0) (2019-01-14)
 
