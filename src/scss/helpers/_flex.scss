@@ -1,0 +1,54 @@
+/*----------------------------------------*\
+  FLEX
+\*----------------------------------------*/
+
+@mixin flex-helper($prefix: '') {
+  .#{$namespace}#{$prefix}flex                    { display: flex !important; }
+  .#{$namespace}#{$prefix}inline-flex             { display: inline-flex !important; }
+
+  .#{$namespace}#{$prefix}flex-row                { flex-direction: row !important; }
+  .#{$namespace}#{$prefix}flex-column             { flex-direction: column !important; }
+  .#{$namespace}#{$prefix}flex-row-reverse        { flex-direction: row-reverse !important; }
+  .#{$namespace}#{$prefix}flex-column-reverse     { flex-direction: column-reverse !important; }
+
+  .#{$namespace}#{$prefix}flex-wrap               { flex-wrap: wrap !important; }
+  .#{$namespace}#{$prefix}flex-nowrap             { flex-wrap: nowrap !important; }
+  .#{$namespace}#{$prefix}flex-wrap-reverse       { flex-wrap: wrap-reverse !important; }
+  .#{$namespace}#{$prefix}flex-fill               { flex: 1 1 auto !important; }
+  .#{$namespace}#{$prefix}flex-grow-0             { flex-grow: 0 !important; }
+  .#{$namespace}#{$prefix}flex-grow-1             { flex-grow: 1 !important; }
+  .#{$namespace}#{$prefix}flex-shrink-0           { flex-shrink: 0 !important; }
+  .#{$namespace}#{$prefix}flex-shrink-1           { flex-shrink: 1 !important; }
+
+  .#{$namespace}#{$prefix}justify-content-start   { justify-content: flex-start !important; }
+  .#{$namespace}#{$prefix}justify-content-end     { justify-content: flex-end !important; }
+  .#{$namespace}#{$prefix}justify-content-center  { justify-content: center !important; }
+  .#{$namespace}#{$prefix}justify-content-between { justify-content: space-between !important; }
+  .#{$namespace}#{$prefix}justify-content-around  { justify-content: space-around !important; }
+
+  .#{$namespace}#{$prefix}align-items-start       { align-items: flex-start !important; }
+  .#{$namespace}#{$prefix}align-items-end         { align-items: flex-end !important; }
+  .#{$namespace}#{$prefix}align-items-center      { align-items: center !important; }
+  .#{$namespace}#{$prefix}align-items-baseline    { align-items: baseline !important; }
+  .#{$namespace}#{$prefix}align-items-stretch     { align-items: stretch !important; }
+
+  .#{$namespace}#{$prefix}align-content-start     { align-content: flex-start !important; }
+  .#{$namespace}#{$prefix}align-content-end       { align-content: flex-end !important; }
+  .#{$namespace}#{$prefix}align-content-center    { align-content: center !important; }
+  .#{$namespace}#{$prefix}align-content-between   { align-content: space-between !important; }
+  .#{$namespace}#{$prefix}align-content-around    { align-content: space-around !important; }
+  .#{$namespace}#{$prefix}align-content-stretch   { align-content: stretch !important; }
+
+  .#{$namespace}#{$prefix}align-self-auto         { align-self: auto !important; }
+  .#{$namespace}#{$prefix}align-self-start        { align-self: flex-start !important; }
+  .#{$namespace}#{$prefix}align-self-end          { align-self: flex-end !important; }
+  .#{$namespace}#{$prefix}align-self-center       { align-self: center !important; }
+  .#{$namespace}#{$prefix}align-self-baseline     { align-self: baseline !important; }
+  .#{$namespace}#{$prefix}align-self-stretch      { align-self: stretch !important; }
+}
+
+@include flex-helper();
+
+@include foreach-breakpoint() {
+  @include flex-helper('#{$breakpoint-name}-');
+}

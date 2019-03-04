@@ -1,0 +1,74 @@
+status: prototype
+notes: |
+  You can restrict style to specific breakpoints by prefixing the classes below with the media query name, for example `.lg-align-items-center` to match only <em>large</em> screens.
+
+  ### Wrapper display
+
+  | Class                     | Style                  |
+  |---------------------------|------------------------|
+  | `flex`                    | `display: flex`        |
+  | `inline-flex`             | `display: inline-flex` |
+
+  ### Direction
+
+  | Class                     | Style                            |
+  |---------------------------|----------------------------------|
+  | `flex-row`                | `flex-direction: row`            |
+  | `flex-column`             | `flex-direction: column`         |
+  | `flex-row-reverse`        | `flex-direction: row-reverse`    |
+  | `flex-column-reverse`     | `flex-direction: column-reverse` |
+
+  ### Layout
+
+  | Class                     | Style                     |
+  |---------------------------|---------------------------|
+  | `flex-wrap`               | `flex-wrap: wrap`         |
+  | `flex-nowrap`             | `flex-wrap: nowrap`       |
+  | `flex-wrap-reverse`       | `flex-wrap: wrap-reverse` |
+  | `flex-fill`               | `flex: 1 1 auto`          |
+  | `flex-grow-0`             | `flex-grow: 0`            |
+  | `flex-grow-1`             | `flex-grow: 1`            |
+  | `flex-shrink-0`           | `flex-shrink: 0`          |
+  | `flex-shrink-1`           | `flex-shrink: 1`          |
+
+  ### Main-axis alignment
+
+  | Class                     | Style                            |
+  |---------------------------|----------------------------------|
+  | `justify-content-start`   | `justify-content: flex-start`    |
+  | `justify-content-end`     | `justify-content: flex-end`      |
+  | `justify-content-center`  | `justify-content: center`        |
+  | `justify-content-between` | `justify-content: space-between` |
+  | `justify-content-around`  | `justify-content: space-around`  |
+
+  ### Cross-axis alignment
+
+  | Class                     | Style                     |
+  |---------------------------|---------------------------|
+  | `align-items-start`       | `align-items: flex-start` |
+  | `align-items-end`         | `align-items: flex-end`   |
+  | `align-items-center`      | `align-items: center`     |
+  | `align-items-baseline`    | `align-items: baseline`   |
+  | `align-items-stretch`     | `align-items: stretch`    |
+
+  ### Space between flex items on cross-axis
+
+  | Class                     | Style                          |
+  |---------------------------|--------------------------------|
+  | `align-content-start`     | `align-content: flex-start`    |
+  | `align-content-end`       | `align-content: flex-end`      |
+  | `align-content-center`    | `align-content: center`        |
+  | `align-content-between`   | `align-content: space-between` |
+  | `align-content-around`    | `align-content: space-around`  |
+  | `align-content-stretch`   | `align-content: stretch`       |
+
+  ### Flex item self alignment on cross-axis
+
+  | Class                     | Style                    |
+  |---------------------------|--------------------------|
+  | `align-self-auto`         | `align-self: auto`       |
+  | `align-self-start`        | `align-self: flex-start` |
+  | `align-self-end`          | `align-self: flex-end`   |
+  | `align-self-center`       | `align-self: center`     |
+  | `align-self-baseline`     | `align-self: baseline`   |
+  | `align-self-stretch`      | `align-self: stretch`    |
