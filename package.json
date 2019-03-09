@@ -6,6 +6,10 @@
   "bin": {
     "kanbasu": "scripts/scaffold.js"
   },
+  "files": [
+    "scripts/**",
+    "src/**"
+  ],
   "scripts": {
     "build": "npm run build:css && fractal build",
     "start": "run-p fractal:server watch:css",
