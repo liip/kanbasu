@@ -1,3 +1,12 @@
+# [2.5.0-beta.1](https://github.com/liip/kanbasu/compare/2.5.0-beta.0...2.5.0-beta.1) (2019-03-09)
+
+
+### Bug Fixes
+
+* **button:** do not remove default focus ring (fix [#57](https://github.com/liip/kanbasu/issues/57)) ([77a2deb](https://github.com/liip/kanbasu/commit/77a2deb))
+
+
+
 <a name="2.5.0-beta.0"></a>
 # [2.5.0-beta.0](https://github.com/liip/kanbasu/compare/2.4.0...2.5.0-beta.0) (2019-03-04)
 
