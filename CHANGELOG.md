@@ -1,3 +1,7 @@
+# [2.5.0](https://github.com/liip/kanbasu/compare/2.5.0-beta.1...2.5.0) (2019-03-19)
+
+
+
 # [2.5.0-beta.1](https://github.com/liip/kanbasu/compare/2.5.0-beta.0...2.5.0-beta.1) (2019-03-09)
 
 
