@@ -3,6 +3,18 @@
 
 ![カンバス Kanbasu](http://kanbasu.liip.ch/2/logo.svg)
 
+---
+
+## Important information
+
+**Kanbasu won’t get any new features from now on, we do not recommend using it in new projects.**
+
+This framework was created during a time it solved an actual problem for us and after being used for years, we think there are now better solutions available. In particular, we are convinced that the utility-first approach gives us more control over the styling of interfaces with less code.
+
+If you’re looking for an alternative in that direction, we’re recommending the amazingly well-done [Tailwind CSS](https://tailwindcss.com/).
+
+---
+
 Kanbasu is a toolbox to create responsive web interfaces quickly. It’s focused on the layout and voluntarily avoid defining much “styling” properties which can be completely different from project to project.
 
 Written is Sass, it’s highly customizable, every component being optional and customizable with variables.
