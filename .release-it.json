@@ -1,8 +1,11 @@
 {
-  "increment": "conventional:angular",
-  "scripts": {
-    "changelog": "conventional-changelog -p angular | tail -n +3",
-    "beforeStage": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "afterBump": "npm run build"
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  },
+  "hooks": {
+    "after:bump": "npm run build"
   }
 }
