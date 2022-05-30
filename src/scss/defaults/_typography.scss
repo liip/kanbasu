@@ -2,11 +2,13 @@
   TYPOGRAPHY SCAFFOLDING
 \*----------------------------------------*/
 
+@use 'sass:math';
+
 html {
   font-family: $font-family-default;
   // Use percentage value for root font-size
   // see https://github.com/liip/kanbasu/issues/29
-  font-size: 100% * $font-size-default / 16px;
+  font-size: math.div(100% * $font-size-default, 16px);
   line-height: $line-height-default;
   color: $text-color;
 

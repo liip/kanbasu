@@ -10,7 +10,7 @@
   align-items: center;
 
   > li {
-    padding: 0 $spacing-unit-default/2;
+    padding: 0 $spacing-unit-default*0.5;
 
     &:first-child {
       #{$padding-left}: 0;
@@ -54,8 +54,8 @@
     .#{$namespace}list-inline--#{$spacing-name},
     %list-inline--#{$spacing-name} {
       > li {
-        #{$padding-left}: $spacing-value / 2;
-        #{$padding-right}: $spacing-value / 2;
+        #{$padding-left}: $spacing-value * 0.5;
+        #{$padding-right}: $spacing-value * 0.5;
       }
     }
   }

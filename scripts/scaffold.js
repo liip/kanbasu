@@ -2,7 +2,6 @@
 
 var fs = require('fs');
 var path = require('path');
-var mkdirp = require('mkdirp');
 var os = require('os');
 
 var dest = process.argv[2];
@@ -12,7 +11,7 @@ if (!dest) {
 }
 
 // Ensure destination exists
-mkdirp(path.join(dest, 'settings'), function(err) {
+fs.mkdir(path.join(dest, 'settings'), { recursive: true }, function(err) {
 	if (err) {
 		return console.error(err);
 	}
