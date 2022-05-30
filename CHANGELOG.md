@@ -1,3 +1,17 @@
+
+
+# [3.0.0](https://github.com/liip/kanbasu/compare/2.5.0...3.0.0) (2022-05-30)
+
+
+### Features
+
+* replace / by math.div ([7388bb3](https://github.com/liip/kanbasu/commit/7388bb343c0394a71c251d53c3c44d0a1c5d549c))
+
+
+### BREAKING CHANGES
+
+* Dart Sass >= 1.33 is required to parse the new math.div syntax, see https://sass-lang.com/documentation/breaking-changes/slash-div
+
 # [2.5.0](https://github.com/liip/kanbasu/compare/2.5.0-beta.1...2.5.0) (2019-03-19)
 
 
