@@ -2,6 +2,8 @@
   MIXINS
 \*----------------------------------------*/
 
+@use 'sass:math';
+
 /**
  * Output something for each spacings
  * $spacing-name and $spacing-value are available inside @content
@@ -80,7 +82,7 @@ $breakpoint-name: null;
   // So entries are unique by width
   @each $column in $columns {
     @for $i from 1 through $column {
-      $width: percentage($i/$column);
+      $width: percentage(math.div($i, $column));
       $fractions: map-merge($fractions, ($width: #{$i}\/#{$column}));
     }
   }

@@ -2,6 +2,8 @@
   GLOBAL SETTINGS
 \*----------------------------------------*/
 
+@use 'sass:math';
+
 // Use this setting to prefix all the components classes
 $namespace:                         '' !default;
 
@@ -48,8 +50,8 @@ $muted-color:                       transparentize($text-color, .4) !default;
 $ratio:                             1.61803398875 !default;
 
 $spacing-unit-default:              24px !default;
-$spacing-unit-tiny:                 floor($spacing-unit-default / ($ratio * 2)) !default;
-$spacing-unit-small:                floor($spacing-unit-default / $ratio) !default;
+$spacing-unit-tiny:                 floor(math.div($spacing-unit-default, $ratio * 2)) !default;
+$spacing-unit-small:                floor(math.div($spacing-unit-default, $ratio)) !default;
 $spacing-unit-large:                floor($spacing-unit-default * $ratio) !default;
 $spacing-unit-huge:                 floor($spacing-unit-default * ($ratio * 2)) !default;
 
@@ -68,12 +70,12 @@ $spacings:                          (
 
 // Use EM media-queries for better browser consistency
 // See http://zellwk.com/blog/media-query-units
-$screen-xs-max:                     640px  / 16px * 1em !default;
-$screen-sm-min:                     641px  / 16px * 1em !default;
-$screen-sm-max:                     768px  / 16px * 1em !default;
-$screen-md-min:                     769px  / 16px * 1em !default;
-$screen-md-max:                     1024px / 16px * 1em !default;
-$screen-lg-min:                     1025px / 16px * 1em !default;
+$screen-xs-max:                     math.div(640px, 16px) * 1em !default;
+$screen-sm-min:                     math.div(641px, 16px) * 1em !default;
+$screen-sm-max:                     math.div(768px, 16px) * 1em !default;
+$screen-md-min:                     math.div(769px, 16px) * 1em !default;
+$screen-md-max:                     math.div(1024px, 16px) * 1em !default;
+$screen-lg-min:                     math.div(1025px, 16px) * 1em !default;
 
 $breakpoints-default:               (
                                       'sm' '(min-width: #{$screen-sm-min})',
@@ -104,7 +106,7 @@ $border-radius-large:               6px !default;
  * Buttons
  */
 
-$btn-padding:                       $spacing-unit-small/$ratio $spacing-unit-small !default;
+$btn-padding:                       math.div($spacing-unit-small, $ratio) $spacing-unit-small !default;
 $btn-color:                         inherit !default;
 $btn-font-size:                     inherit !default;
 $btn-font-family:                   inherit !default;
@@ -112,12 +114,12 @@ $btn-border:                        1px solid transparent !default;
 $btn-bkg:                           transparent !default;
 $btn-border-radius:                 $border-radius-default !default;
 
-$btn-small-padding:                 $spacing-unit-tiny/$ratio $spacing-unit-tiny !default;
+$btn-small-padding:                 math.div($spacing-unit-tiny, $ratio) $spacing-unit-tiny !default;
 $btn-small-font-size:               $font-size-small !default;
 $btn-small-border:                  $btn-border !default;
 $btn-small-border-radius:           $border-radius-small !default;
 
-$btn-large-padding:                 $spacing-unit-default/$ratio $spacing-unit-default !default;
+$btn-large-padding:                 math.div($spacing-unit-default, $ratio) $spacing-unit-default !default;
 $btn-large-font-size:               $font-size-large !default;
 $btn-large-border:                  $btn-border !default;
 $btn-large-border-radius:           $border-radius-large !default;
@@ -137,7 +139,7 @@ $btn-primary-active-bkg-color:      darken($btn-primary-bkg-color, 5%) !default;
  * Forms
  */
 
-$field-padding:                     $spacing-unit-small/$ratio $spacing-unit-small !default;
+$field-padding:                     math.div($spacing-unit-small, $ratio) $spacing-unit-small !default;
 
 $field-color:                       inherit !default;
 $field-font-size:                   inherit !default;
@@ -152,12 +154,12 @@ $field-border-radius:               $border-radius-default !default;
 $field-disabled-bkg-color:          $alt-color-lighter !default;
 $field-disabled-color:              $alt-color !default;
 
-$field-small-padding:               $spacing-unit-tiny/$ratio $spacing-unit-tiny !default;
+$field-small-padding:               math.div($spacing-unit-tiny, $ratio) $spacing-unit-tiny !default;
 $field-small-font-size:             $font-size-small !default;
 $field-small-border:                $field-border !default;
 $field-small-border-radius:         $border-radius-small !default;
 
-$field-large-padding:               $spacing-unit-default/$ratio $spacing-unit-default !default;
+$field-large-padding:               math.div($spacing-unit-default, $ratio) $spacing-unit-default !default;
 $field-large-font-size:             $font-size-large !default;
 $field-large-border:                $field-border !default;
 $field-large-border-radius:         $border-radius-large !default;

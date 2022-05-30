@@ -7,7 +7,7 @@
   @extend %list;
 
   > li {
-    padding: $spacing-unit-default/2 0;
+    padding: $spacing-unit-default*0.5 0;
 
     &:first-child {
       padding-top: 0;
@@ -35,8 +35,8 @@
     .#{$namespace}list-stacked--#{$spacing-name},
     %list-stacked--#{$spacing-name} {
       > li {
-        padding-top: $spacing-value / 2;
-        padding-bottom: $spacing-value / 2;
+        padding-top: $spacing-value * 0.5;
+        padding-bottom: $spacing-value * 0.5;
       }
     }
   }
