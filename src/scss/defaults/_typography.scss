@@ -153,8 +153,9 @@ dl {
     }
 
     dd {
-      @include clearfix;
       #{$margin-left}: calc(100px + #{$spacing-unit-small});
+
+      @include clearfix;
     }
   }
 
