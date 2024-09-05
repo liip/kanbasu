@@ -1,5 +1,12 @@
 
 
+## [3.0.1](https://github.com/liip/kanbasu/compare/3.0.0...3.0.1) (2024-09-05)
+
+
+### Bug Fixes
+
+* comply with native CSS nesting to avoid warnings ([95e5162](https://github.com/liip/kanbasu/commit/95e51626bd87e21b4d379d0aa437b71555ad574b))
+
 # [3.0.0](https://github.com/liip/kanbasu/compare/2.5.0...3.0.0) (2022-05-30)
 
 
